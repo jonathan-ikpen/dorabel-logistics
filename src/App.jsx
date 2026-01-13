@@ -7,6 +7,7 @@ import Services from "./pages/Services";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
+import Booking from "./pages/Booking";
 import Preloader from "./components/Preloader";
 import ScrollToTop from "./components/ScrollToTop";
 import { client } from "../tina/__generated__/client";
@@ -77,6 +78,7 @@ const AppContent = ({ globalData }) => {
           <Route path="/services" element={<Services />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/booking" element={<Booking />} />
         </Routes>
       </main>
       <Footer headerData={headerData} footerData={tinaGlobal?.global?.footer} />

@@ -19,37 +19,44 @@ const BOT_PATTERNS = [
 // SEO metadata for each route
 const SEO_METADATA = {
   "/": {
-    title: "Professional Facility Management Services in Manchester",
+    title: "Dorabel International - Logistics & Transport Support",
     description:
-      "H2O Facilities provides trusted property management, cleaning, and maintenance services in Manchester. We bridge the gap between landlords and quality contractors.",
-    image: "/images/og_image_new.png",
-    canonical: "https://h2ofacilities.co.uk/",
+      "Dorabel International Limited provides trusted logistics and transport support services. We bridge the gap between businesses and reliable carriers.",
+    image: "/uploads/dorabel_hero.png",
+    canonical: "https://dorabel.co.uk/",
   },
   "/about": {
-    title: "About Us - Trusted Property Management Experts",
+    title: "About Us - Trusted Logistics Support Experts",
     description:
-      "Learn about H2O Facilities, your partner in efficient property management. We ensure compliance, safety, and quality for property owners and agents in Manchester.",
-    image: "/images/og_image_new.png",
-    canonical: "https://h2ofacilities.co.uk/about",
+      "Learn about Dorabel International Limited, your partner in efficient logistics and transport support. We ensure compliance, reliability, and cost-effectiveness for commercial clients.",
+    image: "/uploads/dorabel_hero.png",
+    canonical: "https://dorabel.co.uk/about",
   },
   "/services": {
-    title: "Our Services - Cleaning, Maintenance & Repairs",
+    title: "Our Services - Transport, Logistics & Procurement",
     description:
-      "Comprehensive facility services including daily cleaning, waste management, compliance inspections, and emergency maintenance. 24/7 support available.",
-    image: "/images/og_image_new.png",
-    canonical: "https://h2ofacilities.co.uk/services",
+      "Comprehensive logistics services including transport coordination, supply chain management, global freight, and business support. 24/7 availability.",
+    image: "/uploads/dorabel_hero.png",
+    canonical: "https://dorabel.co.uk/services",
   },
   "/contact": {
     title: "Contact Us - Get a Free Quote Today",
     description:
-      "Get in touch with H2O Facilities for a free consultation. Trusted by over 50 leading agencies in Manchester. Call us or email for immediate assistance.",
-    image: "/images/og_image_new.png",
-    canonical: "https://h2ofacilities.co.uk/contact",
+      "Get in touch with Dorabel International Limited for a free consultation. Trusted logistics partners. Call us or email for immediate assistance.",
+    image: "/uploads/dorabel_hero.png",
+    canonical: "https://dorabel.co.uk/contact",
+  },
+  "/booking": {
+    title: "Book an Appointment - Dorabel International",
+    description:
+      "Schedule a consultation or book logistics services with Dorabel International. We offer efficient and reliable transport solutions.",
+    image: "/uploads/hero_building.png",
+    canonical: "https://dorabel.co.uk/booking",
   },
 };
 
-const SITE_URL = "https://h2ofacilities.co.uk";
-const SITE_NAME = "H2O Facilities";
+const SITE_URL = "https://dorabel.co.uk";
+const SITE_NAME = "Dorabel International";
 
 function isBot(userAgent) {
   if (!userAgent) return false;
@@ -59,7 +66,7 @@ function isBot(userAgent) {
 }
 
 function getAbsoluteImageUrl(imagePath) {
-  if (!imagePath) return `${SITE_URL}/images/og_image.png`;
+  if (!imagePath) return `${SITE_URL}/images/dorabel_seo_og.png`;
   if (imagePath.startsWith("http")) return imagePath;
   return `${SITE_URL}${imagePath}`;
 }
@@ -67,7 +74,8 @@ function getAbsoluteImageUrl(imagePath) {
 function generateOGTags(seo, pathname) {
   const title = seo?.title || SITE_NAME;
   const description =
-    seo?.description || "Professional facility management services.";
+    seo?.description ||
+    "Professional logistics and transport support services.";
   const image = getAbsoluteImageUrl(seo?.image);
   const url = seo?.canonical || `${SITE_URL}${pathname}`;
 
@@ -77,8 +85,7 @@ function generateOGTags(seo, pathname) {
     <meta property="og:url" content="${url}" />
     <meta property="og:title" content="${title}" />
     <meta property="og:description" content="${description}" />
-    <meta property="og:image-backup" content="${image}" />
-    <meta property="og:image" content="https://assets.tina.io/01391f29-0fb6-459f-b103-01b078d450ea/og_image_new.png" />
+    <meta property="og:image" content="${image}" />
     <meta property="og:site_name" content="${SITE_NAME}" />
 
     <!-- Twitter -->
@@ -96,7 +103,7 @@ function generateOGTags(seo, pathname) {
 
 // Vercel Edge Middleware config
 export const config = {
-  matcher: ["/", "/about", "/services", "/contact"],
+  matcher: ["/", "/about", "/services", "/contact", "/booking"],
 };
 
 // Vercel Edge Function handler

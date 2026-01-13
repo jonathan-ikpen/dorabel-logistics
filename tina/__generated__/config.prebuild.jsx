@@ -323,6 +323,14 @@ var config_default = defineConfig({
                 ]
               },
               {
+                name: "booking",
+                label: "Booking Form Section",
+                fields: [
+                  { type: "string", name: "heading", label: "Heading" },
+                  { type: "string", name: "subheading", label: "Subheading" }
+                ]
+              },
+              {
                 name: "pageHeader",
                 label: "Page Header",
                 fields: [

@@ -23,6 +23,7 @@ const Navbar = ({ headerData }) => {
 
   const navLinks = [
     { name: "Services", path: "/services" },
+    { name: "Booking", path: "/booking" },
     { name: "Process", path: "/#process", isHash: true },
     { name: "About", path: "/about" },
     { name: "Contact", path: "/contact" },
