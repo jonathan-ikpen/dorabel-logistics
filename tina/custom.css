@@ -1,0 +1,39 @@
+/* H20 Admin Branding Overrides */
+
+/* Attempt to target the sidebar header logo container */
+/* We target standard Tina branding SVG patterns */
+
+/* 1. Hide the default SVG Logo */
+/* SidebarWrapper is a common class prefix, or just target the header area */
+div[class*="SidebarHeader"] svg,
+aside[class*="Sidebar"] svg,
+div[class*="NavBar"] svg {
+  display: none !important;
+}
+
+/* 2. Show H20 Logo */
+/* We insert it as a background on the link or container */
+div[class*="SidebarHeader"] > a,
+aside[class*="Sidebar"] > div:first-child > a,
+div[class*="NavBar"] > div:first-child {
+  background-image: url("/images/logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center left;
+  width: 160px !important;
+  height: 50px !important;
+  display: block !important;
+  margin: 10px 20px;
+}
+
+/* Hide any text label if present */
+div[class*="SidebarHeader"] span,
+aside[class*="Sidebar"] span {
+  /* be careful not to hide nav items */
+}
+
+/* Fix for potential text-decoration */
+a[href="/admin/index.html"],
+a[href="/admin"] {
+  text-decoration: none !important;
+}

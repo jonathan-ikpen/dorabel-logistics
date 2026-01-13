@@ -1,0 +1,33 @@
+/* H20 Admin Branding Overrides */
+
+/* Hide Default Logo SVGs */
+/* Target SVGs in the sidebar (aside) and top nav (nav) */
+aside a svg,
+nav a svg,
+div[class*="sidebar"] svg,
+div[class*="Sidebar"] svg,
+div[class*="NavBar"] svg {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  width: 0 !important;
+}
+
+/* Inject H20 Logo */
+/* We target the link that usually wraps the logo. 
+   It's often the first link in the aside or nav */
+aside a[href="/admin/index.html"],
+aside a[href="/admin"],
+nav a[href^="/admin"] {
+  background-image: url("/images/logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center left;
+  width: 150px !important;
+  height: 50px !important;
+  display: block !important;
+  text-indent: -9999px;
+  color: transparent !important;
+  margin-left: 20px !important;
+  margin-top: 10px !important;
+}

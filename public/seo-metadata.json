@@ -1,0 +1,26 @@
+{
+  "/": {
+    "title": "Professional Facility Management Services in Manchester",
+    "description": "H2O Facilities provides trusted property management, cleaning, and maintenance services in Manchester. We bridge the gap between landlords and quality contractors.",
+    "image": "/images/og_image_new.png",
+    "canonical": "https://h2ofacilities.co.uk/"
+  },
+  "/about": {
+    "title": "About Us - Trusted Property Management Experts",
+    "description": "Learn about H2O Facilities, your partner in efficient property management. We ensure compliance, safety, and quality for property owners and agents in Manchester.",
+    "image": "/images/og_image_new.png",
+    "canonical": "https://h2ofacilities.co.uk/about"
+  },
+  "/services": {
+    "title": "Our Services - Cleaning, Maintenance & Repairs",
+    "description": "Comprehensive facility services including daily cleaning, waste management, compliance inspections, and emergency maintenance. 24/7 support available.",
+    "image": "/images/og_image_new.png",
+    "canonical": "https://h2ofacilities.co.uk/services"
+  },
+  "/contact": {
+    "title": "Contact Us - Get a Free Quote Today",
+    "description": "Get in touch with H2O Facilities for a free consultation. Trusted by over 50 leading agencies in Manchester. Call us or email for immediate assistance.",
+    "image": "/images/og_image_new.png",
+    "canonical": "https://h2ofacilities.co.uk/contact"
+  }
+}

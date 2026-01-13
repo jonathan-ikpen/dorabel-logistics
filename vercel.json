@@ -1,0 +1,43 @@
+{
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/mail",
+      "destination": "https://server231.web-hosting.com:2096",
+      "permanent": true
+    },
+    {
+      "source": "/webmail",
+      "destination": "https://server231.web-hosting.com:2096",
+      "permanent": true
+    },
+    {
+      "source": "/cpanel",
+      "destination": "https://server231.web-hosting.com:2083",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "mail.h2ofacilities.co.uk" }],
+      "destination": "https://server231.web-hosting.com:2096/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "webmail.h2ofacilities.co.uk" }],
+      "destination": "https://server231.web-hosting.com:2096/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "cpanel.h2ofacilities.co.uk" }],
+      "destination": "https://server231.web-hosting.com:2083/:path*",
+      "permanent": true
+    }
+  ]
+}

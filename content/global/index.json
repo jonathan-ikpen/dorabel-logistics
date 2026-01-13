@@ -1,0 +1,25 @@
+{
+  "header": {
+    "logo": "/uploads/dorabel-logo.png",
+    "companyName": "Dorabel",
+    "tagline": "International Limited"
+  },
+  "footer": {
+    "logo": "/uploads/dorabel-logo.png",
+    "contact": {
+      "address": "8, Kestrel Grove. Boroughbridge. YO51 9RX",
+      "phone": "07949937023",
+      "email": "info@dorabel.co.uk"
+    },
+    "newsletter": {
+      "heading": "Subscribe",
+      "text": "Join our newsletter for logistics updates."
+    }
+  },
+  "theme": {
+    "primaryColor": "#4C1D95",
+    "accentColor": "#D97706",
+    "headingFont": "Manrope",
+    "bodyFont": "Manrope"
+  }
+}
