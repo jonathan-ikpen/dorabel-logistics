@@ -24,7 +24,7 @@ const Navbar = ({ headerData }) => {
   const navLinks = [
     { name: "Services", path: "/services" },
     { name: "Booking", path: "/booking" },
-    { name: "Process", path: "/#process", isHash: true },
+    { name: "Process", path: "/#process", isHash: true, hidden: true },
     { name: "About", path: "/about" },
     { name: "Contact", path: "/contact" },
   ];
@@ -95,7 +95,9 @@ const Navbar = ({ headerData }) => {
                 key={link.name}
                 href={link.path}
                 onClick={(e) => handleNavClick(e, link)}
-                className="text-dorabel-purple hover:text-dorabel-gold transition-colors font-sans text-sm font-medium tracking-wide uppercase relative group cursor-pointer"
+                className={`text-dorabel-purple hover:text-dorabel-gold transition-colors font-sans text-sm font-medium tracking-wide uppercase relative group cursor-pointer ${
+                  link.hidden ? "hidden" : ""
+                }`}
               >
                 {link.name}
                 <span className="absolute -bottom-2 left-0 w-0 h-[1px] bg-dorabel-gold transition-all duration-500 group-hover:w-full"></span>
@@ -104,7 +106,9 @@ const Navbar = ({ headerData }) => {
               <Link
                 key={link.name}
                 to={link.path}
-                className="text-dorabel-purple hover:text-dorabel-gold transition-colors font-sans text-sm font-medium tracking-wide uppercase relative group"
+                className={`text-dorabel-purple hover:text-dorabel-gold transition-colors font-sans text-sm font-medium tracking-wide uppercase relative group ${
+                  link.hidden ? "hidden" : ""
+                }`}
               >
                 {link.name}
                 <span className="absolute -bottom-2 left-0 w-0 h-[1px] bg-dorabel-gold transition-all duration-500 group-hover:w-full"></span>
