@@ -331,6 +331,14 @@ var config_default = defineConfig({
                 ]
               },
               {
+                name: "leaveReview",
+                label: "Leave Review Form",
+                fields: [
+                  { type: "string", name: "heading", label: "Heading" },
+                  { type: "string", name: "subheading", label: "Subheading" }
+                ]
+              },
+              {
                 name: "pageHeader",
                 label: "Page Header",
                 fields: [
@@ -374,6 +382,16 @@ var config_default = defineConfig({
         //   global: true,
         // },
         fields: [
+          {
+            type: "string",
+            name: "googleAnalyticsId",
+            label: "Google Analytics Measurement ID (G-XXXXXXXXXX)"
+          },
+          {
+            type: "string",
+            name: "googleReviewLink",
+            label: "Google Reviews Link (e.g. https://g.page/r/...)"
+          },
           {
             type: "object",
             label: "Header",

@@ -103,7 +103,14 @@ function generateOGTags(seo, pathname) {
 
 // Vercel Edge Middleware config
 export const config = {
-  matcher: ["/", "/about", "/services", "/contact", "/booking"],
+  matcher: [
+    "/",
+    "/about",
+    "/services",
+    "/contact",
+    "/booking",
+    "/leave-review",
+  ],
 };
 
 // Vercel Edge Function handler

@@ -28,5 +28,11 @@
     "description": "Schedule a consultation or book logistics services with Dorabel International. We offer efficient and reliable transport solutions.",
     "image": "/images/dorabel_seo_og.png",
     "canonical": "https://dorabel.co.uk/booking"
+  },
+  "/leave-review": {
+    "title": "Leave a Review - Dorabel International",
+    "description": "Share your experience with Dorabel International. We value your feedback on our logistics and transport support services.",
+    "image": "/images/dorabel_seo_og.png",
+    "canonical": "https://dorabel.co.uk/leave-review"
   }
 }

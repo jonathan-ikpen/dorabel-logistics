@@ -7,11 +7,13 @@ import Services from "./pages/Services";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
+import LeaveReview from "./pages/LeaveReview";
 import Booking from "./pages/Booking";
 import Preloader from "./components/Preloader";
 import ScrollToTop from "./components/ScrollToTop";
 import { client } from "../tina/__generated__/client";
 import { useTina } from "tinacms/dist/react";
+import Analytics from "./components/Analytics";
 
 const AppContent = ({ globalData }) => {
   // Use Tina hook to make it editable
@@ -79,6 +81,14 @@ const AppContent = ({ globalData }) => {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/booking" element={<Booking />} />
+          <Route
+            path="/leave-review"
+            element={
+              <LeaveReview
+                googleReviewLink={tinaGlobal?.global?.googleReviewLink}
+              />
+            }
+          />
         </Routes>
       </main>
       <Footer headerData={headerData} footerData={tinaGlobal?.global?.footer} />
@@ -141,10 +151,12 @@ function App() {
       </div>
     );
   }
-
   return (
     <>
       <Preloader />
+      {globalData?.global?.googleAnalyticsId && (
+        <Analytics googleAnalyticsId={globalData.global.googleAnalyticsId} />
+      )}
       <AppContent globalData={globalData} />
     </>
   );

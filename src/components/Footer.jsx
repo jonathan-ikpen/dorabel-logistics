@@ -15,6 +15,7 @@ export default function Footer({ headerData, footerData }) {
     { label: "Facility Management", url: "/services" },
     { label: "Property Inspections", url: "/services" },
     { label: "Maintenance & Repairs", url: "/services" },
+    { label: "Leave a Review", url: "/leave-review" },
   ];
 
   const legalItems = footerData?.legalLinks || [
