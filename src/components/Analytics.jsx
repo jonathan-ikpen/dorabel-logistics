@@ -1,44 +1,32 @@
 import { useEffect } from "react";
+import ReactGA from "react-ga4";
 import { useLocation } from "react-router-dom";
+
+// Hardcoded fallback ID to ensure tracking works even if CMS data fetch fails
+const FALLBACK_ID = "G-B4Z8T7BVVD";
 
 const Analytics = ({ googleAnalyticsId }) => {
   const location = useLocation();
+  // Use the prop if available, otherwise use the fallback
+  const effectiveId = googleAnalyticsId || FALLBACK_ID;
 
   useEffect(() => {
-    if (!googleAnalyticsId) return;
-
-    // Check if script already exists to avoid duplicates
-    const existingScript = document.querySelector(
-      `script[src*="googletagmanager"]`
-    );
-    if (!existingScript) {
-      // 1. Inject the Google Tag Manager script
-      const script = document.createElement("script");
-      script.async = true;
-      script.src = `https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`;
-      document.head.appendChild(script);
-
-      // 2. Initialize window.dataLayer
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        window.dataLayer.push(arguments);
-      }
-      window.gtag = gtag; // Make globally available
-      gtag("js", new Date());
-      gtag("config", googleAnalyticsId);
-      console.log(`GA4 initialized with ID: ${googleAnalyticsId}`);
+    if (effectiveId) {
+      // Initialize GA4
+      ReactGA.initialize(effectiveId);
+      console.log("GA4 Initialized (react-ga4) with ID:", effectiveId);
     }
-  }, [googleAnalyticsId]);
+  }, [effectiveId]);
 
   useEffect(() => {
-    // Track page views on route change
-    if (window.gtag && googleAnalyticsId) {
-      window.gtag("config", googleAnalyticsId, {
-        page_path: location.pathname + location.search,
+    if (effectiveId) {
+      // Send pageview with a custom path
+      ReactGA.send({
+        hitType: "pageview",
+        page: location.pathname + location.search,
       });
-      console.log("GA4 Pageview sent:", location.pathname);
     }
-  }, [location, googleAnalyticsId]);
+  }, [location, effectiveId]);
 
   return null;
 };

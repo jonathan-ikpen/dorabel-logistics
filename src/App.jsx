@@ -154,9 +154,7 @@ function App() {
   return (
     <>
       <Preloader />
-      {globalData?.global?.googleAnalyticsId && (
-        <Analytics googleAnalyticsId={globalData.global.googleAnalyticsId} />
-      )}
+      <Analytics googleAnalyticsId={globalData?.global?.googleAnalyticsId} />
       <AppContent globalData={globalData} />
     </>
   );
