@@ -22,6 +22,77 @@ export default defineConfig({
         link.rel = "stylesheet";
         link.href = "/tina-styles.css";
         document.head.appendChild(link);
+
+        // SAFEST SIDEBAR INJECTION: Uses requestIdleCallback to wait until browser is completely idle
+        // This ensures we don't interfere with any React rendering or Tina operations
+        const injectSidebarLinks = () => {
+          const sidebarList = document.querySelector("ul.flex.flex-col.gap-4");
+          if (
+            !sidebarList ||
+            document.getElementById("tina-custom-analytics-link")
+          )
+            return;
+
+          const customLinks = [
+            {
+              id: "tina-custom-analytics-link",
+              label: "Google Analytics",
+              url: "https://analytics.google.com/analytics/web/",
+              icon: `<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="mr-2 h-6 opacity-80 w-auto" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"></path></svg>`,
+            },
+            {
+              id: "tina-custom-reviews-link",
+              label: "Google Reviews",
+              url: "https://business.google.com/",
+              icon: `<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="mr-2 h-6 opacity-80 w-auto" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>`,
+            },
+            {
+              id: "tina-custom-tawkto-link",
+              label: "Live Chat",
+              url: "https://dashboard.tawk.to/",
+              icon: `<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="mr-2 h-6 opacity-80 w-auto" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-3 12H7v-2h10v2zm0-3H7V9h10v2zm0-3H7V6h10v2z"></path></svg>`,
+            },
+          ];
+
+          customLinks.forEach((linkConfig) => {
+            const li = document.createElement("li");
+            const a = document.createElement("a");
+            a.id = linkConfig.id;
+            a.href = linkConfig.url;
+            a.target = "_blank";
+            a.rel = "noopener noreferrer";
+            a.className =
+              "text-base tracking-wide text-gray-500 hover:text-blue-600 flex items-center opacity-90 hover:opacity-100 cursor-pointer";
+            a.innerHTML = `${linkConfig.icon} ${linkConfig.label}`;
+            li.appendChild(a);
+            sidebarList.appendChild(li);
+          });
+        };
+
+        // Wait for browser to be completely idle, then try to inject after sidebar might be open
+        // Using a click listener on the menu button instead of observers
+        const menuBtn = () =>
+          document.querySelector('button[aria-label="Open navigation menu"]');
+        const tryInject = () => {
+          if (typeof requestIdleCallback !== "undefined") {
+            requestIdleCallback(() => setTimeout(injectSidebarLinks, 100), {
+              timeout: 2000,
+            });
+          } else {
+            setTimeout(injectSidebarLinks, 500);
+          }
+        };
+
+        // Listen for menu button clicks to inject when sidebar opens
+        document.addEventListener(
+          "click",
+          (e) => {
+            if (e.target.closest('button[aria-label="Open navigation menu"]')) {
+              tryInject();
+            }
+          },
+          { passive: true, capture: false }
+        );
       }
     });
 
@@ -401,6 +472,14 @@ export default defineConfig({
             name: "googleReviewLink",
             label: "Google Reviews Link (e.g. https://g.page/r/...)",
           },
+          {
+            type: "string",
+            name: "tawkToId",
+            label: "Tawk.to Property ID (e.g. 1234567890abcdef/1a2b3c4d)",
+            description:
+              "Find this in Tawk.to Dashboard > Administration > Channels > Chat Widget",
+          },
+
           {
             type: "object",
             label: "Header",
