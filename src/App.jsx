@@ -15,6 +15,7 @@ import { client } from "../tina/__generated__/client";
 import { useTina } from "tinacms/dist/react";
 import Analytics from "./components/Analytics";
 import LiveChat from "./components/LiveChat";
+import StructuredData from "./components/StructuredData";
 
 const AppContent = ({ globalData }) => {
   // Use Tina hook to make it editable
@@ -157,6 +158,7 @@ function App() {
       <Preloader />
       <Analytics googleAnalyticsId={globalData?.global?.googleAnalyticsId} />
       <LiveChat tawkToId={globalData?.global?.tawkToId} />
+      <StructuredData />
       <AppContent globalData={globalData} />
     </>
   );
