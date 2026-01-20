@@ -41,7 +41,7 @@ const Services = ({ previewMode = false, data }) => {
   const displayedServices = previewMode ? items.slice(0, 3) : items;
 
   return (
-    <section id="services" className="py-32 bg-white">
+    <section id="services" className="py-24 bg-white">
       <div className="container mx-auto px-8">
         <div className="md:w-1/2 mb-16">
           <Reveal>

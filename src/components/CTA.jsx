@@ -4,7 +4,7 @@ import { tinaField } from "tinacms/dist/react";
 
 const CTA = ({ data }) => {
   return (
-    <section className="py-32 bg-slate-50 border-t border-gray-100 relative overflow-hidden">
+    <section className="py-24 bg-slate-50 border-t border-gray-100 relative overflow-hidden">
       {/* Background Decoration - Very Subtle */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0 pointer-events-none">
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-dorabel-purple/3 rounded-full blur-[120px] transform translate-x-1/2 -translate-y-1/2"></div>

@@ -45,7 +45,7 @@ const Contact = ({ data }) => {
   };
 
   return (
-    <section id="contact" className="py-32 bg-white">
+    <section id="contact" className="py-24 bg-white">
       <div className="container mx-auto px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-24">
           <div>

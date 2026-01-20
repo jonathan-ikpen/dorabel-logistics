@@ -10,7 +10,7 @@ const About = ({ data }) => {
   // For this demo, we assume data is passed if migrated.
 
   return (
-    <section id="about" className="py-2 md:py-32 bg-white overflow-hidden">
+    <section id="about" className="py-24 bg-white overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row items-center gap-20">
           {/* Image Side */}
@@ -44,7 +44,7 @@ const About = ({ data }) => {
               ) : (
                 <h2 className="text-5xl md:text-6xl font-heading font-bold text-dorabel-purple mt-6 mb-8 leading-tight">
                   More Than Just <br />
-                  Facility Management
+                  Logistics
                 </h2>
               )}
             </Reveal>
