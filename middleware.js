@@ -22,35 +22,35 @@ const SEO_METADATA = {
     title: "Dorabel International - Logistics & Transport Support",
     description:
       "Dorabel International Limited provides trusted logistics and transport support services. We bridge the gap between businesses and reliable carriers.",
-    image: "/uploads/dorabel_hero.png",
+    image: "/uploads/og_image.png",
     canonical: "https://dorabel.co.uk/",
   },
   "/about": {
     title: "About Us - Trusted Logistics Support Experts",
     description:
       "Learn about Dorabel International Limited, your partner in efficient logistics and transport support. We ensure compliance, reliability, and cost-effectiveness for commercial clients.",
-    image: "/uploads/dorabel_hero.png",
+    image: "/uploads/og_image.png",
     canonical: "https://dorabel.co.uk/about",
   },
   "/services": {
     title: "Our Services - Transport, Logistics & Procurement",
     description:
       "Comprehensive logistics services including transport coordination, supply chain management, global freight, and business support. 24/7 availability.",
-    image: "/uploads/dorabel_hero.png",
+    image: "/uploads/og_image.png",
     canonical: "https://dorabel.co.uk/services",
   },
   "/contact": {
     title: "Contact Us - Get a Free Quote Today",
     description:
       "Get in touch with Dorabel International Limited for a free consultation. Trusted logistics partners. Call us or email for immediate assistance.",
-    image: "/uploads/dorabel_hero.png",
+    image: "/uploads/og_image.png",
     canonical: "https://dorabel.co.uk/contact",
   },
   "/booking": {
     title: "Book an Appointment - Dorabel International",
     description:
       "Schedule a consultation or book logistics services with Dorabel International. We offer efficient and reliable transport solutions.",
-    image: "/uploads/hero_building.png",
+    image: "/uploads/og_image.png",
     canonical: "https://dorabel.co.uk/booking",
   },
 };
@@ -61,12 +61,12 @@ const SITE_NAME = "Dorabel International";
 function isBot(userAgent) {
   if (!userAgent) return false;
   return BOT_PATTERNS.some((pattern) =>
-    userAgent.toLowerCase().includes(pattern.toLowerCase())
+    userAgent.toLowerCase().includes(pattern.toLowerCase()),
   );
 }
 
 function getAbsoluteImageUrl(imagePath) {
-  if (!imagePath) return `${SITE_URL}/images/dorabel_seo_og.png`;
+  if (!imagePath) return `${SITE_URL}/images/og_image.png`;
   if (imagePath.startsWith("http")) return imagePath;
   return `${SITE_URL}${imagePath}`;
 }

@@ -113,7 +113,7 @@ const Navbar = ({ headerData }) => {
                 {link.name}
                 <span className="absolute -bottom-2 left-0 w-0 h-[1px] bg-dorabel-gold transition-all duration-500 group-hover:w-full"></span>
               </Link>
-            )
+            ),
           )}
           <a
             href="#contact"
@@ -178,7 +178,7 @@ const Navbar = ({ headerData }) => {
                   >
                     {link.name}
                   </Link>
-                )
+                ),
               )}
               <a
                 href="#contact"

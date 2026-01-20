@@ -2,37 +2,37 @@
   "/": {
     "title": "Dorabel International - Logistics & Transport Support",
     "description": "Dorabel International Limited provides trusted logistics and transport support services. We bridge the gap between businesses and reliable carriers.",
-    "image": "/images/dorabel_seo_og.png",
+    "image": "/images/og_image.png",
     "canonical": "https://dorabel.co.uk/"
   },
   "/about": {
     "title": "About Us - Trusted Logistics Support Experts",
     "description": "Learn about Dorabel International Limited, your partner in efficient logistics and transport support. We ensure compliance, reliability, and cost-effectiveness for commercial clients.",
-    "image": "/images/dorabel_seo_og.png",
+    "image": "/images/og_image.png",
     "canonical": "https://dorabel.co.uk/about"
   },
   "/services": {
     "title": "Our Services - Transport, Logistics & Procurement",
     "description": "Comprehensive logistics services including transport coordination, supply chain management, global freight, and business support. 24/7 availability.",
-    "image": "/images/dorabel_seo_og.png",
+    "image": "/images/og_image.png",
     "canonical": "https://dorabel.co.uk/services"
   },
   "/contact": {
     "title": "Contact Us - Get a Free Quote Today",
     "description": "Get in touch with Dorabel International Limited for a free consultation. Trusted logistics partners. Call us or email for immediate assistance.",
-    "image": "/images/dorabel_seo_og.png",
+    "image": "/images/og_image.png",
     "canonical": "https://dorabel.co.uk/contact"
   },
   "/booking": {
     "title": "Book an Appointment - Dorabel International",
     "description": "Schedule a consultation or book logistics services with Dorabel International. We offer efficient and reliable transport solutions.",
-    "image": "/images/dorabel_seo_og.png",
+    "image": "/images/og_image.png",
     "canonical": "https://dorabel.co.uk/booking"
   },
   "/leave-review": {
     "title": "Leave a Review - Dorabel International",
     "description": "Share your experience with Dorabel International. We value your feedback on our logistics and transport support services.",
-    "image": "/images/dorabel_seo_og.png",
+    "image": "/images/og_image.png",
     "canonical": "https://dorabel.co.uk/leave-review"
   }
 }
