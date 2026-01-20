@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import defaultLogo from "../assets/dorabel-logo.png";
+const defaultLogo = "/logo/logo-white-with-text.svg";
 import { tinaField } from "tinacms/dist/react";
 import { subscribeNewsletter } from "../api/mockApi";
 
@@ -63,7 +63,7 @@ export default function Footer({ headerData, footerData }) {
                 }
                 className="h-10 w-auto"
               />
-              <span className="font-heading font-medium text-xl text-white tracking-tight">
+              <span className="font-heading font-medium text-xl text-white tracking-tight hidden">
                 {companyName === "Dorabel International" ? (
                   <>
                     Dorabel{" "}
@@ -84,7 +84,7 @@ export default function Footer({ headerData, footerData }) {
               data-tina-field={
                 headerData ? tinaField(headerData, "tagline") : ""
               }
-              className="text-sm leading-relaxed mb-6 font-light"
+              className="text-sm leading-relaxed mb-6 font-light hidden"
             >
               {tagline}
             </p>

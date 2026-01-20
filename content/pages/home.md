@@ -10,7 +10,7 @@ blocks:
   - heading: Always Delivering Excellence
     subheading: >-
       Our goal is to establish a dependable UK logistics services business that delivers efficient transport support and coordination for commercial clients—while building the operational capability to expand into wider business and supply-chain support services.
-    backgroundImage: /uploads/hero-logistics-modern.png
+    backgroundImage: /uploads/hero-logistics-branded.png
     ctaText: Get Started
     ctaLink: "#contact"
     secondaryCtaText: Our Services

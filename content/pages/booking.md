@@ -5,11 +5,11 @@ seo:
   description: >-
     Schedule a consultation or book logistics services with Dorabel International. We offer efficient and reliable transport solutions.
   canonical: "https://dorabel.co.uk/booking"
-  image: /uploads/hero_building.png
+  image: /uploads/dorabel_hero.png
 blocks:
   - heading: Book an Appointment
     subheading: Schedule a consultation or book logistics services with our expert team.
-    image: /uploads/hero_building.png
+    image: /uploads/dorabel_hero.png
     _template: pageHeader
   - heading: Schedule Your Service
     subheading: Fill out the form below to schedule a consultation or book our logistics services directly.

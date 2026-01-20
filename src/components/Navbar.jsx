@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import defaultLogo from "../assets/dorabel-logo.png";
+const defaultLogo = "/logo/logo-primary-with-text.svg";
 import { tinaField } from "tinacms/dist/react";
 
 const Navbar = ({ headerData }) => {
@@ -70,7 +70,7 @@ const Navbar = ({ headerData }) => {
             data-tina-field={headerData ? tinaField(headerData, "logo") : ""}
             className="h-12 w-auto"
           />
-          <span className="font-heading font-semibold text-2xl tracking-tight text-dorabel-purple">
+          <span className="font-heading font-semibold text-2xl tracking-tight text-dorabel-purple hidden">
             {companyName === "Dorabel" ? (
               <>
                 Dorabel <span className="text-dorabel-gold italic">Intl.</span>
