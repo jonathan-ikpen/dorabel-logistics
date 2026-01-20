@@ -45,13 +45,13 @@ const Services = ({ previewMode = false, data }) => {
       <div className="container mx-auto px-8">
         <div className="md:w-1/2 mb-16">
           <Reveal>
-            <span className="text-dorabel-gold font-medium uppercase tracking-widest text-xs mb-2 block">
+            <span className="text-dorabel-gold font-bold uppercase tracking-widest text-xs mb-2 block">
               Our Expertise
             </span>
             <div className="h-[1px] w-12 bg-gray-200 mb-6"></div>
             <h2
               data-tina-field={data ? tinaField(data, "heading") : null}
-              className="text-4xl md:text-5xl font-heading font-medium text-dorabel-purple mb-6 leading-tight"
+              className="text-4xl md:text-5xl font-heading font-bold text-dorabel-purple mb-6 leading-tight"
             >
               {data?.heading || "Comprehensive Solutions"}
             </h2>
@@ -94,7 +94,7 @@ const Services = ({ previewMode = false, data }) => {
               <Reveal delay={0.2 + index * 0.1}>
                 <h3
                   data-tina-field={tinaField(service, "title")}
-                  className="text-3xl font-heading font-medium text-dorabel-purple mb-4 group-hover:text-dorabel-gold transition-colors duration-500"
+                  className="text-3xl font-heading font-bold text-dorabel-purple mb-4 group-hover:text-dorabel-gold transition-colors duration-500"
                 >
                   {service.title}
                 </h3>
@@ -127,7 +127,7 @@ const Services = ({ previewMode = false, data }) => {
             <Link
               to="/services"
               data-tina-field={data ? tinaField(data, "buttonText") : null}
-              className="px-12 py-5 bg-dorabel-purple hover:bg-dorabel-gold text-white font-medium rounded-none transition-all duration-500 shadow-sm text-sm tracking-widest uppercase hover:px-14"
+              className="px-12 py-5 bg-dorabel-purple hover:bg-dorabel-gold text-white font-bold rounded-none transition-all duration-500 shadow-sm text-sm tracking-widest uppercase hover:px-14"
             >
               {data?.buttonText || "See All Services"}
             </Link>

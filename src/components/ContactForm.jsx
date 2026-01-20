@@ -37,7 +37,7 @@ const ContactForm = ({ data }) => {
       setError(
         err.code === 422
           ? "Please complete required fields."
-          : "Something went wrong."
+          : "Something went wrong.",
       );
     } finally {
       setLoading(false);
@@ -51,14 +51,14 @@ const ContactForm = ({ data }) => {
           <div>
             <span
               data-tina-field={tinaField(data, "subheading")}
-              className="text-dorabel-gold font-medium uppercase tracking-widest text-xs mb-4 block"
+              className="text-dorabel-gold font-bold uppercase tracking-widest text-xs mb-4 block"
             >
               {data.subheading || "Get in Touch"}
             </span>
             <div className="h-[1px] w-12 bg-gray-200 mb-8"></div>
             <h2
               data-tina-field={tinaField(data, "heading")}
-              className="text-4xl md:text-5xl font-heading font-medium text-dorabel-purple mt-3 mb-8 leading-tight"
+              className="text-4xl md:text-5xl font-heading font-bold text-dorabel-purple mt-3 mb-8 leading-tight"
             >
               {data.heading || "Ready to Elevate Your Property?"}
             </h2>
@@ -124,7 +124,7 @@ const ContactForm = ({ data }) => {
           </div>
 
           <div className="bg-[#FAFAFA] p-12 shadow-sm border border-gray-100">
-            <h3 className="text-2xl font-heading font-medium text-dorabel-purple mb-8">
+            <h3 className="text-2xl font-heading font-bold text-dorabel-purple mb-8">
               Send us a Message
             </h3>
             <form className="space-y-6" onSubmit={onSubmit}>

@@ -9,12 +9,12 @@ const Testimonials = ({ data }) => {
     <section className="py-32 bg-dorabel-gray-light">
       <div className="container mx-auto px-8">
         <div className="text-center mb-24">
-          <span className="text-dorabel-gold font-medium uppercase tracking-widest text-xs mb-4 block">
+          <span className="text-dorabel-gold font-bold uppercase tracking-widest text-xs mb-4 block">
             Testimonials
           </span>
           <h2
             data-tina-field={tinaField(data, "heading")}
-            className="text-4xl md:text-5xl font-heading font-medium text-dorabel-purple"
+            className="text-4xl md:text-5xl font-heading font-bold text-dorabel-purple"
           >
             {data.heading || "Trusted by Industry Leaders"}
           </h2>
@@ -53,7 +53,7 @@ const Testimonials = ({ data }) => {
                 "{t.text}"
               </p>
               <div className="flex items-center gap-5 pt-8 border-t border-gray-100">
-                <div className="w-12 h-12 bg-dorabel-purple text-white flex items-center justify-center font-heading font-medium text-xl shadow-md cursor-default">
+                <div className="w-12 h-12 bg-dorabel-purple text-white flex items-center justify-center font-heading font-bold text-xl shadow-md cursor-default">
                   {(t.name || "A")[0]}
                 </div>
                 <div>
@@ -65,7 +65,7 @@ const Testimonials = ({ data }) => {
                   </h4>
                   <p
                     data-tina-field={tinaField(t, "role")}
-                    className="text-xs text-dorabel-gold font-medium uppercase tracking-wider"
+                    className="text-xs text-dorabel-gold font-bold uppercase tracking-wider"
                   >
                     {t.role}
                   </p>

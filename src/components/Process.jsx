@@ -10,12 +10,12 @@ const Process = ({ data }) => {
       <div className="container mx-auto px-8">
         <div className="flex flex-col md:flex-row gap-20 items-stretch">
           <div className="md:w-1/3 flex flex-col justify-center">
-            <span className="text-dorabel-gold font-medium uppercase tracking-widest text-xs mb-4 block">
+            <span className="text-dorabel-gold font-bold uppercase tracking-widest text-xs mb-4 block">
               How We Work
             </span>
             <h2
               data-tina-field={tinaField(data, "heading")}
-              className="text-4xl md:text-5xl font-heading font-medium text-dorabel-purple mt-3 mb-8 leading-tight"
+              className="text-4xl md:text-5xl font-heading font-bold text-dorabel-purple mt-3 mb-8 leading-tight"
             >
               {data.heading || "A Streamlined Approach to Facility Management"}
             </h2>
@@ -29,7 +29,7 @@ const Process = ({ data }) => {
             <div className="mt-auto">
               <a
                 href="#contact"
-                className="px-12 py-5 bg-dorabel-purple hover:bg-dorabel-gold text-white font-medium rounded-none transition-all duration-500 shadow-sm text-sm tracking-widest uppercase inline-block"
+                className="px-12 py-5 bg-dorabel-purple hover:bg-dorabel-gold text-white font-bold rounded-none transition-all duration-500 shadow-sm text-sm tracking-widest uppercase inline-block"
               >
                 {data.ctaText || "Start Your Consultation"}
               </a>
@@ -62,7 +62,7 @@ const Process = ({ data }) => {
 
                 <h3
                   data-tina-field={tinaField(step, "title")}
-                  className="text-2xl font-heading font-medium text-dorabel-purple mb-4 group-hover:text-dorabel-gold transition-colors duration-300"
+                  className="text-2xl font-heading font-bold text-dorabel-purple mb-4 group-hover:text-dorabel-gold transition-colors duration-300"
                 >
                   {step.title}
                 </h3>

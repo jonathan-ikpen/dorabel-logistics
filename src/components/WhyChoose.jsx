@@ -81,7 +81,7 @@ const WhyChoose = ({ data }) => {
           <FadeIn>
             <h2
               data-tina-field={tinaField(data, "heading")}
-              className="text-3xl md:text-5xl font-heading font-medium text-dorabel-purple mb-6"
+              className="text-3xl md:text-5xl font-heading font-bold text-dorabel-purple mb-6"
             >
               {data.heading || "Why Partner With Dorabel?"}
             </h2>

@@ -18,19 +18,19 @@ const CTA = ({ data }) => {
             transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
             viewport={{ once: true }}
           >
-            <span className="text-dorabel-gold font-medium uppercase tracking-widest text-xs mb-8 block">
+            <span className="text-dorabel-gold font-bold uppercase tracking-widest text-xs mb-8 block">
               Get In Touch
             </span>
 
             {data ? (
               <h2
                 data-tina-field={tinaField(data, "heading")}
-                className="text-4xl md:text-6xl font-heading font-medium text-dorabel-purple mb-8 leading-[1.1]"
+                className="text-4xl md:text-6xl font-heading font-bold text-dorabel-purple mb-8 leading-[1.1]"
               >
                 {data.heading}
               </h2>
             ) : (
-              <h2 className="text-4xl md:text-6xl font-heading font-medium text-dorabel-purple mb-8 leading-[1.1]">
+              <h2 className="text-4xl md:text-6xl font-heading font-bold text-dorabel-purple mb-8 leading-[1.1]">
                 Ready to Streamline Your <br />
                 <span className="italic text-dorabel-gold/80">
                   Logistics Operations?
@@ -56,14 +56,14 @@ const CTA = ({ data }) => {
               <a
                 href="#contact"
                 data-tina-field={tinaField(data, "buttonText")}
-                className="px-12 py-5 bg-dorabel-purple hover:bg-dorabel-gold text-white font-medium rounded-none transition-all duration-500 shadow-sm text-sm tracking-widest uppercase"
+                className="px-12 py-5 bg-dorabel-purple hover:bg-dorabel-gold text-white font-bold rounded-none transition-all duration-500 shadow-sm text-sm tracking-widest uppercase"
               >
                 {data.buttonText || "Get a Free Quote"}
               </a>
               <a
                 href="tel:07949937023"
                 data-tina-field={tinaField(data, "secondaryButtonText")}
-                className="px-12 py-5 bg-transparent border border-gray-200 hover:border-dorabel-purple hover:bg-white text-dorabel-purple font-medium rounded-none transition-all duration-500 text-sm tracking-widest uppercase"
+                className="px-12 py-5 bg-transparent border border-gray-200 hover:border-dorabel-purple hover:bg-white text-dorabel-purple font-bold rounded-none transition-all duration-500 text-sm tracking-widest uppercase"
               >
                 {data.secondaryButtonText || "Call Us Now"}
               </a>

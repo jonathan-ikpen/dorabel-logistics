@@ -47,7 +47,7 @@ const BookingForm = ({ data }) => {
       setError(
         err.code === 422
           ? "Please complete required fields."
-          : "Something went wrong."
+          : "Something went wrong.",
       );
     } finally {
       setLoading(false);
@@ -68,7 +68,7 @@ const BookingForm = ({ data }) => {
             </span>
             <h2
               data-tina-field={data ? tinaField(data, "heading") : null}
-              className="text-4xl md:text-5xl font-heading font-medium text-dorabel-purple mb-6"
+              className="text-4xl md:text-5xl font-heading font-bold text-dorabel-purple mb-6"
             >
               {data?.heading || "Schedule Your Service"}
             </h2>

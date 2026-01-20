@@ -15,11 +15,11 @@ const TrustSection = () => {
             transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
             viewport={{ once: true }}
           >
-            <span className="text-dorabel-gold font-medium tracking-widest uppercase text-xs mb-4 block">
+            <span className="text-dorabel-gold font-bold tracking-widest uppercase text-xs mb-4 block">
               Why Choose Us
             </span>
             <div className="h-[1px] w-12 bg-dorabel-gold mb-8 opacity-30"></div>
-            <h2 className="text-4xl md:text-5xl font-heading font-medium text-white mb-8 leading-tight">
+            <h2 className="text-4xl md:text-5xl font-heading font-bold text-white mb-8 leading-tight">
               The Bridge Between <br />
               <span className="text-dorabel-gray-dim italic">
                 Needs & Execution
@@ -33,7 +33,7 @@ const TrustSection = () => {
 
             <div className="grid grid-cols-2 gap-12 border-t border-white/10 pt-10">
               <div>
-                <h3 className="text-4xl font-heading font-medium text-white mb-2">
+                <h3 className="text-4xl font-heading font-bold text-white mb-2">
                   100%
                 </h3>
                 <p className="text-sm text-dorabel-gray-dim tracking-wide uppercase">
@@ -41,7 +41,7 @@ const TrustSection = () => {
                 </p>
               </div>
               <div>
-                <h3 className="text-4xl font-heading font-medium text-white mb-2">
+                <h3 className="text-4xl font-heading font-bold text-white mb-2">
                   24/7
                 </h3>
                 <p className="text-sm text-dorabel-gray-dim tracking-wide uppercase">
@@ -49,7 +49,7 @@ const TrustSection = () => {
                 </p>
               </div>
               <div>
-                <h3 className="text-4xl font-heading font-medium text-white mb-2">
+                <h3 className="text-4xl font-heading font-bold text-white mb-2">
                   50+
                 </h3>
                 <p className="text-sm text-dorabel-gray-dim tracking-wide uppercase">
@@ -57,7 +57,7 @@ const TrustSection = () => {
                 </p>
               </div>
               <div>
-                <h3 className="text-4xl font-heading font-medium text-white mb-2">
+                <h3 className="text-4xl font-heading font-bold text-white mb-2">
                   Eco
                 </h3>
                 <p className="text-sm text-dorabel-gray-dim tracking-wide uppercase">

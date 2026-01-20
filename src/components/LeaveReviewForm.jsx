@@ -45,7 +45,7 @@ const LeaveReviewForm = ({ data }) => {
       setError(
         err.code === 422
           ? "Please complete required fields."
-          : "Something went wrong."
+          : "Something went wrong.",
       );
     } finally {
       setLoading(false);
@@ -65,12 +65,12 @@ const LeaveReviewForm = ({ data }) => {
       <div className="container mx-auto px-8">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
-            <span className="text-dorabel-gold font-medium uppercase tracking-widest text-xs mb-4 block">
+            <span className="text-dorabel-gold font-bold uppercase tracking-widest text-xs mb-4 block">
               Share Your Experience
             </span>
             <h2
               data-tina-field={data ? tinaField(data, "heading") : null}
-              className="text-4xl md:text-5xl font-heading font-medium text-dorabel-purple mb-6"
+              className="text-4xl md:text-5xl font-heading font-bold text-dorabel-purple mb-6"
             >
               {data?.heading || "Leave a Review"}
             </h2>
@@ -90,7 +90,7 @@ const LeaveReviewForm = ({ data }) => {
                   href={data.googleReviewLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-dorabel-purple font-medium hover:text-dorabel-gold transition-colors border-b border-dorabel-purple/20 hover:border-dorabel-gold pb-1"
+                  className="inline-flex items-center gap-2 text-dorabel-purple font-bold hover:text-dorabel-gold transition-colors border-b border-dorabel-purple/20 hover:border-dorabel-gold pb-1"
                 >
                   <svg
                     className="w-5 h-5"
@@ -202,7 +202,7 @@ const LeaveReviewForm = ({ data }) => {
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full py-5 bg-dorabel-purple hover:bg-dorabel-gold text-white font-medium transition-all duration-300 shadow-sm rounded-none tracking-widest uppercase text-sm"
+                className="w-full py-5 bg-dorabel-purple hover:bg-dorabel-gold text-white font-bold transition-all duration-300 shadow-sm rounded-none tracking-widest uppercase text-sm"
               >
                 {loading ? "Submitting..." : "Submit Review"}
               </button>

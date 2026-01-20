@@ -28,7 +28,7 @@ const Hero = ({ data }) => {
 
             <h1
               data-tina-field={tinaField(data, "heading")}
-              className="text-4xl sm:text-6xl lg:text-7xl font-heading font-medium mb-8 leading-[1.05] text-dorabel-purple tracking-tight"
+              className="text-4xl sm:text-6xl lg:text-7xl font-heading font-bold mb-8 leading-[1.05] text-dorabel-purple tracking-tight"
             >
               {data.heading}
             </h1>
@@ -82,7 +82,7 @@ const Hero = ({ data }) => {
                 </div>
                 <p
                   data-tina-field={tinaField(data, "trustedText")}
-                  className="text-sm text-dorabel-gray-dim font-medium max-w-[200px] text-center sm:text-left"
+                  className="text-sm text-dorabel-gray-dim font-bold max-w-[200px] text-center sm:text-left"
                 >
                   {data.trustedText ||
                     "Trusted by commercial partners across the UK"}
@@ -113,7 +113,7 @@ const Hero = ({ data }) => {
                   <p className="text-4xl font-heading font-bold text-dorabel-purple mb-2">
                     99.8%
                   </p>
-                  <p className="text-sm font-medium uppercase tracking-wider text-dorabel-gray-dim">
+                  <p className="text-sm font-bold uppercase tracking-wider text-dorabel-gray-dim">
                     On-Time Delivery Rate
                   </p>
                 </div>
