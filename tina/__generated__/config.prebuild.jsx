@@ -554,6 +554,7 @@ var config_default = defineConfig({
                 label: "Heading Font",
                 name: "headingFont",
                 options: [
+                  "Mona Sans",
                   "Syne",
                   "Manrope",
                   "Inter",
@@ -579,6 +580,7 @@ var config_default = defineConfig({
                 label: "Body Font",
                 name: "bodyFont",
                 options: [
+                  "Satoshi",
                   "Manrope",
                   "Syne",
                   "Inter",

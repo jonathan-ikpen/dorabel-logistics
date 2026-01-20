@@ -580,6 +580,7 @@ export default defineConfig({
                 label: "Heading Font",
                 name: "headingFont",
                 options: [
+                  "Mona Sans",
                   "Syne",
                   "Manrope",
                   "Inter",
@@ -605,6 +606,7 @@ export default defineConfig({
                 label: "Body Font",
                 name: "bodyFont",
                 options: [
+                  "Satoshi",
                   "Manrope",
                   "Syne",
                   "Inter",

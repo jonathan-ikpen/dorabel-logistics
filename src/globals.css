@@ -7,8 +7,10 @@
 :root {
   --color-dorabel-purple: #2a0e61;
   --color-dorabel-gold: #d97706;
-  --font-heading: "Playfair Display";
-  --font-body: "Inter";
+  --font-heading: "Mona Sans", "Mona Sans Fallback", -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-body: "Mona Sans", "Mona Sans Fallback", -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
 @layer base {
