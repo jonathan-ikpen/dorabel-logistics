@@ -5,12 +5,12 @@ seo:
   description: >-
     Dorabel International Limited provides dependable transport support and coordination for commercial clients. Efficient, compliant, and cost-effective logistics.
   canonical: "https://dorabel.co.uk/"
-  image: /uploads/dorabel_hero.png
+  image: /uploads/hero-logistics-modern.png
 blocks:
   - heading: Always Delivering Excellence
     subheading: >-
       Our goal is to establish a dependable UK logistics services business that delivers efficient transport support and coordination for commercial clients—while building the operational capability to expand into wider business and supply-chain support services.
-    backgroundImage: /uploads/dorabel_hero.png
+    backgroundImage: /uploads/hero-logistics-modern.png
     ctaText: Get Started
     ctaLink: "#contact"
     secondaryCtaText: Our Services
