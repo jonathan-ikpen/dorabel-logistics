@@ -7,7 +7,7 @@ seo:
     coordination for commercial clients. Efficient, compliant, and
     cost-effective logistics.
   canonical: 'https://dorabel.co.uk/'
-  image: /uploads/hero-logistics-modern.png
+  image: /uploads/og_image.png
 blocks:
   - heading: Always Delivering Excellence
     subheading: >-
