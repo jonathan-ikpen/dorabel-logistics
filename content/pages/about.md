@@ -7,7 +7,7 @@ seo:
     logistics and transport support. We ensure compliance, reliability, and
     cost-effectiveness for commercial clients.
   canonical: 'https://dorabel.co.uk/about'
-  image: /uploads/dorabel_hero.png
+  image: /uploads/og_image.png
 blocks:
   - heading: About Us
     subheading: Building trust through transparency and excellence in logistics services.
