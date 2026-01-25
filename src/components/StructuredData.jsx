@@ -22,12 +22,12 @@ const StructuredData = () => {
       "@context": "https://schema.org",
       "@type": "Organization",
       "@id": `${BASE_URL}/#organization`,
-      name: "Dorabel International Limited",
+      name: "Dorabel International",
       alternateName: "Dorabel",
       url: BASE_URL,
       logo: `${BASE_URL}/uploads/dorabel-logo.png`,
       description:
-        "Dorabel International Limited is a UK-based logistics services company providing reliable transport support, supply chain coordination, and business logistics solutions for commercial clients.",
+        "Dorabel International is a UK-based logistics services company providing reliable transport support, supply chain coordination, and business logistics solutions for commercial clients.",
       foundingDate: "2025",
       foundingLocation: {
         "@type": "Place",
@@ -63,10 +63,10 @@ const StructuredData = () => {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "@id": `${BASE_URL}/#localbusiness`,
-      name: "Dorabel International Limited",
+      name: "Dorabel International",
       image: `${BASE_URL}/uploads/dorabel-logo.png`,
       description:
-        "Dorabel International Limited provides dependable logistics services including transport support and coordination for commercial clients across the United Kingdom.",
+        "Dorabel International provides dependable logistics services including transport support and coordination for commercial clients across the United Kingdom.",
       url: BASE_URL,
       telephone: "+44-7949937023",
       email: "info@dorabel.co.uk",
@@ -98,7 +98,7 @@ const StructuredData = () => {
       "@id": `${BASE_URL}/#services`,
       name: "Dorabel Logistics Services",
       description:
-        "Professional logistics and transport services offered by Dorabel International Limited",
+        "Professional logistics and transport services offered by Dorabel International",
       itemListElement: [
         {
           "@type": "Service",
@@ -159,18 +159,18 @@ const StructuredData = () => {
       mainEntity: [
         {
           "@type": "Question",
-          name: "What services does Dorabel International Limited offer?",
+          name: "What services does Dorabel International offer?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Dorabel International Limited offers transport support, supply chain coordination, global logistics, and comprehensive business support services for commercial clients across the United Kingdom.",
+            text: "Dorabel International offers transport support, supply chain coordination, global logistics, and comprehensive business support services for commercial clients across the United Kingdom.",
           },
         },
         {
           "@type": "Question",
-          name: "Where is Dorabel International Limited located?",
+          name: "Where is Dorabel International located?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Dorabel International Limited is based in Boroughbridge, North Yorkshire, UK at 8 Kestrel Grove, YO51 9RX.",
+            text: "Dorabel International is based in Boroughbridge, North Yorkshire, UK at 8 Kestrel Grove, YO51 9RX.",
           },
         },
         {
@@ -178,7 +178,7 @@ const StructuredData = () => {
           name: "How can I contact Dorabel for logistics services?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: `You can contact Dorabel International Limited by phone at 07949937023, by email at info@dorabel.co.uk, or through the contact form on their website at ${BASE_URL}/contact.`,
+            text: `You can contact Dorabel International by phone at 07949937023, by email at info@dorabel.co.uk, or through the contact form on their website at ${BASE_URL}/contact.`,
           },
         },
         {
@@ -186,7 +186,7 @@ const StructuredData = () => {
           name: "Does Dorabel provide same-day delivery services?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Dorabel International Limited offers flexible transport support services. Contact them directly to discuss your specific delivery timeline requirements.",
+            text: "Dorabel International offers flexible transport support services. Contact them directly to discuss your specific delivery timeline requirements.",
           },
         },
       ],
@@ -198,9 +198,9 @@ const StructuredData = () => {
       "@type": "WebSite",
       "@id": `${BASE_URL}/#website`,
       url: BASE_URL,
-      name: "Dorabel International Limited",
+      name: "Dorabel International",
       description:
-        "Official website of Dorabel International Limited - UK logistics and transport support services",
+        "Official website of Dorabel International - UK logistics and transport support services",
       publisher: {
         "@id": `${BASE_URL}/#organization`,
       },

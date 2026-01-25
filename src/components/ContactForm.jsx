@@ -136,7 +136,7 @@ const ContactForm = ({ data }) => {
                   <input
                     type="text"
                     required
-                    className="w-full bg-white border border-gray-200 px-4 py-3 text-dorabel-purple focus:outline-none focus:border-dorabel-gold transition-colors rounded-none placeholder-gray-300"
+                    className="w-full bg-white border border-gray-200 px-4 py-3 text-dorabel-purple focus:outline-none focus:border-dorabel-gold transition-colors rounded-md placeholder-gray-300"
                     placeholder="John Doe"
                     value={state.name}
                     onChange={(e) =>
@@ -155,7 +155,7 @@ const ContactForm = ({ data }) => {
                     onChange={(e) =>
                       setState({ ...state, email: e.target.value })
                     }
-                    className="w-full bg-white border border-gray-200 px-4 py-3 text-dorabel-purple focus:outline-none focus:border-dorabel-gold transition-colors rounded-none placeholder-gray-300"
+                    className="w-full bg-white border border-gray-200 px-4 py-3 text-dorabel-purple focus:outline-none focus:border-dorabel-gold transition-colors rounded-md placeholder-gray-300"
                     placeholder="john@example.com"
                   />
                 </div>
@@ -171,7 +171,7 @@ const ContactForm = ({ data }) => {
                   onChange={(e) =>
                     setState({ ...state, phone: e.target.value })
                   }
-                  className="w-full bg-white border border-gray-200 px-4 py-3 text-dorabel-purple focus:outline-none focus:border-dorabel-gold transition-colors rounded-none placeholder-gray-300"
+                  className="w-full bg-white border border-gray-200 px-4 py-3 text-dorabel-purple focus:outline-none focus:border-dorabel-gold transition-colors rounded-md placeholder-gray-300"
                   placeholder="0161 456 7890"
                 />
               </div>
@@ -186,7 +186,7 @@ const ContactForm = ({ data }) => {
                   onChange={(e) =>
                     setState({ ...state, message: e.target.value })
                   }
-                  className="w-full bg-white border border-gray-200 px-4 py-3 text-dorabel-purple focus:outline-none focus:border-dorabel-gold transition-colors rounded-none placeholder-gray-300"
+                  className="w-full bg-white border border-gray-200 px-4 py-3 text-dorabel-purple focus:outline-none focus:border-dorabel-gold transition-colors rounded-md placeholder-gray-300"
                   placeholder="How can we help?"
                 ></textarea>
               </div>
@@ -194,7 +194,7 @@ const ContactForm = ({ data }) => {
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full py-4 bg-dorabel-purple hover:bg-dorabel-gold text-white font-medium transition-all duration-300 shadow-sm rounded-none tracking-widest uppercase text-sm"
+                className="w-full py-4 bg-dorabel-purple hover:bg-dorabel-gold text-white font-medium transition-all duration-300 shadow-sm rounded-md tracking-widest uppercase text-sm"
               >
                 {loading ? "Sending..." : "Send Message"}
               </button>

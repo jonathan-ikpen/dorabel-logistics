@@ -127,7 +127,7 @@ const Services = ({ previewMode = false, data }) => {
             <Link
               to="/services"
               data-tina-field={data ? tinaField(data, "buttonText") : null}
-              className="px-12 py-5 bg-dorabel-purple hover:bg-dorabel-gold text-white font-bold rounded-none transition-all duration-500 shadow-sm text-sm tracking-widest uppercase hover:px-14"
+              className="px-12 py-5 bg-dorabel-purple hover:bg-dorabel-gold text-white font-bold rounded-md transition-all duration-500 shadow-sm text-sm tracking-widest uppercase hover:px-14"
             >
               {data?.buttonText || "See All Services"}
             </Link>

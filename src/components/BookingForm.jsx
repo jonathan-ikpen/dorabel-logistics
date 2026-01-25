@@ -96,7 +96,7 @@ const BookingForm = ({ data }) => {
                     required
                     value={state.name}
                     onChange={handleChange}
-                    className="w-full bg-white border border-gray-200 px-4 py-3 text-dorabel-purple focus:outline-none focus:border-dorabel-gold transition-colors rounded-none placeholder-gray-300"
+                    className="w-full bg-white border border-gray-200 px-4 py-3 text-dorabel-purple focus:outline-none focus:border-dorabel-gold transition-colors rounded-md placeholder-gray-300"
                     placeholder="John Doe"
                   />
                 </div>
@@ -110,7 +110,7 @@ const BookingForm = ({ data }) => {
                     required
                     value={state.email}
                     onChange={handleChange}
-                    className="w-full bg-white border border-gray-200 px-4 py-3 text-dorabel-purple focus:outline-none focus:border-dorabel-gold transition-colors rounded-none placeholder-gray-300"
+                    className="w-full bg-white border border-gray-200 px-4 py-3 text-dorabel-purple focus:outline-none focus:border-dorabel-gold transition-colors rounded-md placeholder-gray-300"
                     placeholder="john@example.com"
                   />
                 </div>
@@ -127,7 +127,7 @@ const BookingForm = ({ data }) => {
                     required
                     value={state.phone}
                     onChange={handleChange}
-                    className="w-full bg-white border border-gray-200 px-4 py-3 text-dorabel-purple focus:outline-none focus:border-dorabel-gold transition-colors rounded-none placeholder-gray-300"
+                    className="w-full bg-white border border-gray-200 px-4 py-3 text-dorabel-purple focus:outline-none focus:border-dorabel-gold transition-colors rounded-md placeholder-gray-300"
                     placeholder="+44 7949 937023"
                   />
                 </div>
@@ -140,7 +140,7 @@ const BookingForm = ({ data }) => {
                       name="serviceType"
                       value={state.serviceType}
                       onChange={handleChange}
-                      className="w-full bg-white border border-gray-200 px-4 py-3 text-dorabel-purple focus:outline-none focus:border-dorabel-gold transition-colors rounded-none appearance-none"
+                      className="w-full bg-white border border-gray-200 px-4 py-3 text-dorabel-purple focus:outline-none focus:border-dorabel-gold transition-colors rounded-md appearance-none"
                     >
                       <option>Logistics</option>
                       <option>Transport Support</option>
@@ -173,7 +173,7 @@ const BookingForm = ({ data }) => {
                     name="date"
                     value={state.date}
                     onChange={handleChange}
-                    className="w-full bg-white border border-gray-200 px-4 py-3 text-dorabel-purple focus:outline-none focus:border-dorabel-gold transition-colors rounded-none placeholder-gray-300"
+                    className="w-full bg-white border border-gray-200 px-4 py-3 text-dorabel-purple focus:outline-none focus:border-dorabel-gold transition-colors rounded-md placeholder-gray-300"
                   />
                 </div>
                 <div>
@@ -185,7 +185,7 @@ const BookingForm = ({ data }) => {
                     name="time"
                     value={state.time}
                     onChange={handleChange}
-                    className="w-full bg-white border border-gray-200 px-4 py-3 text-dorabel-purple focus:outline-none focus:border-dorabel-gold transition-colors rounded-none placeholder-gray-300"
+                    className="w-full bg-white border border-gray-200 px-4 py-3 text-dorabel-purple focus:outline-none focus:border-dorabel-gold transition-colors rounded-md placeholder-gray-300"
                   />
                 </div>
               </div>
@@ -201,7 +201,7 @@ const BookingForm = ({ data }) => {
                     name="pickupLocation"
                     value={state.pickupLocation}
                     onChange={handleChange}
-                    className="w-full bg-white border border-gray-200 px-4 py-3 text-dorabel-purple focus:outline-none focus:border-dorabel-gold transition-colors rounded-none placeholder-gray-300"
+                    className="w-full bg-white border border-gray-200 px-4 py-3 text-dorabel-purple focus:outline-none focus:border-dorabel-gold transition-colors rounded-md placeholder-gray-300"
                     placeholder="City, Postcode"
                   />
                 </div>
@@ -214,7 +214,7 @@ const BookingForm = ({ data }) => {
                     name="deliveryLocation"
                     value={state.deliveryLocation}
                     onChange={handleChange}
-                    className="w-full bg-white border border-gray-200 px-4 py-3 text-dorabel-purple focus:outline-none focus:border-dorabel-gold transition-colors rounded-none placeholder-gray-300"
+                    className="w-full bg-white border border-gray-200 px-4 py-3 text-dorabel-purple focus:outline-none focus:border-dorabel-gold transition-colors rounded-md placeholder-gray-300"
                     placeholder="City, Postcode"
                   />
                 </div>
@@ -229,7 +229,7 @@ const BookingForm = ({ data }) => {
                   rows="3"
                   value={state.cargoDetails}
                   onChange={handleChange}
-                  className="w-full bg-white border border-gray-200 px-4 py-3 text-dorabel-purple focus:outline-none focus:border-dorabel-gold transition-colors rounded-none placeholder-gray-300"
+                  className="w-full bg-white border border-gray-200 px-4 py-3 text-dorabel-purple focus:outline-none focus:border-dorabel-gold transition-colors rounded-md placeholder-gray-300"
                   placeholder="Describe your cargo, weight, dimensions, or special handling needs..."
                 ></textarea>
               </div>
@@ -243,7 +243,7 @@ const BookingForm = ({ data }) => {
                   rows="3"
                   value={state.message}
                   onChange={handleChange}
-                  className="w-full bg-white border border-gray-200 px-4 py-3 text-dorabel-purple focus:outline-none focus:border-dorabel-gold transition-colors rounded-none placeholder-gray-300"
+                  className="w-full bg-white border border-gray-200 px-4 py-3 text-dorabel-purple focus:outline-none focus:border-dorabel-gold transition-colors rounded-md placeholder-gray-300"
                   placeholder="Any other details we should know?"
                 ></textarea>
               </div>
@@ -251,7 +251,7 @@ const BookingForm = ({ data }) => {
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full py-5 bg-dorabel-purple hover:bg-dorabel-gold text-white font-medium transition-all duration-300 shadow-sm rounded-none tracking-widest uppercase text-sm"
+                className="w-full py-5 bg-dorabel-purple hover:bg-dorabel-gold text-white font-medium transition-all duration-300 shadow-sm rounded-md tracking-widest uppercase text-sm"
               >
                 {loading ? "Scheduling..." : "Book Appointment"}
               </button>

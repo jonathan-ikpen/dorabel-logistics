@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "private": true,
-  "description": "Dorabel International Limited - Logistics & Transport Services",
+  "description": "Dorabel International - Logistics & Transport Services",
   "scripts": {
     "dev": "tinacms dev -c \"vite\"",
     "build": "tinacms build && vite build",

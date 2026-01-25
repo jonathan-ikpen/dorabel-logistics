@@ -130,7 +130,7 @@ export default function Header() {
 
             <a
               href="tel:07949937023"
-              className="hidden md:inline-flex items-center gap-2 text-sm px-4 py-2 bg-dorabel-purple text-white hover:bg-dorabel-gold transition-colors rounded-none"
+              className="hidden md:inline-flex items-center gap-2 text-sm px-4 py-2 bg-dorabel-purple text-white hover:bg-dorabel-gold transition-colors rounded-md"
             >
               <span className="text-emerald-600 font-medium">Call</span>
               <span className="text-slate-600 dark:text-slate-200">

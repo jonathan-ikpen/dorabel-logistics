@@ -150,7 +150,7 @@ const LeaveReviewForm = ({ data }) => {
                     required
                     value={state.name}
                     onChange={handleChange}
-                    className="w-full bg-white border border-gray-200 px-4 py-3 text-dorabel-purple focus:outline-none focus:border-dorabel-gold transition-colors rounded-none placeholder-gray-300"
+                    className="w-full bg-white border border-gray-200 px-4 py-3 text-dorabel-purple focus:outline-none focus:border-dorabel-gold transition-colors rounded-md placeholder-gray-300"
                     placeholder="John Doe"
                   />
                 </div>
@@ -163,7 +163,7 @@ const LeaveReviewForm = ({ data }) => {
                     name="role"
                     value={state.role}
                     onChange={handleChange}
-                    className="w-full bg-white border border-gray-200 px-4 py-3 text-dorabel-purple focus:outline-none focus:border-dorabel-gold transition-colors rounded-none placeholder-gray-300"
+                    className="w-full bg-white border border-gray-200 px-4 py-3 text-dorabel-purple focus:outline-none focus:border-dorabel-gold transition-colors rounded-md placeholder-gray-300"
                     placeholder="e.g. CEO, Tech Solutions Ltd"
                   />
                 </div>
@@ -179,7 +179,7 @@ const LeaveReviewForm = ({ data }) => {
                   required
                   value={state.title}
                   onChange={handleChange}
-                  className="w-full bg-white border border-gray-200 px-4 py-3 text-dorabel-purple focus:outline-none focus:border-dorabel-gold transition-colors rounded-none placeholder-gray-300"
+                  className="w-full bg-white border border-gray-200 px-4 py-3 text-dorabel-purple focus:outline-none focus:border-dorabel-gold transition-colors rounded-md placeholder-gray-300"
                   placeholder="e.g. Excellent Service!"
                 />
               </div>
@@ -194,7 +194,7 @@ const LeaveReviewForm = ({ data }) => {
                   rows="5"
                   value={state.message}
                   onChange={handleChange}
-                  className="w-full bg-white border border-gray-200 px-4 py-3 text-dorabel-purple focus:outline-none focus:border-dorabel-gold transition-colors rounded-none placeholder-gray-300"
+                  className="w-full bg-white border border-gray-200 px-4 py-3 text-dorabel-purple focus:outline-none focus:border-dorabel-gold transition-colors rounded-md placeholder-gray-300"
                   placeholder="Tell us about your experience..."
                 ></textarea>
               </div>
@@ -202,7 +202,7 @@ const LeaveReviewForm = ({ data }) => {
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full py-5 bg-dorabel-purple hover:bg-dorabel-gold text-white font-bold transition-all duration-300 shadow-sm rounded-none tracking-widest uppercase text-sm"
+                className="w-full py-5 bg-dorabel-purple hover:bg-dorabel-gold text-white font-bold transition-all duration-300 shadow-sm rounded-md tracking-widest uppercase text-sm"
               >
                 {loading ? "Submitting..." : "Submit Review"}
               </button>

@@ -3,10 +3,10 @@ title: About Us
 seo:
   title: About Us - Trusted Logistics Support Experts
   description: >-
-    Learn about Dorabel International Limited, your partner in efficient
+    Learn about Dorabel International, your partner in efficient
     logistics and transport support. We ensure compliance, reliability, and
     cost-effectiveness for commercial clients.
-  canonical: 'https://dorabel.co.uk/about'
+  canonical: "https://dorabel.co.uk/about"
   image: /uploads/og_image.png
 blocks:
   - heading: About Us
@@ -16,7 +16,7 @@ blocks:
   - items:
       - heading: Our Mission
         content: >-
-          At Dorabel International Limited, our mission is to redefine the
+          At Dorabel International, our mission is to redefine the
           standards of logistics support. We believe that every transport
           requirement deserves to be managed with the utmost care and
           professionalism, ensuring timely and safe delivery. We strive to
@@ -56,22 +56,22 @@ blocks:
       loop.
     ctaText: Start Your Consultation
     steps:
-      - number: '01'
+      - number: "01"
         title: Consultation
         description: >-
           We start by understanding your specific transport needs and auditing
           your current logistics setup.
-      - number: '02'
+      - number: "02"
         title: Planning
         description: >-
           We design a tailored transport plan that optimizes routes and costs
           while ensuring timely delivery.
-      - number: '03'
+      - number: "03"
         title: Execution
         description: >-
           Our team coordinates with vetted carriers to execute the plan. We
           handle all logistics and monitoring.
-      - number: '04'
+      - number: "04"
         title: Optimization
         description: >-
           Continuous monitoring and reporting ensure we always deliver value and
@@ -87,7 +87,7 @@ blocks:
           We coordinate transport activities for commercial clients, ensuring
           your goods move efficiently from origin to destination.
         image: /uploads/service_van.png
-        icon: '01'
+        icon: "01"
         features:
           - Fleet coordination
           - Route optimization
@@ -97,7 +97,7 @@ blocks:
           Our logistics experts manage the flow of goods, providing transparency
           and accountability.
         image: /uploads/service_warehouse.png
-        icon: '02'
+        icon: "02"
         features:
           - Inventory support
           - Procurement coordination
@@ -107,7 +107,7 @@ blocks:
           We help businesses navigate international transport handling
           compliance and coordination.
         image: /uploads/service_ship.png
-        icon: '03'
+        icon: "03"
         features:
           - Import/Export coordination
           - Customs compliance
@@ -117,7 +117,7 @@ blocks:
           We expand our capabilities to offer wider business support services,
           helping you scale operations.
         image: /uploads/dorabel_hero.png
-        icon: '04'
+        icon: "04"
         features:
           - Operational consultancy
           - Logistics planning
@@ -141,4 +141,3 @@ blocks:
     email: info@dorabel.co.uk
     _template: contact
 ---
-

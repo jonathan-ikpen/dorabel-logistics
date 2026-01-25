@@ -47,46 +47,17 @@ const Hero = ({ data }) => {
                 <a
                   href={data.ctaLink || "#contact"}
                   data-tina-field={tinaField(data, "ctaText")}
-                  className="px-10 py-4 bg-dorabel-purple text-white font-semibold text-sm tracking-widest uppercase hover:bg-dorabel-gold transition-colors duration-300 text-center"
+                  className="px-10 py-4 bg-dorabel-purple text-white font-semibold text-sm tracking-widest uppercase hover:bg-dorabel-gold transition-colors duration-300 text-center rounded-md"
                 >
                   {data.ctaText || "Get Started"}
                 </a>
                 <a
                   href={data.secondaryCtaLink || "#services"}
                   data-tina-field={tinaField(data, "secondaryCtaText")}
-                  className="px-10 py-4 border border-dorabel-purple text-dorabel-purple font-semibold text-sm tracking-widest uppercase hover:bg-dorabel-purple hover:text-white transition-colors duration-300 text-center"
+                  className="px-10 py-4 border border-dorabel-purple text-dorabel-purple font-semibold text-sm tracking-widest uppercase hover:bg-dorabel-purple hover:text-white transition-colors duration-300 text-center rounded-md"
                 >
                   {data.secondaryCtaText || "Our Services"}
                 </a>
-              </div>
-            </Reveal>
-
-            {/* Trust Indicators - Subtle & Clean */}
-            <Reveal delay={0.6}>
-              <div className="border-t border-gray-100 pt-8 flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-8">
-                <div className="flex -space-x-3">
-                  {[1, 2, 3, 4].map((i) => (
-                    <div
-                      key={i}
-                      className="w-10 h-10 rounded-full border-2 border-white bg-gray-100 flex items-center justify-center text-xs text-gray-400"
-                    >
-                      {/* Placeholder avatars if needed, or simple colored dots */}
-                      <span className="font-bold">
-                        {String.fromCharCode(64 + i)}
-                      </span>
-                    </div>
-                  ))}
-                  <div className="w-10 h-10 rounded-full border-2 border-white bg-dorabel-gold text-white flex items-center justify-center text-xs font-bold">
-                    50+
-                  </div>
-                </div>
-                <p
-                  data-tina-field={tinaField(data, "trustedText")}
-                  className="text-sm text-dorabel-gray-dim font-bold max-w-[200px] text-center sm:text-left"
-                >
-                  {data.trustedText ||
-                    "Trusted by commercial partners across the UK"}
-                </p>
               </div>
             </Reveal>
           </div>
@@ -99,7 +70,6 @@ const Hero = ({ data }) => {
               transition={{ duration: 1.2, ease: "easeOut" }}
               className="h-full w-full relative"
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-white via-transparent to-transparent z-10 lg:w-32"></div>
               <img
                 src={data.backgroundImage || heroImage}
                 alt="Logistics Transport"

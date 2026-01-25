@@ -247,12 +247,12 @@ export default function Footer({ headerData, footerData }) {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     disabled={loading}
-                    className="bg-dorabel-purple-light border border-dorabel-purple-light text-white px-4 py-3 rounded-none focus:outline-none focus:border-dorabel-gold w-full text-sm disabled:opacity-50"
+                    className="bg-dorabel-purple-light border border-dorabel-purple-light text-white px-4 py-3 rounded-md focus:outline-none focus:border-dorabel-gold w-full text-sm disabled:opacity-50"
                   />
                   <button
                     type="submit"
                     disabled={loading}
-                    className="bg-dorabel-gold hover:bg-dorabel-gold-dark text-white px-4 py-3 rounded-none transition-colors disabled:opacity-50"
+                    className="bg-dorabel-gold hover:bg-dorabel-gold-dark text-white px-4 py-3 rounded-md transition-colors disabled:opacity-50"
                   >
                     {loading ? (
                       <span className="block w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></span>
