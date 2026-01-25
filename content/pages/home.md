@@ -1,12 +1,12 @@
 ---
 title: Home
 seo:
-  title: Dorabel International Limited - Reliable Logistics & Transport Services
+  title: Dorabel International - Reliable Logistics & Transport Services
   description: >-
-    Dorabel International Limited provides dependable transport support and
+    Dorabel International provides dependable transport support and
     coordination for commercial clients. Efficient, compliant, and
     cost-effective logistics.
-  canonical: 'https://dorabel.co.uk/'
+  canonical: "https://dorabel.co.uk/"
   image: /uploads/og_image.png
 blocks:
   - heading: Always Delivering Excellence
@@ -17,14 +17,14 @@ blocks:
       business and supply-chain support services.
     backgroundImage: /uploads/hero-logistics-branded.png
     ctaText: Get Started
-    ctaLink: '#contact'
+    ctaLink: "#contact"
     secondaryCtaText: Our Services
-    secondaryCtaLink: '#services'
+    secondaryCtaLink: "#services"
     trustedText: Trusted Logistics Partner
     _template: hero
   - heading: Efficient Transport Support
     content: >-
-      Dorabel International Limited is a modern logistics partner. We bridge the
+      Dorabel International is a modern logistics partner. We bridge the
       gap between businesses and reliable transport solutions. We understand the
       challenges of supply chain management—delays, unclear costs, and sub-par
       coordination.
@@ -51,7 +51,7 @@ blocks:
           your goods move efficiently from origin to destination using our
           network of trusted carriers.
         image: /uploads/service_van.png
-        icon: '01'
+        icon: "01"
         features:
           - Fleet coordination
           - Route optimization
@@ -61,7 +61,7 @@ blocks:
           Our logistics experts manage the flow of goods, providing transparency
           and accountability at every stage of the supply chain.
         image: /uploads/service_warehouse.png
-        icon: '02'
+        icon: "02"
         features:
           - Inventory management support
           - Procurement coordination
@@ -71,7 +71,7 @@ blocks:
           We help businesses navigate international transport with ease,
           handling compliance and coordination for cross-border movements.
         image: /uploads/service_ship.png
-        icon: '03'
+        icon: "03"
         features:
           - Import/Export coordination
           - Customs compliance support
@@ -82,7 +82,7 @@ blocks:
           business support services, helping you scale your operations with
           confidence.
         image: /uploads/dorabel_hero.png
-        icon: '04'
+        icon: "04"
         features:
           - Operational consultancy
           - Logistics planning
@@ -117,22 +117,22 @@ blocks:
       From booking to delivery, you're always in control.
     ctaText: Start Your Consultation
     steps:
-      - number: '01'
+      - number: "01"
         title: Consultation
         description: >-
           We start by understanding your specific transport needs and auditing
           your current logistics setup.
-      - number: '02'
+      - number: "02"
         title: Planning
         description: >-
           We design a tailored transport plan that optimizes routes and costs
           while ensuring timely delivery.
-      - number: '03'
+      - number: "03"
         title: Execution
         description: >-
           Our team coordinates with vetted carriers to execute the plan. We
           handle all logistics and monitoring.
-      - number: '04'
+      - number: "04"
         title: Review
         description: >-
           We review performance and provide detailed reports, ensuring
@@ -198,4 +198,3 @@ blocks:
     email: info@dorabel.co.uk
     _template: contact
 ---
-
