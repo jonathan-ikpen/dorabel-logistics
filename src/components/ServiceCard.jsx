@@ -29,7 +29,7 @@ export default function ServiceCard({ service, index }) {
           {service.bullets.map((bullet, idx) => (
             <li
               key={idx}
-              className="flex items-start gap-4 text-dorabel-gray-dim text-sm"
+              className="flex items-start gap-4 text-dorabel-gray-dim text-base"
             >
               <div className="mt-1.5 w-1 h-1 bg-dorabel-gold flex-shrink-0" />
               <span className="leading-relaxed font-light text-gray-300">

@@ -11,7 +11,7 @@ const About = ({ data }) => {
   // For this demo, we assume data is passed if migrated.
 
   return (
-    <section id="about" className="py-24 bg-white overflow-hidden">
+    <section id="about" className="py-12 md:py-24 bg-white overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row items-center gap-20">
           {/* Image Side */}
@@ -75,10 +75,32 @@ const About = ({ data }) => {
                   </p>
                 </>
               )}
+
+              <div className="mb-12">
+                <Link
+                  to="/about"
+                  className="inline-flex items-center text-dorabel-purple font-bold tracking-widest uppercase text-sm hover:text-dorabel-gold transition-colors duration-300 group"
+                >
+                  Learn More
+                  <svg
+                    className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                  </svg>
+                </Link>
+              </div>
             </Reveal>
 
             <Reveal delay={0.4} width="100%">
-              <div className="flex flex-row items-center justify-between mt-12 border-t border-gray-100 pt-12 gap-8">
+              <div className="flex flex-row items-center justify-between mt-0 border-t border-gray-100 pt-12 gap-8">
                 <div className="flex gap-12 w-full md:w-auto">
                   <div>
                     <h4
@@ -117,26 +139,6 @@ const About = ({ data }) => {
                     </p>
                   </div>
                 </div>
-
-                <Link
-                  to="/about"
-                  className="inline-flex items-center text-dorabel-purple font-bold tracking-widest uppercase text-sm hover:text-dorabel-gold transition-colors duration-300 group flex-shrink-0"
-                >
-                  Learn More
-                  <svg
-                    className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M17 8l4 4m0 0l-4 4m4-4H3"
-                    />
-                  </svg>
-                </Link>
               </div>
             </Reveal>
           </div>

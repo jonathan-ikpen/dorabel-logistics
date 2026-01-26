@@ -20,7 +20,7 @@ blocks:
       - title: Transport Support
         description: >-
           We provide comprehensive transport support for commercial clients, ensuring that every movement of goods is executed with precision. By leveraging our network of trusted carriers and optimizing routes, we minimize transit times and reduce costs while maintaining the highest standards of safety and compliance.
-        image: /uploads/service_van.png
+        image: /uploads/service_van_branded.png
         icon: "01"
         features:
           - Fleet coordination

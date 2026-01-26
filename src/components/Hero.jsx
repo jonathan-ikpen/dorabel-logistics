@@ -9,7 +9,7 @@ const Hero = ({ data }) => {
   if (!data) return null;
 
   return (
-    <section className="relative min-h-screen bg-white overflow-hidden pt-20 lg:pt-48 md:pt-32 pb-24 flex items-center">
+    <section className="relative min-h-screen bg-white overflow-hidden pt-20 lg:pt-48 md:pt-32 pb-12 md:pb-24 flex items-center">
       <div className="container mx-auto px-6 h-full">
         <div className="flex flex-col lg:flex-row h-full items-center">
           {/* Left Content - Typography Focused */}

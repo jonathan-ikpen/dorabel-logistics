@@ -75,7 +75,7 @@ const WhyChoose = ({ data }) => {
   if (!data) return null;
 
   return (
-    <section className="py-24 bg-dorabel-gray-light/30">
+    <section className="py-12 md:py-24 bg-dorabel-gray-light/30">
       <div className="container mx-auto px-8">
         <div className="text-center mb-24">
           <FadeIn>
@@ -124,7 +124,7 @@ const WhyChoose = ({ data }) => {
                 </h3>
                 <p
                   data-tina-field={tinaField(benefit, "description")}
-                  className="text-dorabel-gray-dim text-sm leading-relaxed font-sans"
+                  className="text-dorabel-gray-dim text-base leading-relaxed font-sans"
                 >
                   {benefit.description}
                 </p>

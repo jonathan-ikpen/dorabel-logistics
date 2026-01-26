@@ -7,7 +7,10 @@ const Process = ({ data }) => {
   if (!data) return null;
 
   return (
-    <section id="process" className="py-24 bg-white relative overflow-hidden">
+    <section
+      id="process"
+      className="py-12 md:py-24 bg-white relative overflow-hidden"
+    >
       <div className="container mx-auto px-8">
         <div className="flex flex-col md:flex-row gap-20 items-stretch">
           <div className="md:w-1/3 flex flex-col justify-center">
@@ -69,7 +72,7 @@ const Process = ({ data }) => {
                 </h3>
                 <p
                   data-tina-field={tinaField(step, "description")}
-                  className="text-dorabel-gray-dim text-sm leading-relaxed font-light"
+                  className="text-dorabel-gray-dim text-base leading-relaxed font-light"
                 >
                   {step.description}
                 </p>

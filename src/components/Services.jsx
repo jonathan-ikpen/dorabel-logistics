@@ -41,7 +41,7 @@ const Services = ({ previewMode = false, data }) => {
   const displayedServices = previewMode ? items.slice(0, 3) : items;
 
   return (
-    <section id="services" className="py-24 bg-white">
+    <section id="services" className="py-12 md:py-24 bg-white">
       <div className="container mx-auto px-8">
         <div className="md:w-1/2 mb-16">
           <Reveal>
@@ -105,7 +105,7 @@ const Services = ({ previewMode = false, data }) => {
                   </h3>
                   <p
                     data-tina-field={tinaField(service, "description")}
-                    className="text-dorabel-gray-dim leading-relaxed mb-6 font-light text-sm flex-grow"
+                    className="text-dorabel-gray-dim leading-relaxed mb-6 font-light text-base flex-grow"
                   >
                     {service.description}
                   </p>
@@ -118,7 +118,7 @@ const Services = ({ previewMode = false, data }) => {
                             {service.features.map((feature, idx) => (
                               <li
                                 key={idx}
-                                className="flex items-center text-dorabel-gray-dim text-sm tracking-wide"
+                                className="flex items-center text-dorabel-gray-dim text-base tracking-wide"
                               >
                                 <svg
                                   className="w-5 h-5 text-dorabel-gold mr-3 flex-shrink-0"
