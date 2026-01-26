@@ -145,8 +145,6 @@ const BookingForm = ({ data }) => {
                       <option>Logistics</option>
                       <option>Transport Support</option>
                       <option>Procurement</option>
-                      <option>Facility Management</option>
-                      <option>Strategic Planning</option>
                       <option>Other</option>
                     </select>
                     <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-dorabel-purple">

@@ -47,9 +47,7 @@ blocks:
     items:
       - title: Transport Support
         description: >-
-          We coordinate transport activities for commercial clients, ensuring
-          your goods move efficiently from origin to destination using our
-          network of trusted carriers.
+          We provide comprehensive transport support for commercial clients, ensuring that every movement of goods is executed with precision. By leveraging our network of trusted carriers and optimizing routes, we minimize transit times and reduce costs while maintaining the highest standards of safety and compliance.
         image: /uploads/service_van.png
         icon: "01"
         features:
@@ -58,8 +56,7 @@ blocks:
           - Carrier vetting and management
       - title: Supply Chain Coordination
         description: >-
-          Our logistics experts manage the flow of goods, providing transparency
-          and accountability at every stage of the supply chain.
+          Our supply chain coordination services are designed to bring clarity and control to your operations. We manage the flow of goods from procurement to delivery, providing real-time transparency and accountability at every stage to ensure your inventory is always where it needs to be.
         image: /uploads/service_warehouse.png
         icon: "02"
         features:
@@ -68,8 +65,7 @@ blocks:
           - Supply chain visibility
       - title: Global Logistics
         description: >-
-          We help businesses navigate international transport with ease,
-          handling compliance and coordination for cross-border movements.
+          We simplify the complexities of international trade. Our team handles the intricate details of cross-border transport, from navigating customs compliance to coordinating freight bookings, ensuring your global logistics operate as smoothly as your domestic shipping.
         image: /uploads/service_ship.png
         icon: "03"
         features:
@@ -78,9 +74,7 @@ blocks:
           - International freight booking
       - title: Business Support Services
         description: >-
-          As client needs evolve, we expand our capabilities to offer wider
-          business support services, helping you scale your operations with
-          confidence.
+          As your business grows, so do your needs. We offer strategic business support services including operational consultancy and process optimization, effectively acting as an extension of your team to help you scale your capabilities and improve overall efficiency.
         image: /uploads/dorabel_hero.png
         icon: "04"
         features:

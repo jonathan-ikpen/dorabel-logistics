@@ -68,57 +68,87 @@ const Services = ({ previewMode = false, data }) => {
         </div>
 
         <div
-          className={`grid grid-cols-1 gap-x-12 gap-y-24 ${
-            previewMode ? "md:grid-cols-3" : "md:grid-cols-2"
+          className={`grid grid-cols-1 gap-8 ${
+            previewMode ? "md:grid-cols-3" : "md:grid-cols-2 lg:grid-cols-3"
           }`}
         >
           {displayedServices.map((service, index) => (
-            <div key={index} className="group cursor-pointer">
-              <MaskReveal
-                delay={index * 0.1}
-                className="h-[350px] mb-8 overflow-hidden relative"
-              >
-                <img
-                  src={service.image || heroBuildingImg}
-                  alt={service.title}
-                  data-tina-field={tinaField(service, "image")}
-                  className="w-full h-full object-cover transition-transform duration-1000 ease-[0.16,1,0.3,1] group-hover:scale-105"
-                />
-                <div className="absolute top-0 right-0 p-6 bg-white z-10 border-b border-l border-gray-100">
-                  <span className="font-heading font-bold text-2xl text-dorabel-purple">
-                    {service.icon || `0${index + 1}`}
-                  </span>
+            <Reveal
+              key={index}
+              delay={index * 0.1}
+              className="h-full"
+              width="100%"
+            >
+              <div className="group h-full bg-white border border-gray-100 overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all duration-500 flex flex-col">
+                <div className="relative h-64 overflow-hidden">
+                  <MaskReveal className="h-full w-full">
+                    <img
+                      src={service.image || heroBuildingImg}
+                      alt={service.title}
+                      data-tina-field={tinaField(service, "image")}
+                      className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                    />
+                    <div className="absolute top-0 right-0 p-5 bg-white z-10 border-b border-l border-gray-100">
+                      <span className="font-heading font-bold text-2xl text-dorabel-purple">
+                        {service.icon || `0${index + 1}`}
+                      </span>
+                    </div>
+                  </MaskReveal>
                 </div>
-              </MaskReveal>
 
-              <Reveal delay={0.2 + index * 0.1}>
-                <h3
-                  data-tina-field={tinaField(service, "title")}
-                  className="text-3xl font-heading font-bold text-dorabel-purple mb-4 group-hover:text-dorabel-gold transition-colors duration-500"
-                >
-                  {service.title}
-                </h3>
-                <p
-                  data-tina-field={tinaField(service, "description")}
-                  className="text-dorabel-gray-dim leading-relaxed mb-6 font-light border-l border-gray-200 pl-6 group-hover:border-dorabel-gold transition-colors duration-500"
-                >
-                  {service.description}
-                </p>
-                {!previewMode && service.features && (
-                  <ul className="space-y-3 pl-6">
-                    {service.features.map((feature, idx) => (
-                      <li
-                        key={idx}
-                        className="flex items-center text-dorabel-gray-dim text-sm tracking-wide"
-                      >
-                        <span className="w-1.5 h-1.5 bg-dorabel-gold rounded-full mr-3"></span>
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </Reveal>
-            </div>
+                <div className="p-8 flex flex-col flex-grow">
+                  <h3
+                    data-tina-field={tinaField(service, "title")}
+                    className="text-2xl font-heading font-bold text-dorabel-purple mb-4 group-hover:text-dorabel-gold transition-colors duration-300"
+                  >
+                    {service.title}
+                  </h3>
+                  <p
+                    data-tina-field={tinaField(service, "description")}
+                    className="text-dorabel-gray-dim leading-relaxed mb-6 font-light text-sm flex-grow"
+                  >
+                    {service.description}
+                  </p>
+
+                  <div className="mt-auto">
+                    {(previewMode || !previewMode) && (
+                      <>
+                        {service.features && service.features.length > 0 ? (
+                          <ul className="space-y-3">
+                            {service.features.map((feature, idx) => (
+                              <li
+                                key={idx}
+                                className="flex items-center text-dorabel-gray-dim text-sm tracking-wide"
+                              >
+                                <svg
+                                  className="w-5 h-5 text-dorabel-gold mr-3 flex-shrink-0"
+                                  fill="none"
+                                  viewBox="0 0 24 24"
+                                  stroke="currentColor"
+                                >
+                                  <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth={2}
+                                    d="M5 13l4 4L19 7"
+                                  />
+                                </svg>
+                                <span className="w-1.5 h-1.5 bg-dorabel-gold rounded-full mr-3 flex-shrink-0 hidden"></span>
+                                <span className="leading-snug">{feature}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        ) : (
+                          <p className="text-sm text-gray-400 italic">
+                            Features not listed.
+                          </p>
+                        )}
+                      </>
+                    )}
+                  </div>
+                </div>
+              </div>
+            </Reveal>
           ))}
         </div>
 
