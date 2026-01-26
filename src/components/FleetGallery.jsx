@@ -60,7 +60,7 @@ const FleetGallery = () => {
             <div className="h-[1px] w-12 bg-gray-200 mb-6"></div>
             <h2 className="text-4xl md:text-5xl font-heading font-bold text-dorabel-purple mb-6 leading-tight">
               We Provide World Best{" "}
-              <span className="text-dorabel-gold">Logistics Solutions</span>
+              <span className="ftext-dorabel-gold">Logistics Solutions</span>
             </h2>
           </Reveal>
           <Reveal delay={0.2}>
