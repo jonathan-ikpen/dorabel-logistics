@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import maintenanceImg from "../assets/service_van.png";
+import maintenanceImg from "../assets/service_van_branded.png";
 import cleaningImg from "../assets/service_warehouse.png";
 import inspectionImg from "../assets/service_ship.png";
 import { Reveal, MaskReveal } from "./Reveal";

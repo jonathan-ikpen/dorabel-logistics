@@ -15,7 +15,7 @@ const About = ({ data }) => {
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row items-center gap-20">
           {/* Image Side */}
-          <div className="lg:w-1/2 relative h-[600px] w-full">
+          <div className="lg:w-1/2 order-2 lg:order-1 relative h-[600px] w-full">
             <MaskReveal className="w-full h-full rounded-none shadow-2xl">
               <ParallaxImage
                 src={data.image || aboutImage}
@@ -27,7 +27,7 @@ const About = ({ data }) => {
           </div>
 
           {/* Text Side */}
-          <div className="lg:w-1/2">
+          <div className="lg:w-1/2 order-1 lg:order-2">
             <Reveal>
               <span className="text-dorabel-gold font-bold uppercase tracking-widest text-xs">
                 About Dorabel
@@ -78,7 +78,7 @@ const About = ({ data }) => {
             </Reveal>
 
             <Reveal delay={0.4} width="100%">
-              <div className="flex flex-col md:flex-row items-end md:items-center justify-between mt-12 border-t border-gray-100 pt-12 gap-8">
+              <div className="flex flex-row items-center justify-between mt-12 border-t border-gray-100 pt-12 gap-8">
                 <div className="flex gap-12 w-full md:w-auto">
                   <div>
                     <h4

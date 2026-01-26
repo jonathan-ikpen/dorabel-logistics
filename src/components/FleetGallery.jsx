@@ -74,7 +74,7 @@ const FleetGallery = () => {
 
         <div className="flex flex-col lg:flex-row shadow-2xl border border-gray-100">
           {/* Left Side: Dynamic Image */}
-          <div className="lg:w-1/2 relative min-h-[400px] lg:min-h-[600px] overflow-hidden">
+          <div className="lg:w-1/2 order-2 lg:order-1 relative min-h-[400px] lg:min-h-[600px] overflow-hidden">
             <AnimatePresence mode="wait">
               <motion.img
                 key={activeTab}
@@ -90,7 +90,7 @@ const FleetGallery = () => {
           </div>
 
           {/* Right Side: AccordionTabs */}
-          <div className="lg:w-1/2 bg-white flex flex-col">
+          <div className="lg:w-1/2 order-1 lg:order-2 bg-white flex flex-col">
             {services.map((service, index) => (
               <div
                 key={service.id}
