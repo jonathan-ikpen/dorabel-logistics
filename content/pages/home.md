@@ -107,15 +107,13 @@ blocks:
   - heading: A Streamlined Approach to Logistics
     subheading: How We Work
     description: >-
-      We've refined our process to be as efficient and transparent as possible.
-      From booking to delivery, you're always in control.
-    ctaText: Start Your Consultation
+      We believe logistics should accelerate your business. Our streamlined approach is built for speed and reliability, ensuring your supply chain moves as fast as your ambition.
+    ctaText: Book Now
     steps:
       - number: "01"
-        title: Consultation
+        title: Initial Assessment
         description: >-
-          We start by understanding your specific transport needs and auditing
-          your current logistics setup.
+          We start by analyzing your specific logistics requirements and freight details to confirm capacity and route availability.
       - number: "02"
         title: Planning
         description: >-

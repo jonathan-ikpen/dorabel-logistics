@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { tinaField } from "tinacms/dist/react";
 
@@ -24,15 +25,15 @@ const Process = ({ data }) => {
               className="text-dorabel-gray-dim text-lg leading-relaxed mb-12 font-light"
             >
               {data.description ||
-                "We've refined our process to be as efficient and transparent as possible."}
+                "We believe logistics should accelerate your business. Our streamlined approach is built for speed and reliability, ensuring your supply chain moves as fast as your ambition."}
             </p>
             <div className="mt-auto">
-              <a
-                href="#contact"
+              <Link
+                to="/booking"
                 className="px-12 py-5 bg-dorabel-purple hover:bg-dorabel-gold text-white font-bold rounded-md transition-all duration-500 shadow-sm text-sm tracking-widest uppercase inline-block"
               >
                 {data.ctaText || "Start Your Consultation"}
-              </a>
+              </Link>
             </div>
           </div>
 

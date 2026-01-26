@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Reveal, FadeIn, MaskReveal } from "./Reveal";
 import aboutImage from "../assets/dorabel_hero.png";
 import ParallaxImage from "./ParallaxImage";
@@ -15,7 +16,7 @@ const About = ({ data }) => {
         <div className="flex flex-col lg:flex-row items-center gap-20">
           {/* Image Side */}
           <div className="lg:w-1/2 relative h-[600px] w-full">
-            <MaskReveal className="w-full h-full rounded-none">
+            <MaskReveal className="w-full h-full rounded-none shadow-2xl">
               <ParallaxImage
                 src={data.image || aboutImage}
                 alt="Dorabel Team"
@@ -76,36 +77,66 @@ const About = ({ data }) => {
               )}
             </Reveal>
 
-            <Reveal delay={0.4}>
-              <div className="grid grid-cols-2 gap-12 mt-12 border-t border-gray-100 pt-12">
-                <div>
-                  <h4
-                    data-tina-field={data ? tinaField(data, "stat1Number") : ""}
-                    className="text-5xl font-heading font-bold text-dorabel-purple mb-2"
-                  >
-                    {data?.stat1Number || "10+"}
-                  </h4>
-                  <p
-                    data-tina-field={data ? tinaField(data, "stat1Label") : ""}
-                    className="text-sm text-dorabel-gray-dim uppercase tracking-widest"
-                  >
-                    {data?.stat1Label || "Years Experience"}
-                  </p>
+            <Reveal delay={0.4} width="100%">
+              <div className="flex flex-col md:flex-row items-end md:items-center justify-between mt-12 border-t border-gray-100 pt-12 gap-8">
+                <div className="flex gap-12 w-full md:w-auto">
+                  <div>
+                    <h4
+                      data-tina-field={
+                        data ? tinaField(data, "stat1Number") : ""
+                      }
+                      className="text-5xl font-heading font-bold text-dorabel-purple mb-2"
+                    >
+                      {data?.stat1Number || "10+"}
+                    </h4>
+                    <p
+                      data-tina-field={
+                        data ? tinaField(data, "stat1Label") : ""
+                      }
+                      className="text-sm text-dorabel-gray-dim uppercase tracking-widest"
+                    >
+                      {data?.stat1Label || "Years Experience"}
+                    </p>
+                  </div>
+                  <div>
+                    <h4
+                      data-tina-field={
+                        data ? tinaField(data, "stat2Number") : ""
+                      }
+                      className="text-5xl font-heading font-bold text-dorabel-purple mb-2"
+                    >
+                      {data?.stat2Number || "98%"}
+                    </h4>
+                    <p
+                      data-tina-field={
+                        data ? tinaField(data, "stat2Label") : ""
+                      }
+                      className="text-sm text-dorabel-gray-dim uppercase tracking-widest"
+                    >
+                      {data?.stat2Label || "Client Retention"}
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <h4
-                    data-tina-field={data ? tinaField(data, "stat2Number") : ""}
-                    className="text-5xl font-heading font-bold text-dorabel-purple mb-2"
+
+                <Link
+                  to="/about"
+                  className="inline-flex items-center text-dorabel-purple font-bold tracking-widest uppercase text-sm hover:text-dorabel-gold transition-colors duration-300 group flex-shrink-0"
+                >
+                  Learn More
+                  <svg
+                    className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
                   >
-                    {data?.stat2Number || "98%"}
-                  </h4>
-                  <p
-                    data-tina-field={data ? tinaField(data, "stat2Label") : ""}
-                    className="text-sm text-dorabel-gray-dim uppercase tracking-widest"
-                  >
-                    {data?.stat2Label || "Client Retention"}
-                  </p>
-                </div>
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                  </svg>
+                </Link>
               </div>
             </Reveal>
           </div>

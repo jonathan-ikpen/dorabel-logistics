@@ -5,7 +5,7 @@ seo:
   description: >-
     Schedule a consultation or book logistics services with Dorabel
     International. We offer efficient and reliable transport solutions.
-  canonical: 'https://dorabel.co.uk/booking'
+  canonical: "https://dorabel.co.uk/booking"
   image: /uploads/og_image.png
 blocks:
   - heading: Book an Appointment
@@ -20,27 +20,24 @@ blocks:
   - heading: A Streamlined Approach to Logistics
     subheading: How We Work
     description: >-
-      We've refined our process to be as efficient and transparent as possible.
-      From the initial consultation to ongoing management, you're always in the
-      loop.
-    ctaText: Start Your Consultation
+      We believe logistics should accelerate your business. Our streamlined approach is built for speed and reliability, ensuring your supply chain moves as fast as your ambition.
+    ctaText: Book Now
     steps:
-      - number: '01'
-        title: Consultation
+      - number: "01"
+        title: Initial Assessment
         description: >-
-          We start by understanding your specific transport needs and auditing
-          your current logistics setup.
-      - number: '02'
+          We start by analyzing your specific logistics requirements and freight details to confirm capacity and route availability.
+      - number: "02"
         title: Planning
         description: >-
           We design a tailored transport plan that optimizes routes and costs
           while ensuring timely delivery.
-      - number: '03'
+      - number: "03"
         title: Execution
         description: >-
           Our team coordinates with vetted carriers to execute the plan. We
           handle all logistics and monitoring.
-      - number: '04'
+      - number: "04"
         title: Optimization
         description: >-
           Continuous monitoring and reporting ensure we always deliver value and
@@ -56,7 +53,7 @@ blocks:
           We coordinate transport activities for commercial clients, ensuring
           your goods move efficiently from origin to destination.
         image: /uploads/service_van.png
-        icon: '01'
+        icon: "01"
         features:
           - Fleet coordination
           - Route optimization
@@ -66,7 +63,7 @@ blocks:
           Our logistics experts manage the flow of goods, providing transparency
           and accountability.
         image: /uploads/service_warehouse.png
-        icon: '02'
+        icon: "02"
         features:
           - Inventory support
           - Procurement coordination
@@ -76,7 +73,7 @@ blocks:
           We help businesses navigate international transport handling
           compliance and coordination.
         image: /uploads/service_ship.png
-        icon: '03'
+        icon: "03"
         features:
           - Import/Export coordination
           - Customs compliance
@@ -86,7 +83,7 @@ blocks:
           We expand our capabilities to offer wider business support services,
           helping you scale operations.
         image: /uploads/dorabel_hero.png
-        icon: '04'
+        icon: "04"
         features:
           - Operational consultancy
           - Logistics planning
@@ -128,4 +125,3 @@ blocks:
           to discuss your requirements.
     _template: faq
 ---
-

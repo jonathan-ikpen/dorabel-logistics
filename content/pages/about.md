@@ -16,10 +16,10 @@ blocks:
   - items:
       - heading: Our Mission
         content: >-
-          We exist to bring clarity and reliability to an industry often defined by uncertainty. Our mission is to be the steadfast partner that businesses can rely on, transforming logistics from a logistical headache into a competitive advantage. We don't just move goods; we deliver promises, ensuring that every shipment represents a commitment kept and a relationship strengthened.
+          We exist to bring absolute clarity and unwavering reliability to an industry that is all too often defined by uncertainty. Our mission is to be the steadfast partner that businesses can rely on implicitly, transforming logistics from a potential headache into a powerful competitive advantage. We believe that true partnership isn't just about moving goods from A to B; it's about understanding the heartbeat of your business and ensuring that every delivery pulse is strong and steady. We don't just deliver packages; we deliver on our promises, ensuring that every single shipment represents a commitment kept, a problem solved, and a relationship strengthened. We are here to prove that logistics can be personal, precise, and perfect.
       - heading: Our Vision
         content: >-
-          We see a future where logistics is invisible—seamless, efficient, and stress-free. We strive to set a new standard for the industry, where technology and human expertise blend perfectly to create a transport network that is not only robust but also responsive. We act today to build the supply chains of tomorrow, empowering businesses to grow without limits.
+          We see a future where logistics is completely invisible—seamless, efficient, and entirely stress-free. We strive to set a new, higher standard for the entire industry, where cutting-edge technology and deep human expertise blend perfectly to create a transport network that is not only robust but also intuitively responsive to change. We visualize a world where distance is no longer a barrier to opportunity, and where businesses of all sizes can scale without fear of supply chain failure. We act today to build the resilient, intelligent supply chains of tomorrow, empowering businesses to grow without limits and to reach their full potential with confidence.
     _template: contentGrid
   - heading: More Than Just Logistics
     content: >-
@@ -41,16 +41,13 @@ blocks:
   - heading: A Streamlined Approach to Logistics
     subheading: How We Work
     description: >-
-      We've refined our process to be as efficient and transparent as possible.
-      From the initial consultation to ongoing management, you're always in the
-      loop.
-    ctaText: Start Your Consultation
+      We believe logistics should accelerate your business. Our streamlined approach is built for speed and reliability, ensuring your supply chain moves as fast as your ambition.
+    ctaText: Book Now
     steps:
       - number: "01"
-        title: Consultation
+        title: Initial Assessment
         description: >-
-          We start by understanding your specific transport needs and auditing
-          your current logistics setup.
+          We start by analyzing your specific logistics requirements and freight details to confirm capacity and route availability.
       - number: "02"
         title: Planning
         description: >-
