@@ -32,7 +32,7 @@ const FleetGallery = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {images.map((item, index) => (
             <Reveal key={index} delay={index * 0.1} width="100%">
-              <div className="group relative h-[400px] overflow-hidden rounded-xl shadow-md cursor-pointer">
+              <div className="group relative h-[400px] overflow-hidden rounded-none shadow-2xl cursor-pointer border border-gray-100">
                 {/* Image */}
                 <div className="absolute inset-0 transition-transform duration-700 group-hover:scale-110">
                   <img
