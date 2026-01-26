@@ -91,7 +91,7 @@ export default defineConfig({
               tryInject();
             }
           },
-          { passive: true, capture: false }
+          { passive: true, capture: false },
         );
       }
     });

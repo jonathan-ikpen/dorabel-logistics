@@ -16,20 +16,10 @@ blocks:
   - items:
       - heading: Our Mission
         content: >-
-          At Dorabel International, our mission is to redefine the
-          standards of logistics support. We believe that every transport
-          requirement deserves to be managed with the utmost care and
-          professionalism, ensuring timely and safe delivery. We strive to
-          provide our clients with peace of mind by handling every aspect of
-          transport coordination with transparency, efficiency, and a commitment
-          to quality.
+          We exist to bring clarity and reliability to an industry often defined by uncertainty. Our mission is to be the steadfast partner that businesses can rely on, transforming logistics from a logistical headache into a competitive advantage. We don't just move goods; we deliver promises, ensuring that every shipment represents a commitment kept and a relationship strengthened.
       - heading: Our Vision
         content: >-
-          We envision a future where logistics is seamless and stress-free. By
-          leveraging technology and a network of trusted carriers, we aim to
-          become the leading logistics support partner for businesses across the
-          UK. Our goal is to build long-lasting relationships with our clients,
-          founded on trust, reliability, and a shared dedication to excellence.
+          We see a future where logistics is invisible—seamless, efficient, and stress-free. We strive to set a new standard for the industry, where technology and human expertise blend perfectly to create a transport network that is not only robust but also responsive. We act today to build the supply chains of tomorrow, empowering businesses to grow without limits.
     _template: contentGrid
   - heading: More Than Just Logistics
     content: >-

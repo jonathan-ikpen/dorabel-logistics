@@ -50,25 +50,68 @@ const PageHeader = ({ data }) => {
 // Inline ContentGrid Component (for Mission/Vision)
 const ContentGrid = ({ data }) => {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-dorabel-cream/30">
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
-          {data.items?.map((item, index) => (
-            <Reveal key={index} delay={index * 0.2}>
-              <h2
-                data-tina-field={tinaField(item, "heading")}
-                className="text-4xl font-heading font-bold text-dorabel-purple mb-6"
-              >
-                {item.heading}
-              </h2>
-              <p
-                data-tina-field={tinaField(item, "content")}
-                className="text-dorabel-gray-dim text-lg leading-relaxed mb-6"
-              >
-                {item.content}
-              </p>
-            </Reveal>
-          ))}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16">
+          {data.items?.map((item, index) => {
+            const isMission = item.heading?.toLowerCase().includes("mission");
+            return (
+              <Reveal key={index} delay={index * 0.2} className="h-full">
+                <div className="bg-white p-10 border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-500 h-full flex flex-col group">
+                  <div className="mb-8 p-4 bg-dorabel-purple/5 rounded-full w-20 h-20 flex items-center justify-center group-hover:bg-dorabel-purple/10 transition-colors duration-500">
+                    {isMission ? (
+                      <svg
+                        className="w-10 h-10 text-dorabel-purple"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={1.5}
+                          d="M13 10V3L4 14h7v7l9-11h-7z"
+                        />
+                      </svg>
+                    ) : (
+                      <svg
+                        className="w-10 h-10 text-dorabel-purple"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={1.5}
+                          d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                        />
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={1.5}
+                          d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                        />
+                      </svg>
+                    )}
+                  </div>
+
+                  <h2
+                    data-tina-field={tinaField(item, "heading")}
+                    className="text-3xl font-heading font-bold text-dorabel-purple mb-6"
+                  >
+                    {item.heading}
+                  </h2>
+                  <p
+                    data-tina-field={tinaField(item, "content")}
+                    className="text-dorabel-gray-dim text-lg leading-relaxed font-light"
+                  >
+                    {item.content}
+                  </p>
+                </div>
+              </Reveal>
+            );
+          })}
         </div>
       </div>
     </section>
