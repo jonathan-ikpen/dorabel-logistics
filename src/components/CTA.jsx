@@ -1,13 +1,20 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { tinaField } from "tinacms/dist/react";
+import ctaBg from "../assets/cta_bg.png";
 
 const CTA = ({ data }) => {
   return (
-    <section className="py-24 bg-slate-50 border-t border-gray-100 relative overflow-hidden">
-      {/* Background Decoration - Very Subtle */}
-      <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0 pointer-events-none">
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-dorabel-purple/3 rounded-full blur-[120px] transform translate-x-1/2 -translate-y-1/2"></div>
+    <section className="py-32 relative overflow-hidden">
+      {/* Background Image & Overlay */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src={ctaBg}
+          alt="Logistics Background"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-dorabel-purple/75 mix-blend-multiply"></div>
+        <div className="absolute inset-0 bg-black/20"></div>
       </div>
 
       <div className="container mx-auto px-8 relative z-10">
@@ -25,14 +32,14 @@ const CTA = ({ data }) => {
             {data ? (
               <h2
                 data-tina-field={tinaField(data, "heading")}
-                className="text-4xl md:text-6xl font-heading font-bold text-dorabel-purple mb-8 leading-[1.1]"
+                className="text-4xl md:text-6xl font-heading font-bold text-white mb-8 leading-[1.1]"
               >
                 {data.heading}
               </h2>
             ) : (
-              <h2 className="text-4xl md:text-6xl font-heading font-bold text-dorabel-purple mb-8 leading-[1.1]">
+              <h2 className="text-4xl md:text-6xl font-heading font-bold text-white mb-8 leading-[1.1]">
                 Ready to Streamline Your <br />
-                <span className="italic text-dorabel-gold/80">
+                <span className="italic text-dorabel-gold">
                   Logistics Operations?
                 </span>
               </h2>
@@ -41,12 +48,12 @@ const CTA = ({ data }) => {
             {data ? (
               <p
                 data-tina-field={tinaField(data, "subheading")}
-                className="text-xl text-dorabel-gray-dim mb-16 max-w-2xl mx-auto font-light leading-relaxed"
+                className="text-xl text-gray-200 mb-16 max-w-2xl mx-auto font-light leading-relaxed"
               >
                 {data.subheading}
               </p>
             ) : (
-              <p className="text-xl text-dorabel-gray-dim mb-16 max-w-2xl mx-auto font-light leading-relaxed">
+              <p className="text-xl text-gray-200 mb-16 max-w-2xl mx-auto font-light leading-relaxed">
                 Join the growing number of businesses who trust Dorabel
                 International to keep their supply chain moving.
               </p>
@@ -56,14 +63,14 @@ const CTA = ({ data }) => {
               <a
                 href="#contact"
                 data-tina-field={tinaField(data, "buttonText")}
-                className="px-12 py-5 bg-dorabel-purple hover:bg-dorabel-gold text-white font-bold rounded-md transition-all duration-500 shadow-sm text-sm tracking-widest uppercase"
+                className="px-12 py-5 bg-dorabel-gold hover:bg-white hover:text-dorabel-purple text-dorabel-purple font-bold rounded-md transition-all duration-500 shadow-lg hover:shadow-xl text-sm tracking-widest uppercase"
               >
                 {data.buttonText || "Get a Free Quote"}
               </a>
               <a
                 href="tel:07949937023"
                 data-tina-field={tinaField(data, "secondaryButtonText")}
-                className="px-12 py-5 bg-transparent border border-gray-200 hover:border-dorabel-purple hover:bg-white text-dorabel-purple font-bold rounded-md transition-all duration-500 text-sm tracking-widest uppercase"
+                className="px-12 py-5 bg-transparent border border-white/30 hover:border-white hover:bg-white text-white hover:text-dorabel-purple font-bold rounded-md transition-all duration-500 text-sm tracking-widest uppercase backdrop-blur-sm"
               >
                 {data.secondaryButtonText || "Call Us Now"}
               </a>
