@@ -3,10 +3,9 @@ title: Home
 seo:
   title: Dorabel International - Reliable Logistics & Transport Services
   description: >-
-    Dorabel International provides dependable transport support and
-    coordination for commercial clients. Efficient, compliant, and
-    cost-effective logistics.
-  canonical: "https://dorabel.co.uk/"
+    Dorabel International provides dependable transport support and coordination
+    for commercial clients. Efficient, compliant, and cost-effective logistics.
+  canonical: 'https://dorabel.co.uk/'
   image: /uploads/og_image.png
 blocks:
   - heading: Always Delivering Excellence
@@ -17,15 +16,15 @@ blocks:
       business and supply-chain support services.
     backgroundImage: /uploads/hero-logistics-branded.png
     ctaText: Get Started
-    ctaLink: "#contact"
+    ctaLink: '#contact'
     secondaryCtaText: Our Services
-    secondaryCtaLink: "#services"
+    secondaryCtaLink: '#services'
     trustedText: Trusted Logistics Partner
     _template: hero
   - heading: Efficient Transport Support
     content: >-
-      Dorabel International is a modern logistics partner. We bridge the
-      gap between businesses and reliable transport solutions. We understand the
+      Dorabel International is a modern logistics partner. We bridge the gap
+      between businesses and reliable transport solutions. We understand the
       challenges of supply chain management—delays, unclear costs, and sub-par
       coordination.
 
@@ -47,36 +46,50 @@ blocks:
     items:
       - title: Transport Support
         description: >-
-          We provide comprehensive transport support for commercial clients, ensuring that every movement of goods is executed with precision. By leveraging our network of trusted carriers and optimizing routes, we minimize transit times and reduce costs while maintaining the highest standards of safety and compliance.
-        image: /uploads/service_van.png
-        icon: "01"
+          We provide comprehensive transport support for commercial clients,
+          ensuring that every movement of goods is executed with precision. By
+          leveraging our network of trusted carriers and optimizing routes, we
+          minimize transit times and reduce costs while maintaining the highest
+          standards of safety and compliance.
+        image: /uploads/service_van_branded.png
+        icon: '01'
         features:
           - Fleet coordination
           - Route optimization
           - Carrier vetting and management
       - title: Supply Chain Coordination
         description: >-
-          Our supply chain coordination services are designed to bring clarity and control to your operations. We manage the flow of goods from procurement to delivery, providing real-time transparency and accountability at every stage to ensure your inventory is always where it needs to be.
+          Our supply chain coordination services are designed to bring clarity
+          and control to your operations. We manage the flow of goods from
+          procurement to delivery, providing real-time transparency and
+          accountability at every stage to ensure your inventory is always where
+          it needs to be.
         image: /uploads/service_warehouse.png
-        icon: "02"
+        icon: '02'
         features:
           - Inventory management support
           - Procurement coordination
           - Supply chain visibility
       - title: Global Logistics
         description: >-
-          We simplify the complexities of international trade. Our team handles the intricate details of cross-border transport, from navigating customs compliance to coordinating freight bookings, ensuring your global logistics operate as smoothly as your domestic shipping.
+          We simplify the complexities of international trade. Our team handles
+          the intricate details of cross-border transport, from navigating
+          customs compliance to coordinating freight bookings, ensuring your
+          global logistics operate as smoothly as your domestic shipping.
         image: /uploads/service_ship.png
-        icon: "03"
+        icon: '03'
         features:
           - Import/Export coordination
           - Customs compliance support
           - International freight booking
       - title: Business Support Services
         description: >-
-          As your business grows, so do your needs. We offer strategic business support services including operational consultancy and process optimization, effectively acting as an extension of your team to help you scale your capabilities and improve overall efficiency.
+          As your business grows, so do your needs. We offer strategic business
+          support services including operational consultancy and process
+          optimization, effectively acting as an extension of your team to help
+          you scale your capabilities and improve overall efficiency.
         image: /uploads/dorabel_hero.png
-        icon: "04"
+        icon: '04'
         features:
           - Operational consultancy
           - Logistics planning
@@ -107,24 +120,27 @@ blocks:
   - heading: A Streamlined Approach to Logistics
     subheading: How We Work
     description: >-
-      We believe logistics should accelerate your business. Our streamlined approach is built for speed and reliability, ensuring your supply chain moves as fast as your ambition.
+      We believe logistics should accelerate your business. Our streamlined
+      approach is built for speed and reliability, ensuring your supply chain
+      moves as fast as your ambition.
     ctaText: Book Now
     steps:
-      - number: "01"
+      - number: '01'
         title: Initial Assessment
         description: >-
-          We start by analyzing your specific logistics requirements and freight details to confirm capacity and route availability.
-      - number: "02"
+          We start by analyzing your specific logistics requirements and freight
+          details to confirm capacity and route availability.
+      - number: '02'
         title: Planning
         description: >-
           We design a tailored transport plan that optimizes routes and costs
           while ensuring timely delivery.
-      - number: "03"
+      - number: '03'
         title: Execution
         description: >-
           Our team coordinates with vetted carriers to execute the plan. We
           handle all logistics and monitoring.
-      - number: "04"
+      - number: '04'
         title: Review
         description: >-
           We review performance and provide detailed reports, ensuring
@@ -190,3 +206,4 @@ blocks:
     email: info@dorabel.co.uk
     _template: contact
 ---
+
