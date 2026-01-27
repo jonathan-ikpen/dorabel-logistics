@@ -22,7 +22,7 @@
   "theme": {
     "primaryColor": "#4C1D95",
     "accentColor": "#D97706",
-    "headingFont": "Mona Sans",
-    "bodyFont": "Mona Sans"
+    "headingFont": "Inter",
+    "bodyFont": "Inter"
   }
 }

@@ -606,6 +606,7 @@ export default defineConfig({
                 label: "Body Font",
                 name: "bodyFont",
                 options: [
+                  "Mona Sans",
                   "Satoshi",
                   "Manrope",
                   "Syne",

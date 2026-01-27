@@ -580,6 +580,7 @@ var config_default = defineConfig({
                 label: "Body Font",
                 name: "bodyFont",
                 options: [
+                  "Mona Sans",
                   "Satoshi",
                   "Manrope",
                   "Syne",
