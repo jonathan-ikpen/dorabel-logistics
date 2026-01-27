@@ -19,7 +19,7 @@ div[class*="NavBar"] svg {
 aside a[href="/admin/index.html"],
 aside a[href="/admin"],
 nav a[href^="/admin"] {
-  background-image: url("/images/logo.png");
+  background-image: url("/images/logo.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center left;

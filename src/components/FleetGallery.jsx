@@ -156,30 +156,6 @@ const FleetGallery = () => {
                             {service.cta}
                           </button>
                         </Link>
-
-                        {/* Zigzag Decoration (SVG) - subtle overlay */}
-                        <div className="absolute right-0 bottom-0 opacity-10 pointer-events-none">
-                          <svg
-                            width="200"
-                            height="100"
-                            viewBox="0 0 200 100"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M0 100 L25 75 L50 100 L75 75 L100 100 L125 75 L150 100 L175 75 L200 100"
-                              stroke="currentColor"
-                              strokeWidth="4"
-                              className="text-dorabel-purple"
-                            />
-                            <path
-                              d="M0 75 L25 50 L50 75 L75 50 L100 75 L125 50 L150 75 L175 50 L200 75"
-                              stroke="currentColor"
-                              strokeWidth="4"
-                              className="text-dorabel-purple mt-4"
-                            />
-                          </svg>
-                        </div>
                       </motion.div>
                     )}
                   </AnimatePresence>

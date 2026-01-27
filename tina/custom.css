@@ -16,7 +16,7 @@ div[class*="NavBar"] svg {
 div[class*="SidebarHeader"] > a,
 aside[class*="Sidebar"] > div:first-child > a,
 div[class*="NavBar"] > div:first-child {
-  background-image: url("/images/logo.png");
+  background-image: url("/images/logo.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center left;

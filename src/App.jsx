@@ -33,13 +33,13 @@ const AppContent = ({ globalData }) => {
     if (themeData?.primaryColor) {
       document.documentElement.style.setProperty(
         "--color-dorabel-purple",
-        themeData.primaryColor
+        themeData.primaryColor,
       );
     }
     if (themeData?.accentColor) {
       document.documentElement.style.setProperty(
         "--color-dorabel-gold",
-        themeData.accentColor
+        themeData.accentColor,
       );
     }
 
@@ -50,7 +50,7 @@ const AppContent = ({ globalData }) => {
       const link = document.createElement("link");
       link.href = `https://fonts.googleapis.com/css2?family=${fontName.replace(
         /\s+/g,
-        "+"
+        "+",
       )}:wght@300;400;500;600;700;800&display=swap`;
       link.rel = "stylesheet";
       document.head.appendChild(link);
@@ -60,14 +60,14 @@ const AppContent = ({ globalData }) => {
       loadFont(themeData.headingFont);
       document.documentElement.style.setProperty(
         "--font-heading",
-        `"${themeData.headingFont}"`
+        `"${themeData.headingFont}"`,
       );
     }
     if (themeData?.bodyFont) {
       loadFont(themeData.bodyFont);
       document.documentElement.style.setProperty(
         "--font-body",
-        `"${themeData.bodyFont}"`
+        `"${themeData.bodyFont}"`,
       );
     }
   }, [themeData]);
