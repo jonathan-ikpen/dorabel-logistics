@@ -42,14 +42,14 @@ const SEO_METADATA = {
   "/contact": {
     title: "Contact Us - Get a Free Quote Today",
     description:
-      "Get in touch with Dorabel Logistics for a free consultation. Trusted UK logistics partners. Call us or email for immediate assistance.",
+      "Get in touch with Dorabel Logistics for a free quote. Trusted UK logistics partners. Call us or email for immediate assistance.",
     image: "/uploads/og_image.png",
     canonical: "https://dorabel.co.uk/contact",
   },
   "/booking": {
     title: "Book an Appointment - Dorabel Logistics",
     description:
-      "Schedule a consultation or book logistics services with Dorabel Logistics. We offer efficient and reliable transport solutions.",
+      "Request a quote or book logistics services with Dorabel Logistics. We offer efficient and reliable transport solutions.",
     image: "/uploads/og_image.png",
     canonical: "https://dorabel.co.uk/booking",
   },

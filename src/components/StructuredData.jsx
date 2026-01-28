@@ -206,7 +206,7 @@ const StructuredData = () => {
           name: "How can I contact Dorabel for logistics services?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: `You can contact Dorabel International by phone at 07949937023, by email at info@dorabel.co.uk, or through the contact form on their website at ${BASE_URL}/contact.`,
+            text: `You can contact Dorabel International by phone at +447949937023, by email at info@dorabel.co.uk, or through the contact form on their website at ${BASE_URL}/contact.`,
           },
         },
         {

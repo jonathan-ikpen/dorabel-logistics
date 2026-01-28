@@ -67,7 +67,7 @@ const Contact = ({ data }) => {
               className="text-dorabel-gray-dim text-lg mb-16 font-light leading-relaxed"
             >
               {data.intro ||
-                "Contact us today for a bespoke consultation. We're here to help you manage your facilities with ease and efficiency."}
+                "Contact us today for a tailored quote. We're here to help you manage your logistics with ease and efficiency."}
             </p>
 
             <div className="space-y-10 pl-6 border-l border-gray-100">
@@ -169,11 +169,11 @@ const Contact = ({ data }) => {
                     Call Us
                   </h4>
                   <a
-                    href={`tel:${data.phone || "07949937023"}`}
+                    href={`tel:${data.phone || "+447949937023"}`}
                     data-tina-field={tinaField(data, "phone")}
                     className="text-dorabel-gray-dim hover:text-dorabel-gold transition-colors font-light"
                   >
-                    {data.phone || "07949937023"}
+                    {data.phone || "+447949937023"}
                   </a>
                 </div>
               </div>
@@ -182,7 +182,7 @@ const Contact = ({ data }) => {
 
           <div className="bg-[#FAFAFA] p-12 shadow-sm border border-gray-100">
             <h3 className="text-2xl font-heading font-bold text-dorabel-purple mb-8">
-              Request a Consultation
+              Request a Quote
             </h3>
             <form className="space-y-6" onSubmit={onSubmit}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

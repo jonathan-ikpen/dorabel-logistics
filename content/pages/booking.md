@@ -3,18 +3,18 @@ title: Book an Appointment
 seo:
   title: Book an Appointment - Dorabel International
   description: >-
-    Schedule a consultation or book logistics services with Dorabel
+    Request a quote or book logistics services with Dorabel
     International. We offer efficient and reliable transport solutions.
   canonical: "https://dorabel.co.uk/booking"
   image: /uploads/og_image.png
 blocks:
   - heading: Book an Appointment
-    subheading: Schedule a consultation or book logistics services with our expert team.
+    subheading: Request a quote or book logistics services with our expert team.
     image: /uploads/dorabel_hero.png
     _template: pageHeader
   - heading: Schedule Your Service
     subheading: >-
-      Fill out the form below to schedule a consultation or book our logistics
+      Fill out the form below to request a quote or book our logistics
       services directly.
     _template: booking
   - heading: A Streamlined Approach to Logistics

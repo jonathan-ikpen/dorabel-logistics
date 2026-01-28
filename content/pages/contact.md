@@ -3,7 +3,7 @@ title: Contact Us
 seo:
   title: Contact Us - Get a Free Quote Today
   description: >-
-    Get in touch with Dorabel International for a free consultation.
+    Get in touch with Dorabel International for a free quote.
     Trusted logistics partners. Call us or email for immediate assistance.
   canonical: "https://dorabel.co.uk/contact"
   image: /uploads/og_image.png

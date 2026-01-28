@@ -67,7 +67,7 @@ const ContactForm = ({ data }) => {
               className="text-dorabel-gray-dim text-lg mb-16 font-light leading-relaxed"
             >
               {data.intro ||
-                "Contact us today for a bespoke consultation. We're here to help you manage your facilities with ease and efficiency."}
+                "Contact us today for a tailored quote. We're here to help you manage your logistics with ease and efficiency."}
             </p>
 
             <div className="space-y-10 pl-6 border-l border-gray-100">

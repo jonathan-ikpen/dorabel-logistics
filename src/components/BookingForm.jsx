@@ -78,7 +78,7 @@ const BookingForm = ({ data }) => {
               className="text-dorabel-gray-dim text-lg font-light leading-relaxed max-w-2xl mx-auto"
             >
               {data?.subheading ||
-                "Fill out the form below to schedule a consultation or book our logistics services directly."}
+                "Fill out the form below to request a quote or book our logistics services directly."}
             </p>
           </div>
 

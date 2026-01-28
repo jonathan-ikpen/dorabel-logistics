@@ -175,7 +175,7 @@ export default function Footer({ headerData, footerData }) {
                   }
                   className="hover:text-white transition-colors"
                 >
-                  {footerData?.contact?.phone || "07949937023"}
+                  {footerData?.contact?.phone || "+447949937023"}
                 </a>
               </li>
               <li className="flex items-center gap-4">
