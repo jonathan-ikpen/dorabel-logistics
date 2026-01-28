@@ -79,9 +79,9 @@ const Services = ({ previewMode = false, data }) => {
               className="h-full"
               width="100%"
             >
-              <div className="group h-full bg-white border border-gray-100 overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all duration-500 flex flex-col">
+              <div className="group h-full bg-white border border-gray-100 overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all duration-500 flex flex-col rounded-2xl">
                 <div className="relative h-64 overflow-hidden">
-                  <MaskReveal className="h-full w-full">
+                  <MaskReveal className="h-full w-full rounded-t-2xl">
                     <img
                       src={service.image || heroBuildingImg}
                       alt={service.title}
@@ -157,7 +157,7 @@ const Services = ({ previewMode = false, data }) => {
             <Link
               to="/services"
               data-tina-field={data ? tinaField(data, "buttonText") : null}
-              className="px-12 py-5 bg-dorabel-purple hover:bg-dorabel-gold text-white font-bold rounded-md transition-all duration-500 shadow-sm text-sm tracking-widest uppercase hover:px-14"
+              className="px-12 py-5 bg-dorabel-purple hover:bg-dorabel-gold text-white font-bold rounded-xl transition-all duration-500 shadow-sm text-sm tracking-widest uppercase hover:px-14"
             >
               {data?.buttonText || "See All Services"}
             </Link>

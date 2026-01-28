@@ -33,7 +33,7 @@ const Process = ({ data }) => {
             <div className="mt-auto">
               <Link
                 to="/booking"
-                className="px-12 py-5 bg-dorabel-purple hover:bg-dorabel-gold text-white font-bold rounded-md transition-all duration-500 shadow-sm text-sm tracking-widest uppercase inline-block"
+                className="px-12 py-5 bg-dorabel-purple hover:bg-dorabel-gold text-white font-bold rounded-xl transition-all duration-500 shadow-sm text-sm tracking-widest uppercase inline-block"
               >
                 {data.ctaText || "Start Your Consultation"}
               </Link>

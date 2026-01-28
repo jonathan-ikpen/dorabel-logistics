@@ -72,7 +72,7 @@ const FleetGallery = () => {
           </Reveal>
         </div>
 
-        <div className="flex flex-col lg:flex-row shadow-2xl border border-gray-100">
+        <div className="flex flex-col lg:flex-row shadow-2xl border border-gray-100 rounded-2xl overflow-hidden">
           {/* Left Side: Dynamic Image */}
           <div className="lg:w-1/2 order-2 lg:order-1 relative min-h-[400px] lg:min-h-[600px] overflow-hidden">
             <AnimatePresence mode="wait">
@@ -152,7 +152,7 @@ const FleetGallery = () => {
                           {service.description}
                         </p>
                         <Link to={service.link}>
-                          <button className="bg-dorabel-purple text-white px-8 py-3 text-sm font-bold uppercase tracking-widest hover:bg-white hover:text-dorabel-purple transition-colors duration-300 shadow-sm rounded-md">
+                          <button className="bg-dorabel-purple text-white px-8 py-3 text-sm font-bold uppercase tracking-widest hover:bg-white hover:text-dorabel-purple transition-colors duration-300 shadow-sm rounded-xl">
                             {service.cta}
                           </button>
                         </Link>

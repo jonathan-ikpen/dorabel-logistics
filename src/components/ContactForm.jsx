@@ -123,7 +123,7 @@ const ContactForm = ({ data }) => {
             </div>
           </div>
 
-          <div className="bg-[#FAFAFA] p-12 shadow-sm border border-gray-100">
+          <div className="bg-[#FAFAFA] p-12 shadow-sm border border-gray-100 rounded-2xl">
             <h3 className="text-2xl font-heading font-bold text-dorabel-purple mb-8">
               Send us a Message
             </h3>
@@ -136,7 +136,7 @@ const ContactForm = ({ data }) => {
                   <input
                     type="text"
                     required
-                    className="w-full bg-white border border-gray-200 px-4 py-3 text-dorabel-purple focus:outline-none focus:border-dorabel-gold transition-colors rounded-md placeholder-gray-300"
+                    className="w-full bg-white border border-gray-200 px-4 py-3 text-dorabel-purple focus:outline-none focus:border-dorabel-gold transition-colors rounded-xl placeholder-gray-300"
                     placeholder="John Doe"
                     value={state.name}
                     onChange={(e) =>
@@ -194,7 +194,7 @@ const ContactForm = ({ data }) => {
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full py-4 bg-dorabel-purple hover:bg-dorabel-gold text-white font-medium transition-all duration-300 shadow-sm rounded-md tracking-widest uppercase text-sm"
+                className="w-full py-4 bg-dorabel-purple hover:bg-dorabel-gold text-white font-medium transition-all duration-300 shadow-sm rounded-xl tracking-widest uppercase text-sm"
               >
                 {loading ? "Sending..." : "Send Message"}
               </button>

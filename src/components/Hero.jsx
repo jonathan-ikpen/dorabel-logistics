@@ -47,14 +47,14 @@ const Hero = ({ data }) => {
                 <a
                   href={data.ctaLink || "#contact"}
                   data-tina-field={tinaField(data, "ctaText")}
-                  className="px-10 py-4 bg-dorabel-purple text-white font-semibold text-sm tracking-widest uppercase hover:bg-dorabel-gold transition-colors duration-300 text-center rounded-md"
+                  className="px-10 py-4 bg-dorabel-purple text-white font-semibold text-sm tracking-widest uppercase hover:bg-dorabel-gold transition-colors duration-300 text-center rounded-xl"
                 >
                   {data.ctaText || "Get Started"}
                 </a>
                 <a
                   href={data.secondaryCtaLink || "#services"}
                   data-tina-field={tinaField(data, "secondaryCtaText")}
-                  className="px-10 py-4 border border-dorabel-purple text-dorabel-purple font-semibold text-sm tracking-widest uppercase hover:bg-dorabel-purple hover:text-white transition-colors duration-300 text-center rounded-md"
+                  className="px-10 py-4 border border-dorabel-purple text-dorabel-purple font-semibold text-sm tracking-widest uppercase hover:bg-dorabel-purple hover:text-white transition-colors duration-300 text-center rounded-xl"
                 >
                   {data.secondaryCtaText || "Our Services"}
                 </a>
@@ -79,7 +79,7 @@ const Hero = ({ data }) => {
 
               {/* Optional: Modern Glass Overlay Card (Simplified) */}
               <div className="absolute bottom-12 left-12 right-12 lg:left-[-4rem] lg:right-auto z-20 hidden md:block">
-                <div className="bg-white/90 backdrop-blur-md p-8 border-l-4 border-dorabel-gold shadow-2xl max-w-sm">
+                <div className="bg-white/90 backdrop-blur-md p-8 border-l-4 border-dorabel-gold shadow-2xl max-w-sm rounded-2xl">
                   <p className="text-4xl font-heading font-bold text-dorabel-purple mb-2">
                     99.8%
                   </p>

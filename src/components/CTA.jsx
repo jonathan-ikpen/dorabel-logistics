@@ -63,14 +63,14 @@ const CTA = ({ data }) => {
               <a
                 href="#contact"
                 data-tina-field={tinaField(data, "buttonText")}
-                className="px-12 py-5 bg-dorabel-gold hover:bg-white hover:text-dorabel-purple text-dorabel-purple font-bold rounded-md transition-all duration-500 shadow-lg hover:shadow-xl text-sm tracking-widest uppercase"
+                className="px-12 py-5 bg-dorabel-gold hover:bg-white hover:text-dorabel-purple text-dorabel-purple font-bold rounded-xl transition-all duration-500 shadow-lg hover:shadow-xl text-sm tracking-widest uppercase"
               >
                 {data.buttonText || "Get a Free Quote"}
               </a>
               <a
                 href="tel:07949937023"
                 data-tina-field={tinaField(data, "secondaryButtonText")}
-                className="px-12 py-5 bg-transparent border border-white/30 hover:border-white hover:bg-white text-white hover:text-dorabel-purple font-bold rounded-md transition-all duration-500 text-sm tracking-widest uppercase backdrop-blur-sm"
+                className="px-12 py-5 bg-transparent border border-white/30 hover:border-white hover:bg-white text-white hover:text-dorabel-purple font-bold rounded-xl transition-all duration-500 text-sm tracking-widest uppercase backdrop-blur-sm"
               >
                 {data.secondaryButtonText || "Call Us Now"}
               </a>

@@ -117,7 +117,7 @@ const Navbar = ({ headerData }) => {
           )}
           <a
             href="#contact"
-            className="px-8 py-3 bg-dorabel-purple hover:bg-dorabel-gold text-white font-medium rounded-md transition-all duration-500 shadow-sm text-sm tracking-wide"
+            className="px-8 py-3 bg-dorabel-purple hover:bg-dorabel-gold text-white font-medium rounded-xl transition-all duration-500 shadow-sm text-sm tracking-wide"
           >
             Get a Quote
           </a>
@@ -182,7 +182,7 @@ const Navbar = ({ headerData }) => {
               )}
               <a
                 href="#contact"
-                className="px-8 py-4 bg-dorabel-purple text-center text-white font-medium rounded-md mt-8"
+                className="px-8 py-4 bg-dorabel-purple text-center text-white font-medium rounded-xl mt-8"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Get a Quote

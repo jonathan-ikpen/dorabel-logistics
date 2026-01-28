@@ -32,7 +32,7 @@ const Testimonials = ({ data }) => {
                 ease: [0.16, 1, 0.3, 1],
               }}
               viewport={{ once: true }}
-              className="bg-white p-10 shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-500 group"
+              className="bg-white p-10 shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-500 group rounded-2xl"
             >
               <div className="flex gap-1 mb-8 text-dorabel-gold opacity-60 group-hover:opacity-100 transition-opacity">
                 {[...Array(5)].map((_, i) => (

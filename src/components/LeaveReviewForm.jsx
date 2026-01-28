@@ -105,7 +105,7 @@ const LeaveReviewForm = ({ data }) => {
             )}
           </div>
 
-          <div className="bg-[#FAFAFA] p-8 md:p-12 shadow-sm border border-gray-100">
+          <div className="bg-[#FAFAFA] p-8 md:p-12 shadow-sm border border-gray-100 rounded-2xl">
             <form className="space-y-8" onSubmit={onSubmit}>
               {/* Star Rating Section */}
               <div className="flex flex-col items-center justify-center mb-8">
@@ -150,7 +150,7 @@ const LeaveReviewForm = ({ data }) => {
                     required
                     value={state.name}
                     onChange={handleChange}
-                    className="w-full bg-white border border-gray-200 px-4 py-3 text-dorabel-purple focus:outline-none focus:border-dorabel-gold transition-colors rounded-md placeholder-gray-300"
+                    className="w-full bg-white border border-gray-200 px-4 py-3 text-dorabel-purple focus:outline-none focus:border-dorabel-gold transition-colors rounded-xl placeholder-gray-300"
                     placeholder="John Doe"
                   />
                 </div>
@@ -202,7 +202,7 @@ const LeaveReviewForm = ({ data }) => {
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full py-5 bg-dorabel-purple hover:bg-dorabel-gold text-white font-bold transition-all duration-300 shadow-sm rounded-md tracking-widest uppercase text-sm"
+                className="w-full py-5 bg-dorabel-purple hover:bg-dorabel-gold text-white font-bold transition-all duration-300 shadow-sm rounded-xl tracking-widest uppercase text-sm"
               >
                 {loading ? "Submitting..." : "Submit Review"}
               </button>

@@ -16,7 +16,7 @@ const About = ({ data }) => {
         <div className="flex flex-col lg:flex-row items-center gap-20">
           {/* Image Side */}
           <div className="lg:w-1/2 order-2 lg:order-1 relative h-[600px] w-full">
-            <MaskReveal className="w-full h-full rounded-none shadow-2xl">
+            <MaskReveal className="w-full h-full rounded-2xl shadow-2xl">
               <ParallaxImage
                 src={data.image || aboutImage}
                 alt="Dorabel Team"
