@@ -16,7 +16,7 @@ const About = ({ data }) => {
         <div className="flex flex-col lg:flex-row items-center gap-20">
           {/* Image Side */}
           <div className="lg:w-1/2 order-2 lg:order-1 relative h-[600px] w-full">
-            <MaskReveal className="w-full h-full rounded-2xl shadow-2xl">
+            <MaskReveal className="w-full h-full shadow-2xl">
               <ParallaxImage
                 src={data.image || aboutImage}
                 alt="Dorabel Team"
@@ -62,10 +62,10 @@ const About = ({ data }) => {
                 <>
                   <p className="text-dorabel-gray-dim text-xl leading-relaxed mb-6 font-light">
                     Founded on the principles of transparency and efficiency,
-                    Dorabel International was created to bridge the gap between
-                    property owners and reliable service providers. We
-                    understand the headaches of property management—missed
-                    appointments, unclear costs, and sub-par work.
+                    Dorabel was created to bridge the gap between property
+                    owners and reliable service providers. We understand the
+                    headaches of property management—missed appointments,
+                    unclear costs, and sub-par work.
                   </p>
                   <p className="text-dorabel-gray-dim text-lg leading-relaxed mb-8">
                     Our "Dorabel Standard" ensures that every contractor we
@@ -100,7 +100,7 @@ const About = ({ data }) => {
             </Reveal>
 
             <Reveal delay={0.4} width="100%">
-              <div className="flex flex-row items-center justify-between mt-0 border-t border-gray-100 pt-12 gap-8">
+              <div className="flex flex-row items-center justify-between mt-0 pt-12 gap-8">
                 <div className="flex gap-12 w-full md:w-auto">
                   <div>
                     <h4

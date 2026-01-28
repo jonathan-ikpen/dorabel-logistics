@@ -54,7 +54,7 @@ const HomeContent = ({ initialData }) => {
             return (
               <React.Fragment key={i}>
                 <Services previewMode={true} data={block} />
-                <FleetGallery />
+                {/* <FleetGallery /> */}
               </React.Fragment>
             );
           case "PageBlocksCta":

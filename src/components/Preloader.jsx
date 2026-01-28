@@ -61,14 +61,14 @@ const Preloader = () => {
                 fill="currentColor"
                 initial={{
                   pathLength: 0,
-                  fill: "transparent",
-                  stroke: "#d97706",
+                  fill: "rgba(255, 255, 255, 0)",
+                  stroke: "rgba(217, 119, 6, 1)", // #d97706
                   strokeWidth: 1,
                 }}
                 animate={{
                   pathLength: 1,
-                  fill: "#ffffff",
-                  stroke: "transparent",
+                  fill: "rgba(255, 255, 255, 1)",
+                  stroke: "rgba(217, 119, 6, 0)",
                 }}
                 transition={{
                   pathLength: drawTransition,
@@ -82,14 +82,14 @@ const Preloader = () => {
                 fill="currentColor"
                 initial={{
                   pathLength: 0,
-                  fill: "transparent",
-                  stroke: "#d97706",
+                  fill: "rgba(255, 255, 255, 0)",
+                  stroke: "rgba(217, 119, 6, 1)", // #d97706
                   strokeWidth: 1,
                 }}
                 animate={{
                   pathLength: 1,
-                  fill: "#ffffff",
-                  stroke: "transparent",
+                  fill: "rgba(255, 255, 255, 1)",
+                  stroke: "rgba(217, 119, 6, 0)",
                 }}
                 transition={{
                   pathLength: { ...drawTransition, delay: 0.2 }, // slight delay for arrow

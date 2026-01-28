@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Reveal } from "./Reveal";
-import fleetAir from "../assets/fleet_air.png";
-import fleetSea from "../assets/fleet_sea.png";
-import fleetRoad from "../assets/fleet_road.png";
-import fleetWarehouse from "../assets/fleet_warehouse.png";
+import fleetVan from "../assets/fleet_express_courier.png";
+import fleetArtic from "../assets/fleet_national_haulage.png";
+import fleetRigid from "../assets/fleet_regional_distribution.png";
+import fleetWarehouse from "../assets/fleet_warehousing_interior.png";
 
 const FleetGallery = () => {
   const [activeTab, setActiveTab] = useState(1); // Default to Road Freight (index 1)
@@ -13,28 +13,28 @@ const FleetGallery = () => {
   const services = [
     {
       id: 0,
-      title: "Ocean Freight",
+      title: "National Haulage",
       description:
-        "Global ocean freight services connecting major ports worldwide. We handle FCL and LCL shipments with precision, providing reliable scheduling and competitive rates for your international cargo.",
-      image: fleetSea,
+        "High-capacity articulated lorries for bulk transport across the UK motorway network. We handle full truckloads (FTL) with precision, providing reliable scheduling for your nationwide distribution needs.",
+      image: fleetArtic,
       cta: "Request Quote",
       link: "/contact",
     },
     {
       id: 1,
-      title: "Road Freight",
+      title: "Regional Distribution",
       description:
-        "Essential trucking solutions offering flexibility and efficiency. Our modern fleet ensures reliable delivery for time-critical and standard haulage across the UK and Europe. From pallet distribution to full loads.",
-      image: fleetRoad,
+        "Agile fleet of diverse vehicles provided for regional efficiency. Our modern fleet ensures reliable delivery for standard haulage across UK counties. From pallet distribution to multi-drop routes.",
+      image: fleetRigid,
       cta: "Get in Touch",
       link: "/contact",
     },
     {
       id: 2,
-      title: "Air Freight",
+      title: "Express Courier",
       description:
-        "Rapid air cargo solutions for urgent global deliveries. When time is critical, our air freight network ensures your goods reach their destination safely and on schedule.",
-      image: fleetAir,
+        "Rapid response vans for urgent, time-critical deliveries. When every minute counts, our direct drive service ensures your goods reach their destination safely and without delay anywhere in the mainland UK.",
+      image: fleetVan,
       cta: "Contact Team",
       link: "/contact",
     },
@@ -42,7 +42,7 @@ const FleetGallery = () => {
       id: 3,
       title: "Warehousing",
       description:
-        "Secure, modern warehousing facilities for your inventory. We offer flexible storage solutions, stock management, and fulfillment services to streamline your supply chain.",
+        "Secure, modern UK warehousing facilities for your inventory. We offer flexible storage solutions, stock management, and fulfillment services to streamline your domestic supply chain.",
       image: fleetWarehouse,
       cta: "Enquire Now",
       link: "/contact",
@@ -59,15 +59,15 @@ const FleetGallery = () => {
             </span>
             <div className="h-[1px] w-12 bg-gray-200 mb-6"></div>
             <h2 className="text-4xl md:text-5xl font-heading font-bold text-dorabel-purple mb-6 leading-tight">
-              We Provide World Best{" "}
+              We Provide Best-in-Class{" "}
               <span className="ftext-dorabel-gold">Logistics Solutions</span>
             </h2>
           </Reveal>
           <Reveal delay={0.2}>
             <p className="text-dorabel-gray-dim text-lg leading-relaxed font-light">
-              From our dedicated road fleet to our global network of air and sea
+              From our dedicated fleet to our trusted network of regional
               partners, we have the capacity to move your goods anywhere in the
-              world with precision and care.
+              UK with precision and care.
             </p>
           </Reveal>
         </div>
@@ -98,9 +98,16 @@ const FleetGallery = () => {
                   activeTab === index ? "flex-grow" : ""
                 }`}
               >
-                <button
+                <div
+                  role="button"
+                  tabIndex={0}
                   onClick={() => setActiveTab(index)}
-                  className={`w-full h-full text-left transition-all duration-300 ${
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter" || e.key === " ") {
+                      setActiveTab(index);
+                    }
+                  }}
+                  className={`w-full h-full text-left transition-all duration-300 cursor-pointer ${
                     activeTab === index
                       ? "bg-[#d97706]/65 py-10 px-10"
                       : "bg-white py-6 px-10 hover:bg-gray-50"
@@ -159,7 +166,7 @@ const FleetGallery = () => {
                       </motion.div>
                     )}
                   </AnimatePresence>
-                </button>
+                </div>
               </div>
             ))}
           </div>

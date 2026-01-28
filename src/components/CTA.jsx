@@ -55,7 +55,7 @@ const CTA = ({ data }) => {
             ) : (
               <p className="text-xl text-gray-200 mb-16 max-w-2xl mx-auto font-light leading-relaxed">
                 Join the growing number of businesses who trust Dorabel
-                International to keep their supply chain moving.
+                Logistics to keep their supply chain moving.
               </p>
             )}
 

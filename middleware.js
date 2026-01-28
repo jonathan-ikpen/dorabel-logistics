@@ -19,16 +19,16 @@ const BOT_PATTERNS = [
 // SEO metadata for each route
 const SEO_METADATA = {
   "/": {
-    title: "Dorabel International - Logistics & Transport Support",
+    title: "Dorabel Logistics - Service & Transport Support",
     description:
-      "Dorabel International provides trusted logistics and transport support services. We bridge the gap between businesses and reliable carriers.",
+      "Dorabel Logistics provides trusted UK logistics and transport support services. We bridge the gap between businesses and reliable carriers.",
     image: "/uploads/og_image.png",
     canonical: "https://dorabel.co.uk/",
   },
   "/about": {
     title: "About Us - Trusted Logistics Support Experts",
     description:
-      "Learn about Dorabel International, your partner in efficient logistics and transport support. We ensure compliance, reliability, and cost-effectiveness for commercial clients.",
+      "Learn about Dorabel Logistics, your partner in efficient logistics and transport support. We ensure compliance, reliability, and cost-effectiveness for UK commercial clients.",
     image: "/uploads/og_image.png",
     canonical: "https://dorabel.co.uk/about",
   },
@@ -42,21 +42,21 @@ const SEO_METADATA = {
   "/contact": {
     title: "Contact Us - Get a Free Quote Today",
     description:
-      "Get in touch with Dorabel International for a free consultation. Trusted logistics partners. Call us or email for immediate assistance.",
+      "Get in touch with Dorabel Logistics for a free consultation. Trusted UK logistics partners. Call us or email for immediate assistance.",
     image: "/uploads/og_image.png",
     canonical: "https://dorabel.co.uk/contact",
   },
   "/booking": {
-    title: "Book an Appointment - Dorabel International",
+    title: "Book an Appointment - Dorabel Logistics",
     description:
-      "Schedule a consultation or book logistics services with Dorabel International. We offer efficient and reliable transport solutions.",
+      "Schedule a consultation or book logistics services with Dorabel Logistics. We offer efficient and reliable transport solutions.",
     image: "/uploads/og_image.png",
     canonical: "https://dorabel.co.uk/booking",
   },
 };
 
 const SITE_URL = "https://dorabel.co.uk";
-const SITE_NAME = "Dorabel International";
+const SITE_NAME = "Dorabel Logistics";
 
 function isBot(userAgent) {
   if (!userAgent) return false;

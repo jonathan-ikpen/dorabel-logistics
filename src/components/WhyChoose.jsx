@@ -98,7 +98,7 @@ const WhyChoose = ({ data }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {(data.benefits || []).map((benefit, index) => (
             <FadeIn key={index} delay={index * 0.1}>
-              <div className="bg-white p-8 group h-full hover:shadow-lg transition-shadow duration-500 border border-gray-100 rounded-2xl">
+              <div className="bg-white p-8 group h-full hover:shadow-lg transition-shadow duration-500 border border-gray-100">
                 <div className="w-12 h-12 bg-transparent border border-dorabel-gold/30 flex items-center justify-center text-dorabel-purple mb-8 group-hover:bg-dorabel-gold group-hover:text-white group-hover:border-dorabel-gold transition-all duration-500 rounded-xl">
                   {iconMap[benefit.title] || (
                     <svg

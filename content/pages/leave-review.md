@@ -19,7 +19,7 @@ blocks:
     questions:
       - question: What areas do you cover?
         answer: >-
-          We provide transport support across the UK and can coordinate international movements through our network of partners.
+          We provide transport support across the UK and can coordinate movements through our network of trusted regional partners.
       - question: Do you offer same-day delivery?
         answer: >-
           Yes, we can coordinate urgent same-day deliveries for time-critical shipments. Please contact us for availability.

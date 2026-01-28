@@ -407,6 +407,8 @@ var config_default = defineConfig({
                 name: "contentGrid",
                 label: "Content Grid (Mission/Vision)",
                 fields: [
+                  { type: "string", name: "heading", label: "Heading" },
+                  { type: "string", name: "subheading", label: "Subheading" },
                   {
                     type: "object",
                     list: true,

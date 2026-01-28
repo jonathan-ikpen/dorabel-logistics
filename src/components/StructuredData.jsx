@@ -127,14 +127,42 @@ const StructuredData = () => {
         {
           "@type": "Service",
           "@id": `${BASE_URL}/services#global`,
-          name: "Global Logistics",
+          name: "International Logistics",
           description:
-            "International logistics support and coordination for businesses with cross-border shipping requirements.",
+            "Comprehensive international logistics solutions, including freight forwarding, customs clearance, and global supply chain management for businesses.",
+          serviceType: "LogisticsService",
           provider: {
-            "@id": `${BASE_URL}/#organization`,
+            "@type": "LocalBusiness",
+            name: "Dorabel International",
           },
-          areaServed: "Worldwide",
-          serviceType: "International Logistics",
+          areaServed: {
+            "@type": "Country",
+            name: "United Kingdom",
+          },
+          hasOfferCatalog: {
+            "@type": "OfferCatalog",
+            name: "Logistics Services",
+            itemListElement: [
+              {
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service",
+                  name: "National Haulage",
+                  description:
+                    "Reliable nationwide transport support and coordination for businesses across the UK.",
+                },
+              },
+              {
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service",
+                  name: "International Freight",
+                  description:
+                    "Global freight forwarding and customs clearance for cross-border shipping.",
+                },
+              },
+            ],
+          },
         },
         {
           "@type": "Service",

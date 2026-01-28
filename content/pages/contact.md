@@ -12,7 +12,7 @@ blocks:
     subheading: We're here to help. Get in touch with our team today.
     image: /uploads/dorabel_hero.png
     _template: pageHeader
-  - heading: Ready to Elevate Your Business?
+  - heading: Ready to Activate Your Business?
     subheading: Get in Touch
     intro: >-
       Contact us today. We're here to help you move goods efficiently and
@@ -28,7 +28,7 @@ blocks:
       - question: What areas do you cover?
         answer: >-
           We provide transport support across the UK and can coordinate
-          international movements through our network of partners.
+          nationwide movements through our network of partners.
       - question: Do you offer same-day delivery?
         answer: >-
           Yes, we can coordinate urgent same-day deliveries for time-critical

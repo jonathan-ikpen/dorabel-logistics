@@ -1,37 +1,122 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import maintenanceImg from "../assets/service_van_branded.png";
-import cleaningImg from "../assets/service_warehouse.png";
-import inspectionImg from "../assets/service_ship.png";
 import { Reveal, MaskReveal } from "./Reveal";
+import domesticFreightImg from "../assets/service_domestic_freight.png";
+import lastMileImg from "../assets/service_last_mile.png";
+import orderFulfillmentImg from "../assets/service_order_fulfillment.png";
+import consultingImg from "../assets/service_logistics_consulting.png";
+import outsourcedImg from "../assets/service_outsourced_logistics.png";
+import complianceImg from "../assets/service_logistics_compliance.png";
+import retailImg from "../assets/service_retail_ecommerce.png";
+import manufacturingImg from "../assets/service_manufacturing_b2b.png";
 import heroBuildingImg from "../assets/dorabel_hero.png";
 import { tinaField } from "tinacms/dist/react";
 
 const localServices = [
   {
     id: 1,
-    title: "Procurement & Coordination",
-    description: "We manage your entire supply chain with precision and care.",
-    features: ["Global Sourcing", "Contract Negotiation", "Vendor Management"],
-    image: inspectionImg, // Ship
+    title: "Domestic Freight & Delivery",
+    description: "Comprehensive transport solutions across the UK.",
+    features: [
+      "Same-day delivery (within major UK cities)",
+      "Next-day and scheduled deliveries",
+      "Palletized freight transport",
+      "Part-load and full-truckload (FTL) services",
+      "Inter-city and regional haulage",
+    ],
+    image: domesticFreightImg,
     icon: "01",
   },
   {
     id: 2,
-    title: "Logistics Management",
-    description: "End-to-end logistics solutions for your business needs.",
-    features: ["Fleet Management", "Route Optimization", "Last Mile Delivery"],
-    image: maintenanceImg, // Van
+    title: "Last-Mile Delivery for Businesses",
+    description: "Reliable final step delivery for your brand.",
+    features: [
+      "E-commerce order delivery",
+      "Retail store restocking",
+      "Food & grocery delivery",
+      "Subscription box fulfillment",
+      "White-label delivery",
+    ],
+    image: lastMileImg,
     icon: "02",
   },
   {
     id: 3,
-    title: "Warehousing Services",
-    description: "Secure and efficient storage for your inventory.",
-    features: ["Inventory Control", "Distribution", "Storage Solutions"],
-    image: cleaningImg, // Warehouse
+    title: "Order Fulfillment (3PL Services)",
+    description: "Full-service logistical support for online sellers.",
+    features: [
+      "Pick, pack, and ship",
+      "Inventory management",
+      "Returns handling (reverse logistics)",
+      "Integration with Shopify, WooCommerce, Amazon",
+    ],
+    image: orderFulfillmentImg,
     icon: "03",
+  },
+  {
+    id: 4,
+    title: "Logistics Consulting & Planning",
+    description: "Optimizing your supply chain for efficiency and growth.",
+    features: [
+      "Supply chain optimization",
+      "Route planning & cost reduction",
+      "Delivery performance audits",
+      "Scaling logistics for growing businesses",
+    ],
+    image: consultingImg,
+    icon: "04",
+  },
+  {
+    id: 5,
+    title: "Outsourced Logistics Operations",
+    description: "Your dedicated external logistics department.",
+    features: [
+      "Acting as a company’s logistics department",
+      "Fleet management on behalf of businesses",
+      "Driver sourcing and management",
+      "Delivery SLA management",
+    ],
+    image: outsourcedImg,
+    icon: "05",
+  },
+  {
+    id: 6,
+    title: "Logistics Compliance",
+    description: "Ensuring safety and legal standards in transport.",
+    features: [
+      "Regulatory Compliance",
+      "Operator Licensing",
+      "Driver & Vehicle Safety",
+      "Environmental & Safety Standards",
+    ],
+    image: complianceImg,
+    icon: "06",
+  },
+  {
+    id: 7,
+    title: "Retail & E-commerce Logistics",
+    description: "Specialized handling for retail and online stores.",
+    features: [
+      "Stock transfers between stores",
+      "Online order fulfillment",
+      "Returns management",
+    ],
+    image: retailImg,
+    icon: "07",
+  },
+  {
+    id: 8,
+    title: "Manufacturing & B2B Supply Logistics",
+    description: "Industrial strength logistics for manufacturers.",
+    features: [
+      "Raw material transport",
+      "Just-in-time delivery",
+      "Factory-to-warehouse distribution",
+    ],
+    image: manufacturingImg,
+    icon: "08",
   },
 ];
 
@@ -79,9 +164,9 @@ const Services = ({ previewMode = false, data }) => {
               className="h-full"
               width="100%"
             >
-              <div className="group h-full bg-white border border-gray-100 overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all duration-500 flex flex-col rounded-2xl">
+              <div className="group h-full bg-white border border-gray-100 overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all duration-500 flex flex-col">
                 <div className="relative h-64 overflow-hidden">
-                  <MaskReveal className="h-full w-full rounded-t-2xl">
+                  <MaskReveal className="h-full w-full">
                     <img
                       src={service.image || heroBuildingImg}
                       alt={service.title}

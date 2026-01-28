@@ -60,7 +60,7 @@ const Contact = ({ data }) => {
               data-tina-field={tinaField(data, "heading")}
               className="text-4xl md:text-5xl font-heading font-bold text-dorabel-purple mt-3 mb-8 leading-tight"
             >
-              {data.heading || "Ready to Elevate Your Property?"}
+              {data.heading || "Ready to Activate Your Property?"}
             </h2>
             <p
               data-tina-field={tinaField(data, "intro")}
@@ -180,7 +180,7 @@ const Contact = ({ data }) => {
             </div>
           </div>
 
-          <div className="bg-[#FAFAFA] p-12 shadow-sm border border-gray-100 rounded-2xl">
+          <div className="bg-[#FAFAFA] p-12 shadow-sm border border-gray-100">
             <h3 className="text-2xl font-heading font-bold text-dorabel-purple mb-8">
               Request a Consultation
             </h3>

@@ -1,11 +1,11 @@
 ---
 title: Home
 seo:
-  title: Dorabel International - Reliable Logistics & Transport Services
+  title: Dorabel International - UK-Based Logistics & Transport Services
   description: >-
     Dorabel International provides dependable transport support and coordination
     for commercial clients. Efficient, compliant, and cost-effective logistics.
-  canonical: 'https://dorabel.co.uk/'
+  canonical: "https://dorabel.co.uk/"
   image: /uploads/og_image.png
 blocks:
   - heading: Always Delivering Excellence
@@ -16,9 +16,9 @@ blocks:
       business and supply-chain support services.
     backgroundImage: /uploads/hero-logistics-branded.png
     ctaText: Get Started
-    ctaLink: '#contact'
+    ctaLink: "#contact"
     secondaryCtaText: Our Services
-    secondaryCtaLink: '#services'
+    secondaryCtaLink: "#services"
     trustedText: Trusted Logistics Partner
     _template: hero
   - heading: Efficient Transport Support
@@ -44,56 +44,86 @@ blocks:
       We offer a full suite of services designed to take the stress out of
       transport and supply chain management.
     items:
-      - title: Transport Support
+      - title: Domestic Freight & Delivery
         description: >-
-          We provide comprehensive transport support for commercial clients,
-          ensuring that every movement of goods is executed with precision. By
-          leveraging our network of trusted carriers and optimizing routes, we
-          minimize transit times and reduce costs while maintaining the highest
-          standards of safety and compliance.
-        image: /uploads/service_van_branded.png
-        icon: '01'
+          We provide comprehensive nationwide transport solutions connecting every corner of the UK. Our fleet manages everything from high-volume inter-city haulage to precise regional distribution, ensuring your goods move seamlessly through our optimized network with real-time tracking and dedicated support.
+        image: /uploads/service_domestic_freight_uk.png
+        icon: "01"
         features:
-          - Fleet coordination
-          - Route optimization
-          - Carrier vetting and management
-      - title: Supply Chain Coordination
+          - Nationwide UK coverage
+          - Same-day & Next-day delivery
+          - Full-truckload (FTL) & Part-load (LTL)
+          - Pallet network integration
+      - title: Last-Mile Delivery
         description: >-
-          Our supply chain coordination services are designed to bring clarity
-          and control to your operations. We manage the flow of goods from
-          procurement to delivery, providing real-time transparency and
-          accountability at every stage to ensure your inventory is always where
-          it needs to be.
-        image: /uploads/service_warehouse.png
-        icon: '02'
+          Our final-mile logistics service is designed for the unique challenges of UK cities and towns. We combine local expertise with smart routing to ensure your products reach their final destination promptly. Whether residential or commercial, we guarantee a professional delivery experience that reflects positively on your brand.
+        image: /uploads/service_last_mile_uk.png
+        icon: "02"
         features:
-          - Inventory management support
-          - Procurement coordination
-          - Supply chain visibility
-      - title: Global Logistics
+          - Urban & residential delivery
+          - High street retail replenishment
+          - Timed delivery slots
+          - Driver tracking & POD
+      - title: Order Fulfillment (3PL)
         description: >-
-          We simplify the complexities of international trade. Our team handles
-          the intricate details of cross-border transport, from navigating
-          customs compliance to coordinating freight bookings, ensuring your
-          global logistics operate as smoothly as your domestic shipping.
-        image: /uploads/service_ship.png
-        icon: '03'
+          Scale your operations without the overhead with our complete UK-based fulfillment handling. From our secure, modern facilities, we manage the entire process—receiving, storage, pick-and-pack, and dispatch. Our technology integrates directly with your sales channels for a frictionless order-to-delivery cycle.
+        image: /uploads/service_fulfillment_uk.png
+        icon: "03"
         features:
-          - Import/Export coordination
-          - Customs compliance support
-          - International freight booking
-      - title: Business Support Services
+          - Secure UK warehousing
+          - E-commerce integration
+          - Returns management
+          - Scalable storage solutions
+      - title: Logistics Consulting
         description: >-
-          As your business grows, so do your needs. We offer strategic business
-          support services including operational consultancy and process
-          optimization, effectively acting as an extension of your team to help
-          you scale your capabilities and improve overall efficiency.
-        image: /uploads/dorabel_hero.png
-        icon: '04'
+          Optimize your supply chain with strategic guidance tailored to the UK market. Our experts analyze your entire transport operation to identify cost-saving opportunities, improve resilience, and streamline carrier management. We help you navigate complex challenges with data-driven insights and industry best practices.
+        image: /uploads/service_consulting_uk.png
+        icon: "04"
         features:
-          - Operational consultancy
-          - Logistics planning
-          - Process optimization
+          - UK supply chain audit
+          - Cost reduction strategies
+          - Carrier contract negotiation
+          - Recruitment & resourcing advice
+      - title: Outsourced Logistics Support
+        description: >-
+          Transform your logistics from a cost center into a competitive advantage by letting us act as your dedicated transport department. We take full responsibility for planning, carrier management, and daily operations, allowing your internal teams to focus entirely on your core business activities.
+        image: /uploads/service_outsourced_uk.png
+        icon: "05"
+        features:
+          - Daily transport planning
+          - Fleet & driver management
+          - Incident resolution
+          - KPI reporting
+      - title: Transport Compliance
+        description: >-
+          Navigate the complexities of UK transport regulations with total confidence. We provide specialized support for Operator Licences, driver hours compliance, and fleet maintenance planning. Our proactive approach ensures you remain fully legal, safe, and audit-ready at all times.
+        image: /uploads/service_compliance_uk.png
+        icon: "06"
+        features:
+          - Operator Licence support
+          - Driver hours & tachograph analysis
+          - Vehicle maintenance planning
+          - DVSA audit preparation
+      - title: National Logistics
+        description: >-
+          We offer specialized, high-velocity logistics solutions specifically for the UK retail sector. Our services ensure seamless stock replenishment for high street stores and shopping centres, managing seasonal peaks and reverse logistics with the precision required to keep shelves stocked and customers happy.
+        image: /uploads/service_retail_uk.png
+        icon: "07"
+        features:
+          - Store replenishment
+          - Reverse logistics & returns
+          - Seasonal peak planning
+          - White-glove delivery services
+      - title: Industrial & Manufacturing Logistics
+        description: >-
+          Our robust supply chain support is engineered for the specific demands of UK manufacturers. We ensure the just-in-time delivery of raw materials to keep production lines running and the efficient distribution of finished goods to distributors and end-users, handling everything from standard pallets to hazardous goods.
+        image: /uploads/service_manufacturing_uk.png
+        icon: "08"
+        features:
+          - Nationwide UK Transport
+          - DVSA Compliance Support
+          - Regional Freight Bookingds distribution
+          - Hazardous goods (ADR) support
     _template: services
   - heading: Why Partner With Dorabel?
     subheading: >-
@@ -125,26 +155,24 @@ blocks:
       moves as fast as your ambition.
     ctaText: Book Now
     steps:
-      - number: '01'
+      - number: "01"
         title: Initial Assessment
         description: >-
           We start by analyzing your specific logistics requirements and freight
           details to confirm capacity and route availability.
-      - number: '02'
+      - number: "02"
         title: Planning
         description: >-
           We design a tailored transport plan that optimizes routes and costs
           while ensuring timely delivery.
-      - number: '03'
+      - number: "03"
         title: Execution
         description: >-
-          Our team coordinates with vetted carriers to execute the plan. We
-          handle all logistics and monitoring.
-      - number: '04'
-        title: Review
+          Our team coordinates with vetted UK carriers to execute the plan. We handle all logistics and real-time monitoring to ensure smooth operations.
+      - number: "04"
+        title: Review & Support
         description: >-
-          We review performance and provide detailed reports, ensuring
-          continuous improvement in your supply chain.
+          We provide detailed proof of delivery (POD) and performance reviews, ensuring your UK supply chain consistently meets its targets.
     _template: process
   - heading: Trusted by Commercial Clients
     items:
@@ -195,7 +223,7 @@ blocks:
     buttonText: Get a Free Quote
     secondaryButtonText: Call Us Now
     _template: cta
-  - heading: Ready to Elevate Your Business?
+  - heading: Ready to Activate Your Business?
     subheading: Get in Touch
     intro: >-
       Contact us today. We're here to help you move goods efficiently and
@@ -206,4 +234,3 @@ blocks:
     email: info@dorabel.co.uk
     _template: contact
 ---
-

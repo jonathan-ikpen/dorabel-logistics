@@ -82,7 +82,7 @@ const BookingForm = ({ data }) => {
             </p>
           </div>
 
-          <div className="bg-[#FAFAFA] p-8 md:p-12 shadow-sm border border-gray-100 rounded-2xl">
+          <div className="bg-[#FAFAFA] p-8 md:p-12 shadow-sm border border-gray-100">
             <form className="space-y-8" onSubmit={onSubmit}>
               {/* Personal Details */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

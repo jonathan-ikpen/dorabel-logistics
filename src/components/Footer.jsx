@@ -49,7 +49,7 @@ export default function Footer({ headerData, footerData }) {
   };
 
   return (
-    <footer className="bg-dorabel-purple-dark text-dorabel-gray-dim border-t border-dorabel-purple-light pt-20 pb-12">
+    <footer className="bg-dorabel-purple-dark text-gray-200 frounded-t-[40px] pt-20 pb-12 mt-12">
       <div className="container mx-auto px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Brand Column */}
@@ -105,7 +105,7 @@ export default function Footer({ headerData, footerData }) {
                         ? tinaField(footerData.serviceLinks[i], "label")
                         : null
                     }
-                    className="hover:text-dorabel-gold transition-colors block"
+                    className="text-gray-300 hover:text-dorabel-gold transition-colors block font-light"
                   >
                     {item.label}
                   </a>
