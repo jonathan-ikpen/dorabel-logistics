@@ -142,9 +142,14 @@ const BookingForm = ({ data }) => {
                       onChange={handleChange}
                       className="w-full bg-white border border-gray-200 px-4 py-3 text-dorabel-purple focus:outline-none focus:border-dorabel-gold transition-colors rounded-xl appearance-none"
                     >
-                      <option>Logistics</option>
-                      <option>Transport Support</option>
-                      <option>Procurement</option>
+                      <option>Same-Day & Express Courier</option>
+                      <option>Business & E-commerce Courier</option>
+                      <option>UK Domestic Logistics</option>
+                      <option>Residential Moving</option>
+                      <option>Commercial Relocation</option>
+                      <option>Warehousing & Fulfilment</option>
+                      <option>Secure & Specialist Courier</option>
+                      <option>Supply Chain Support</option>
                       <option>Other</option>
                     </select>
                     <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-dorabel-purple">

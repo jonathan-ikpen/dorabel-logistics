@@ -50,7 +50,7 @@ const PageHeader = ({ data }) => {
 // Inline ContentGrid Component (for Mission/Vision)
 const ContentGrid = ({ data }) => {
   return (
-    <section className="py-24 bg-[#fdfdfe]">
+    <section className="py-24 bg-dorabel-gray-light">
       <div className="container mx-auto px-6">
         {data.heading && (
           <div className="text-left mb-16">

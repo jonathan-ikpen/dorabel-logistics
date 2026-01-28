@@ -11,111 +11,123 @@ import complianceImg from "../assets/service_logistics_compliance.png";
 import retailImg from "../assets/service_retail_ecommerce.png";
 import manufacturingImg from "../assets/service_manufacturing_b2b.png";
 import heroBuildingImg from "../assets/dorabel_hero.png";
+import fleetExpressCourierImg from "../assets/fleet_express_courier.png";
+import fleetVanUkImg from "../assets/fleet_van_uk.png";
+import fleetRigidUkImg from "../assets/fleet_rigid_uk.png";
+import serviceWarehouseImg from "../assets/service_warehouse.png";
 import { tinaField } from "tinacms/dist/react";
 
 const localServices = [
   {
     id: 1,
-    title: "Domestic Freight & Delivery",
-    description: "Comprehensive transport solutions across the UK.",
+    title: "Same-Day & Express Courier Services",
+    description:
+      "We provide fast, reliable courier services across the UK for urgent deliveries. We specialise in time-critical solutions, ensuring your goods reach their destination with speed, accuracy, and total peace of mind.",
     features: [
-      "Same-day delivery (within major UK cities)",
-      "Next-day and scheduled deliveries",
-      "Palletized freight transport",
-      "Part-load and full-truckload (FTL) services",
-      "Inter-city and regional haulage",
+      "Direct point-to-point delivery",
+      "Time-guaranteed windows",
+      "Urgent document handling",
+      "Secure parcel transport",
     ],
-    image: domesticFreightImg,
+    image: fleetExpressCourierImg,
     icon: "01",
   },
   {
     id: 2,
-    title: "Last-Mile Delivery for Businesses",
-    description: "Reliable final step delivery for your brand.",
+    title: "Business & E-commerce Courier Solutions",
+    description:
+      "Scalable courier services designed to support growing UK businesses. We help online stores and SMEs deliver orders efficiently while maintaining a professional and reliable customer experience.",
     features: [
-      "E-commerce order delivery",
-      "Retail store restocking",
-      "Food & grocery delivery",
-      "Subscription box fulfillment",
-      "White-label delivery",
+      "Nationwide parcel delivery",
+      "Multi-drop courier routes",
+      "White-label courier services",
+      "Cost-effective shipping",
     ],
-    image: lastMileImg,
+    image: retailImg,
     icon: "02",
   },
   {
     id: 3,
-    title: "Order Fulfillment (3PL Services)",
-    description: "Full-service logistical support for online sellers.",
+    title: "UK Domestic Logistics & Distribution",
+    description:
+      "End-to-end logistics solutions for businesses operating across the UK. We manage the movement of goods between suppliers, warehouses, and customers with exceptional efficiency and precision.",
     features: [
-      "Pick, pack, and ship",
-      "Inventory management",
-      "Returns handling (reverse logistics)",
-      "Integration with Shopify, WooCommerce, Amazon",
+      "Regional & nationwide transport",
+      "Pallet & bulk goods distribution",
+      "B2B logistics solutions",
+      "Reliable trade deliveries",
     ],
-    image: orderFulfillmentImg,
+    image: domesticFreightImg,
     icon: "03",
   },
   {
     id: 4,
-    title: "Logistics Consulting & Planning",
-    description: "Optimizing your supply chain for efficiency and growth.",
+    title: "Residential Moving Services",
+    description:
+      "Professional, stress-free home moving services across the UK. We take care of your move from start to finish, ensuring your personal belongings arrive safely and on time at your new home.",
     features: [
-      "Supply chain optimization",
-      "Route planning & cost reduction",
-      "Delivery performance audits",
-      "Scaling logistics for growing businesses",
+      "Local & long-distance moves",
+      "Expert packing services",
+      "Furniture handling & assembly",
+      "Secure transport",
     ],
-    image: consultingImg,
+    image: fleetVanUkImg,
     icon: "04",
   },
   {
     id: 5,
-    title: "Outsourced Logistics Operations",
-    description: "Your dedicated external logistics department.",
+    title: "Commercial & Office Relocation Services",
+    description:
+      "Efficient office relocation services designed to minimise downtime. We help businesses relocate smoothly without disrupting daily operations, handling everything from desks to IT equipment.",
     features: [
-      "Acting as a company’s logistics department",
-      "Fleet management on behalf of businesses",
-      "Driver sourcing and management",
-      "Delivery SLA management",
+      "Office & workspace moves",
+      "IT & equipment relocation",
+      "Out-of-hours scheduling",
+      "Weekend move options",
     ],
-    image: outsourcedImg,
+    image: fleetRigidUkImg,
     icon: "05",
   },
   {
     id: 6,
-    title: "Logistics Compliance",
-    description: "Ensuring safety and legal standards in transport.",
+    title: "Warehousing & Fulfilment Services",
+    description:
+      "Flexible storage and fulfilment solutions that support business growth. We provide secure warehousing combined with efficient order processing and dispatch for modern businesses.",
     features: [
-      "Regulatory Compliance",
-      "Operator Licensing",
-      "Driver & Vehicle Safety",
-      "Environmental & Safety Standards",
+      "Short-term & long-term storage",
+      "Pick, pack & dispatch",
+      "Returns & reverse logistics",
+      "Inventory management",
     ],
-    image: complianceImg,
+    image: serviceWarehouseImg,
     icon: "06",
   },
   {
     id: 7,
-    title: "Retail & E-commerce Logistics",
-    description: "Specialized handling for retail and online stores.",
+    title: "Secure & Specialist Courier Services",
+    description:
+      "Specialist courier services for sensitive, valuable, or fragile items. We provide enhanced security, tracking, and compassionate handling for high-risk or delicate deliveries.",
     features: [
-      "Stock transfers between stores",
-      "Online order fulfillment",
-      "Returns management",
+      "Confidential document courier",
+      "High-value item transport",
+      "Fragile item handling",
+      "Enhanced security tracking",
     ],
-    image: retailImg,
+    image: complianceImg,
     icon: "07",
   },
   {
     id: 8,
-    title: "Manufacturing & B2B Supply Logistics",
-    description: "Industrial strength logistics for manufacturers.",
+    title: "Supply Chain & Logistics Support Services",
+    description:
+      "Strategic logistics support to help businesses operate more efficiently. We work as an extension of your team to optimise logistics operations and streamline your supply chain.",
     features: [
-      "Raw material transport",
-      "Just-in-time delivery",
-      "Factory-to-warehouse distribution",
+      "Route & delivery optimisation",
+      "Outsourced logistics management",
+      "Stock movement planning",
+      "Operational support",
     ],
-    image: manufacturingImg,
+    image: consultingImg,
     icon: "08",
   },
 ];
@@ -196,39 +208,34 @@ const Services = ({ previewMode = false, data }) => {
                   </p>
 
                   <div className="mt-auto">
-                    {(previewMode || !previewMode) && (
-                      <>
-                        {service.features && service.features.length > 0 ? (
-                          <ul className="space-y-3">
-                            {service.features.map((feature, idx) => (
-                              <li
-                                key={idx}
-                                className="flex items-center text-dorabel-gray-dim text-base tracking-wide"
-                              >
-                                <svg
-                                  className="w-5 h-5 text-dorabel-gold mr-3 flex-shrink-0"
-                                  fill="none"
-                                  viewBox="0 0 24 24"
-                                  stroke="currentColor"
-                                >
-                                  <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth={2}
-                                    d="M5 13l4 4L19 7"
-                                  />
-                                </svg>
-                                <span className="w-1.5 h-1.5 bg-dorabel-gold rounded-full mr-3 flex-shrink-0 hidden"></span>
-                                <span className="leading-snug">{feature}</span>
-                              </li>
-                            ))}
-                          </ul>
-                        ) : (
-                          <p className="text-sm text-gray-400 italic">
-                            Features not listed.
-                          </p>
-                        )}
-                      </>
+                    {service.features && service.features.length > 0 ? (
+                      <ul className="space-y-3">
+                        {service.features.map((feature, idx) => (
+                          <li
+                            key={idx}
+                            className="flex items-center text-dorabel-gray-dim text-base tracking-wide"
+                          >
+                            <svg
+                              className="w-5 h-5 text-dorabel-gold mr-3 flex-shrink-0"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M5 13l4 4L19 7"
+                              />
+                            </svg>
+                            <span className="leading-snug">{feature}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    ) : (
+                      <p className="text-sm text-gray-400 italic">
+                        Features not listed.
+                      </p>
                     )}
                   </div>
                 </div>

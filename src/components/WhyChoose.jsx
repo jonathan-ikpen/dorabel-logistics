@@ -75,7 +75,7 @@ const WhyChoose = ({ data }) => {
   if (!data) return null;
 
   return (
-    <section className="py-12 md:py-24 bg-dorabel-gray-light/30">
+    <section className="py-12 md:py-24 bg-dorabel-gray-light">
       <div className="container mx-auto px-8">
         <div className="text-center mb-24">
           <FadeIn>

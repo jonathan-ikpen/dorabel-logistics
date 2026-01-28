@@ -13,7 +13,7 @@ const Hero = ({ data }) => {
       <div className="container mx-auto px-6 h-full">
         <div className="flex flex-col lg:flex-row h-full items-center">
           {/* Left Content - Typography Focused */}
-          <div className="flex-1 lg:w-[55%] lg:flex-none z-20 pt-16 lg:pt-0 lg:pr-12 self-center">
+          <div className="flex-1 lg:w-[50%] lg:flex-none z-20 pt-16 lg:pt-0 lg:pr-12 self-center">
             <Reveal>
               <div className="flex items-center gap-3 mb-6">
                 <span className="h-[2px] w-8 bg-dorabel-gold block"></span>
@@ -63,7 +63,7 @@ const Hero = ({ data }) => {
           </div>
 
           {/* Right Image - Full Height / Bleed effect on lg screens */}
-          <div className="flex-1 relative w-full h-[50vh] lg:h-screen lg:absolute lg:right-0 lg:top-0 lg:w-[45%]">
+          <div className="flex-1 relative w-full h-[50vh] lg:h-screen lg:absolute lg:right-0 lg:top-0 lg:w-[50%]">
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
