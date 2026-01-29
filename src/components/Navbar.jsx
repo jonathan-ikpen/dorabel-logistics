@@ -13,6 +13,12 @@ const Navbar = ({ headerData }) => {
   const logoSrc = headerData?.logo || defaultLogo;
   const companyName = headerData?.companyName || "Dorabel";
 
+  // Navbar Styling Logic:
+  // - Home Page (/): Transparent at top, White on scroll.
+  // - Other Pages: Always White (scrolled or not).
+  const isHomePage = location.pathname === "/";
+  const showWhiteBackground = !isHomePage || isScrolled;
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
@@ -59,10 +65,12 @@ const Navbar = ({ headerData }) => {
       animate={{ y: 0 }}
       transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }} // Slower, cinematic ease
       className={`fixed w-full z-50 transition-all duration-700 py-6 ${
-        isScrolled ? "bg-white/95 backdrop-blur-md shadow-sm" : "bg-transparent"
+        showWhiteBackground
+          ? "bg-white/95 backdrop-blur-md shadow-sm"
+          : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto px-8 flex justify-between items-center">
+      <div className="container mx-auto px-6 flex justify-between items-center">
         <Link to="/" className="flex items-center gap-4 group">
           <img
             src={logoSrc}

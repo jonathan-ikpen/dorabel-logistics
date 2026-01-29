@@ -166,7 +166,7 @@ blocks:
     buttonText: Get a Free Quote
     secondaryButtonText: Call Us Now
     _template: cta
-  - heading: Ready to Activate Your Business?
+  - heading: Ready to Move Your Business Forward?
     subheading: Get in Touch
     intro: >-
       Contact us today. We're here to help you move goods efficiently and

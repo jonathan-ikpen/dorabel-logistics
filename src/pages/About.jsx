@@ -48,9 +48,11 @@ const PageHeader = ({ data }) => {
 };
 
 // Inline ContentGrid Component (for Mission/Vision)
-const ContentGrid = ({ data }) => {
+const ContentGrid = ({ data, variant = "gray" }) => {
+  const bgClass = variant === "white" ? "bg-white" : "bg-dorabel-gray-light";
+
   return (
-    <section className="py-24 bg-dorabel-gray-light">
+    <section className={`py-24 ${bgClass}`}>
       <div className="container mx-auto px-6">
         {data.heading && (
           <div className="text-left mb-16">
@@ -257,7 +259,12 @@ const AboutContent = ({ initialData }) => {
           case "PageBlocksPageHeader":
             return <PageHeader key={i} data={block} />;
           case "PageBlocksContentGrid":
-            return <ContentGrid key={i} data={block} />;
+            // "Our Core Values" should be white. "Mission/Vision" (default) is gray.
+            const isValues =
+              block.tagline?.includes("Values") ||
+              block.heading?.includes("Values");
+            const variant = isValues ? "gray" : "white";
+            return <ContentGrid key={i} data={block} variant={variant} />;
           case "PageBlocksAbout":
             return <AboutComponent key={i} data={block} />;
           case "PageBlocksProcess":

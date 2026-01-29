@@ -12,7 +12,7 @@ blocks:
     subheading: We're here to help. Get in touch with our team today.
     image: /uploads/dorabel_hero.png
     _template: pageHeader
-  - heading: Ready to Activate Your Business?
+  - heading: Ready to Optimize Your Logistics?
     subheading: Get in Touch
     intro: >-
       Contact us today. We're here to help you move goods efficiently and

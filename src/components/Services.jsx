@@ -139,7 +139,7 @@ const Services = ({ previewMode = false, data }) => {
 
   return (
     <section id="services" className="py-12 md:py-24 bg-white">
-      <div className="container mx-auto px-8">
+      <div className="container mx-auto px-6">
         <div className="md:w-1/2 mb-16">
           <Reveal>
             <span className="text-dorabel-gold font-bold uppercase tracking-widest text-xs mb-2 block">

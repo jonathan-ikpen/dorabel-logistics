@@ -60,7 +60,7 @@ const ContactForm = ({ data }) => {
               data-tina-field={tinaField(data, "heading")}
               className="text-4xl md:text-5xl font-heading font-bold text-dorabel-purple mt-3 mb-8 leading-tight"
             >
-              {data.heading || "Ready to Activate Your Property?"}
+              {data.heading || "Ready to Streamline Your Logistics?"}
             </h2>
             <p
               data-tina-field={tinaField(data, "intro")}
