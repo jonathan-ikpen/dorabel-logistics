@@ -203,7 +203,7 @@ const ContentGrid = ({ data, variant = "gray" }) => {
             return (
               <Reveal key={index} delay={index * 0.2} className="h-full">
                 <div className="bg-white p-10 border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-500 h-full flex flex-col group">
-                  <div className="mb-8 p-4 bg-dorabel-purple/5 rounded-full w-20 h-20 flex items-center justify-center group-hover:bg-dorabel-purple/10 transition-colors duration-500">
+                  <div className="mb-8 p-4 bg-dorabel-purple/5 rounded-2xl w-20 h-20 flex items-center justify-center group-hover:bg-dorabel-purple/10 transition-colors duration-500">
                     {icon}
                   </div>
 
