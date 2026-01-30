@@ -395,6 +395,24 @@ var config_default = defineConfig({
                 ]
               },
               {
+                name: "compliance",
+                label: "Compliance Section",
+                fields: [
+                  { type: "string", name: "heading", label: "Heading" },
+                  { type: "string", name: "subheading", label: "Subheading" },
+                  {
+                    type: "string",
+                    // or "rich-text" if preferred, but string + textarea is often safer for simple text
+                    name: "description",
+                    label: "Description",
+                    ui: { component: "textarea" }
+                  },
+                  { type: "image", name: "image", label: "Map Image" },
+                  { type: "string", name: "buttonText", label: "Button Text" },
+                  { type: "string", name: "buttonLink", label: "Button Link" }
+                ]
+              },
+              {
                 name: "pageHeader",
                 label: "Page Header",
                 fields: [

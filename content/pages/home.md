@@ -10,10 +10,10 @@ seo:
 blocks:
   - heading: Always Delivering Excellence
     subheading: >-
-      Our goal is to establish a dependable UK logistics services business that
-      delivers efficient transport support and coordination for commercial
-      clients—while building the operational capability to expand into wider
-      business and supply-chain support services.
+      We are a dependable UK logistics partner delivering efficient transport
+      support for businesses and individuals. From commercial freight to
+      residential moves, we provide scalable solutions that ensure your goods
+      arrive safely and on time.
     backgroundImage: /uploads/hero-logistics-branded.png
     ctaText: Get Started
     ctaLink: "#contact"
@@ -117,6 +117,14 @@ blocks:
           - "Stock movement planning"
           - "Operational support"
     _template: services
+  - heading: Track Compliance Standards Nationwide
+    subheading: Compliance Tracking
+    description: >-
+      Navigating the complexities of UK transport regulations is essential for any business. We ensure that every journey meets strict safety and compliance standards, giving you full confidence that your goods are being transported legally and responsibly. From correct documentation to secure load handling, our professional team manages the details so you don't have to. We are dedicated to maintaining the highest levels of operational integrity and care for every consignment we carry.
+    image: /uploads/uk_map-no-bg.png
+    buttonText: Contact Support
+    buttonLink: "/contact"
+    _template: compliance
   - heading: Why Partner With Dorabel?
     subheading: >-
       We bring a new level of professionalism and reliability to the logistics

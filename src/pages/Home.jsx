@@ -7,6 +7,7 @@ import Hero from "../components/Hero";
 import Contact from "../components/Contact";
 import FleetGallery from "../components/FleetGallery";
 import Services from "../components/Services";
+import ComplianceMap from "../components/ComplianceMap";
 import LoadingSpinner from "../components/LoadingSpinner";
 
 import About from "../components/About";
@@ -57,6 +58,8 @@ const HomeContent = ({ initialData }) => {
                 {/* <FleetGallery /> */}
               </React.Fragment>
             );
+          case "PageBlocksCompliance":
+            return <ComplianceMap data={block} key={i} />;
           case "PageBlocksCta":
             return <CTA key={i} data={block} />;
           case "PageBlocksWhyChoose":
