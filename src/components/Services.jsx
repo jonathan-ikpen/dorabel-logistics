@@ -180,7 +180,7 @@ const Services = ({ previewMode = false, data }) => {
                 <div className="relative h-64 overflow-hidden">
                   <MaskReveal className="h-full w-full">
                     <img
-                      src={`${service.image || heroBuildingImg}?updated=true`}
+                      src={service.image || heroBuildingImg}
                       alt={service.title}
                       data-tina-field={tinaField(service, "image")}
                       className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
