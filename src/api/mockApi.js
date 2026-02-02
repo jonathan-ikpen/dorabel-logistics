@@ -55,7 +55,7 @@ export async function submitContact(payload) {
 
   const formData = new FormData();
   if (payload.form_type === "contact") {
-    formData.append("access_key", "3ec62242-c8a8-4390-a9a0-561096c456b0");
+    formData.append("access_key", "ed9373ef-d3bd-4418-af08-cbd5de53f5f6");
   }
   if (payload.form_type === "booking") {
     formData.append("access_key", "de028481-b57a-4176-9415-d9b5ba7e63a1");
