@@ -7,7 +7,7 @@ const ContactForm = ({ data }) => {
   const [state, setState] = React.useState({
     name: "",
     email: "",
-    serviceInterest: "Procurement & Coordination",
+    phone: "",
     message: "",
     form_type: "contact",
   });
@@ -29,7 +29,7 @@ const ContactForm = ({ data }) => {
       setState({
         name: "",
         email: "",
-        serviceInterest: "",
+        phone: "",
         message: "",
         form_type: "contact",
       });
