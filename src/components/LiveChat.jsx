@@ -8,7 +8,7 @@ import { useEffect } from "react";
  *                            Find this in your Tawk.to dashboard under Administration > Channels > Chat Widget
  */
 
-const FALLBACK_ID = "696813e81d59b6198d668274/1jev8rhn3";
+const FALLBACK_ID = "6980c0d53c76db1c37e37bfc/1jgff2hf1";
 
 const LiveChat = ({ tawkToId }) => {
   useEffect(() => {
