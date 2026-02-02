@@ -31,7 +31,7 @@ const ContactForm = ({ data }) => {
         email: "",
         serviceInterest: "",
         message: "",
-        form_type: "contact",
+        form_type: "quote",
       });
     } catch (err) {
       setError(
