@@ -55,10 +55,10 @@ export async function submitContact(payload) {
 
   const formData = new FormData();
   if (payload.form_type === "contact") {
-    formData.append("access_key", "bafc5bd0-0441-4072-b07c-440fa6a66d01");
+    formData.append("access_key", "Зес62242-с8a8-4390-a9a0-561096c456b0");
   }
   if (payload.form_type === "appointment") {
-    formData.append("access_key", "8f84253a-0fc5-433d-86fe-97882de1100b");
+    formData.append("access_key", "de028481-b57a-4176-9415-d9b5ba7e63a1");
   }
   formData.append("name", payload.name);
   formData.append("email", payload.email);
@@ -85,7 +85,7 @@ export async function subscribeNewsletter(email) {
   }
 
   const formData = new FormData();
-  formData.append("access_key", "c0b66fc5-492b-4305-8d65-acc478f5b027");
+  formData.append("access_key", "Зес62242-с8a8-4390-a9a0-561096c456b0");
   formData.append("email", email);
   formData.append("message", "Newsletter Subscription");
   formData.append("subject", "New Newsletter Subscriber");
