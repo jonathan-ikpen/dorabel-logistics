@@ -57,7 +57,7 @@ export async function submitContact(payload) {
   if (payload.form_type === "contact") {
     formData.append("access_key", "Зес62242-с8a8-4390-a9a0-561096c456b0");
   }
-  if (payload.form_type === "appointment") {
+  if (payload.form_type === "appointment" || payload.form_type === "booking") {
     formData.append("access_key", "de028481-b57a-4176-9415-d9b5ba7e63a1");
   }
 
@@ -70,10 +70,12 @@ export async function submitContact(payload) {
   formData.append("message", payload.message);
   formData.append("serviceInterest", payload.serviceInterest);
   formData.append("phone", payload.phone);
-  formData.append("preferred_date", payload.preferred_date);
-  formData.append("pickup_location", payload.pickup_location);
-  formData.append("delivery_location", payload.delivery_location);
-  formData.append("cargo_details", payload.cargo_details);
+  formData.append("serviceType", payload.serviceType);
+  formData.append("date", payload.date);
+  formData.append("time", payload.time);
+  formData.append("pickupLocation", payload.pickupLocation);
+  formData.append("deliveryLocation", payload.deliveryLocation);
+  formData.append("cargoDetails", payload.cargoDetails);
   
 
   const response = await fetch("https://api.web3forms.com/submit", {
