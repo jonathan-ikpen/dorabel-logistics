@@ -5,7 +5,7 @@ import { Reveal, MaskReveal } from "./Reveal";
 import domesticFreightImg from "../assets/service_domestic_freight.png";
 import lastMileImg from "../assets/service_last_mile.png";
 import orderFulfillmentImg from "../assets/service_order_fulfillment.png";
-import consultingImg from "../assets/service_logistics_consulting.png";
+import consultingImg from "../assets/service_logistics_compliance.png";
 import outsourcedImg from "../assets/service_outsourced_logistics.png";
 import complianceImg from "../assets/service_logistics_compliance.png";
 import retailImg from "../assets/service_retail_ecommerce.png";
@@ -20,7 +20,7 @@ import { tinaField } from "tinacms/dist/react";
 const localServices = [
   {
     id: 1,
-    title: "Same-Day & Express Courier Services",
+    title: "Same-Day & Express Delivery",
     description:
       "We provide fast, reliable courier services across the UK for urgent deliveries. We specialise in time-critical solutions, ensuring your goods reach their destination with speed, accuracy, and total peace of mind.",
     features: [
@@ -34,7 +34,7 @@ const localServices = [
   },
   {
     id: 2,
-    title: "Business & E-commerce Courier Solutions",
+    title: "E-commerce & Small Business Delivery",
     description:
       "Scalable courier services designed to support growing UK businesses. We help online stores and SMEs deliver orders efficiently while maintaining a professional and reliable customer experience.",
     features: [
@@ -48,7 +48,7 @@ const localServices = [
   },
   {
     id: 3,
-    title: "UK Domestic Logistics & Distribution",
+    title: "Regional & Nationwide Logistics",
     description:
       "End-to-end logistics solutions for businesses operating across the UK. We manage the movement of goods between suppliers, warehouses, and customers with exceptional efficiency and precision.",
     features: [
@@ -90,35 +90,7 @@ const localServices = [
   },
   {
     id: 6,
-    title: "Warehousing & Fulfilment Services",
-    description:
-      "Flexible storage and fulfilment solutions that support business growth. We provide secure warehousing combined with efficient order processing and dispatch for modern businesses.",
-    features: [
-      "Short-term & long-term storage",
-      "Pick, pack & dispatch",
-      "Returns & reverse logistics",
-      "Inventory management",
-    ],
-    image: serviceWarehouseImg,
-    icon: "06",
-  },
-  {
-    id: 7,
-    title: "Secure & Specialist Courier Services",
-    description:
-      "Specialist courier services for sensitive, valuable, or fragile items. We provide enhanced security, tracking, and compassionate handling for high-risk or delicate deliveries.",
-    features: [
-      "Confidential document courier",
-      "High-value item transport",
-      "Fragile item handling",
-      "Enhanced security tracking",
-    ],
-    image: complianceImg,
-    icon: "07",
-  },
-  {
-    id: 8,
-    title: "Supply Chain & Logistics Support Services",
+    title: "Supply Chain & Logistics Support",
     description:
       "Strategic logistics support to help businesses operate more efficiently. We work as an extension of your team to optimise logistics operations and streamline your supply chain.",
     features: [
@@ -128,7 +100,7 @@ const localServices = [
       "Operational support",
     ],
     image: consultingImg,
-    icon: "08",
+    icon: "06",
   },
 ];
 

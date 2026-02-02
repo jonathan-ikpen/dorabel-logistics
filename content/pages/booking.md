@@ -48,7 +48,7 @@ blocks:
       We offer a full suite of services designed to take the stress out of
       transport management.
     items:
-      - title: Same-Day & Express Courier Services
+      - title: Same-Day & Express Delivery
         description: We provide fast, reliable courier services across the UK for urgent deliveries. We specialise in time-critical solutions, ensuring your goods reach their destination with speed, accuracy, and total peace of mind.
         image: /uploads/fleet_express_courier.png
         icon: "01"
@@ -57,7 +57,7 @@ blocks:
           - "Time-guaranteed windows"
           - "Urgent document handling"
           - "Secure parcel transport"
-      - title: Business & E-commerce Courier Solutions
+      - title: E-commerce & Small Business Delivery
         description: Scalable courier services designed to support growing UK businesses. We help online stores and SMEs deliver orders efficiently while maintaining a professional and reliable customer experience.
         image: /uploads/service_retail_ecommerce.png
         icon: "02"
@@ -66,7 +66,7 @@ blocks:
           - "Multi-drop courier routes"
           - "White-label courier services"
           - "Cost-effective shipping"
-      - title: UK Domestic Logistics & Distribution
+      - title: Regional & Nationwide Logistics
         description: End-to-end logistics solutions for businesses operating across the UK. We manage the movement of goods between suppliers, warehouses, and customers with exceptional efficiency and precision.
         image: /uploads/service_domestic_freight.png
         icon: "03"
@@ -93,28 +93,10 @@ blocks:
           - "IT & equipment relocation"
           - "Out-of-hours scheduling"
           - "Weekend move options"
-      - title: Warehousing & Fulfilment Services
-        description: Flexible storage and fulfilment solutions that support business growth. We provide secure warehousing combined with efficient order processing and dispatch for modern businesses.
-        image: /uploads/service_warehouse.png
-        icon: "06"
-        features:
-          - "Short-term & long-term storage"
-          - "Pick, pack & dispatch"
-          - "Returns & reverse logistics"
-          - "Inventory management"
-      - title: Secure & Specialist Courier Services
-        description: Specialist courier services for sensitive, valuable, or fragile items. We provide enhanced security, tracking, and compassionate handling for high-risk or delicate deliveries.
-        image: /uploads/service_logistics_compliance.png
-        icon: "07"
-        features:
-          - "Confidential document courier"
-          - "High-value item transport"
-          - "Fragile item handling"
-          - "Enhanced security tracking"
-      - title: Supply Chain & Logistics Support Services
+      - title: Supply Chain & Logistics Support
         description: Strategic logistics support to help businesses operate more efficiently. We work as an extension of your team to optimise logistics operations and streamline your supply chain.
-        image: /uploads/service_logistics_consulting.png
-        icon: "08"
+        image: /uploads/service_logistics_compliance.png
+        icon: "06"
         features:
           - "Route & delivery optimisation"
           - "Outsourced logistics management"
