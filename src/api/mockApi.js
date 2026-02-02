@@ -70,12 +70,12 @@ export async function submitContact(payload) {
   formData.append("message", payload.message);
   formData.append("serviceInterest", payload.serviceInterest);
   formData.append("phone", payload.phone);
-  formData.append("serviceType", payload.serviceType);
-  formData.append("date", payload.date);
-  formData.append("time", payload.time);
-  formData.append("pickupLocation", payload.pickupLocation);
-  formData.append("deliveryLocation", payload.deliveryLocation);
-  formData.append("cargoDetails", payload.cargoDetails);
+  payload.serviceType && formData.append("serviceType", payload.serviceType);
+  payload.date && formData.append("date", payload.date);
+  payload.time && formData.append("time", payload.time);
+  payload.pickupLocation && formData.append("pickupLocation", payload.pickupLocation);
+  payload.deliveryLocation && formData.append("deliveryLocation", payload.deliveryLocation);
+  payload.cargoDetails && formData.append("cargoDetails", payload.cargoDetails);
   
 
   const response = await fetch("https://api.web3forms.com/submit", {
