@@ -11,7 +11,7 @@ const Preloader = () => {
     // Total animation time is roughly 3.5s
     const timer = setTimeout(() => {
       setMinTimeElapsed(true);
-    }, 3500);
+    }, 2000);
     return () => clearTimeout(timer);
   }, []);
 
