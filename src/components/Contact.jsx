@@ -9,7 +9,7 @@ const Contact = ({ data }) => {
     email: "",
     serviceInterest: "Same-Day & Express Delivery",
     message: "",
-    form_type: "appointment",
+    form_type: "quote",
   });
   const [loading, setLoading] = React.useState(false);
   const [result, setResult] = React.useState(null);
