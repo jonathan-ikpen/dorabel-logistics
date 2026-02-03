@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Obfuscate from "./ObfuscatedEmail";
 const defaultLogo = "/logo/logo-white-with-text.svg";
 import { tinaField } from "tinacms/dist/react";
@@ -78,12 +79,12 @@ export default function Footer({ headerData, footerData }) {
             <ul className="space-y-4 text-sm">
               {quickLinks.map((item, i) => (
                 <li key={i}>
-                  <a
-                    href={item.url}
+                  <Link
+                    to={item.url}
                     className="text-gray-300 hover:text-dorabel-gold transition-colors block font-light"
                   >
                     {item.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -97,8 +98,8 @@ export default function Footer({ headerData, footerData }) {
             <ul className="space-y-4 text-sm">
               {serviceItems.map((item, i) => (
                 <li key={i}>
-                  <a
-                    href={item.url}
+                  <Link
+                    to={item.url}
                     data-tina-field={
                       footerData?.serviceLinks
                         ? tinaField(footerData.serviceLinks[i], "label")
@@ -107,7 +108,7 @@ export default function Footer({ headerData, footerData }) {
                     className="text-gray-300 hover:text-dorabel-gold transition-colors block font-light"
                   >
                     {item.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

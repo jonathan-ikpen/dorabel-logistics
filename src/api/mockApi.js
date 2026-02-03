@@ -47,7 +47,7 @@ export async function fetchServices() {
 }
 
 export async function submitContact(payload) {
-  if (!payload.email) {
+  if (!payload.form_type === "review" && !payload.email) {
     const e = new Error("validation");
     e.code = 422;
     throw e;
@@ -64,19 +64,28 @@ export async function submitContact(payload) {
   if (payload.form_type === "quote") {
     formData.append("access_key", "871fd125-9fd3-4539-ae41-f527639eb554");
   }
-  
+
+  if (payload.form_type === "review") {
+    formData.append("access_key", "c76624b3-067c-46ef-bc49-e82fa1e40855");
+  }
+
   formData.append("name", payload.name);
-  formData.append("email", payload.email);
-  formData.append("message", payload.message);
-  formData.append("serviceInterest", payload.serviceInterest);
-  formData.append("phone", payload.phone);
+  payload.email && formData.append("email", payload.email);
+  payload.message && formData.append("message", payload.message);
+  payload.serviceInterest &&
+    formData.append("serviceInterest", payload.serviceInterest);
+  payload.phone && formData.append("phone", payload.phone);
   payload.serviceType && formData.append("serviceType", payload.serviceType);
   payload.date && formData.append("date", payload.date);
   payload.time && formData.append("time", payload.time);
-  payload.pickupLocation && formData.append("pickupLocation", payload.pickupLocation);
-  payload.deliveryLocation && formData.append("deliveryLocation", payload.deliveryLocation);
+  payload.pickupLocation &&
+    formData.append("pickupLocation", payload.pickupLocation);
+  payload.deliveryLocation &&
+    formData.append("deliveryLocation", payload.deliveryLocation);
   payload.cargoDetails && formData.append("cargoDetails", payload.cargoDetails);
-  
+  payload.role && formData.append("role", payload.role);
+  payload.rating && formData.append("rating", payload.rating);
+  payload.title && formData.append("title", payload.title);
 
   const response = await fetch("https://api.web3forms.com/submit", {
     method: "POST",
