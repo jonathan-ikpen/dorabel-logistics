@@ -1,4 +1,5 @@
 import React from "react";
+import Obfuscate from "./ObfuscatedEmail";
 const defaultLogo = "/logo/logo-white-with-text.svg";
 import { tinaField } from "tinacms/dist/react";
 
@@ -190,19 +191,18 @@ export default function Footer({ headerData, footerData }) {
                     d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                   />
                 </svg>
-                <a
-                  href={`mailto:${
-                    footerData?.contact?.email || "info@dorabel.co.uk"
-                  }`}
+                <span
                   data-tina-field={
                     footerData?.contact
                       ? tinaField(footerData.contact, "email")
                       : null
                   }
-                  className="hover:text-white transition-colors"
                 >
-                  {footerData?.contact?.email || "info@dorabel.co.uk"}
-                </a>
+                  <Obfuscate
+                    email={footerData?.contact?.email || "info@dorabel.co.uk"}
+                    className="hover:text-white transition-colors text-left"
+                  />
+                </span>
               </li>
             </ul>
           </div>

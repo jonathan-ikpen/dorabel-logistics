@@ -1,4 +1,5 @@
 import React from "react";
+import Obfuscate from "./ObfuscatedEmail";
 import { motion, AnimatePresence } from "framer-motion";
 import { tinaField } from "tinacms/dist/react";
 import { submitContact } from "../api/mockApi";
@@ -119,7 +120,7 @@ const Contact = ({ data }) => {
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       strokeWidth={1.5}
-                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 00-2 2v10a2 2 0 002 2z"
                     />
                   </svg>
                 </div>
@@ -128,22 +129,18 @@ const Contact = ({ data }) => {
                     Email Us
                   </h4>
                   <div className="space-y-1">
-                    <a
-                      href={`mailto:${data.email || "info@dorabel.co.uk"}`}
-                      data-tina-field={tinaField(data, "email")}
-                      className="text-dorabel-gray-dim hover:text-dorabel-gold transition-colors block font-light"
-                    >
-                      {data.email || "info@dorabel.co.uk"}
-                    </a>
-                    <a
-                      href={`mailto:${
-                        data.secondaryEmail || "support@dorabel.co.uk"
-                      }`}
-                      data-tina-field={tinaField(data, "secondaryEmail")}
-                      className="text-dorabel-gray-dim hover:text-dorabel-gold transition-colors block font-light"
-                    >
-                      {data.secondaryEmail || "support@dorabel.co.uk"}
-                    </a>
+                    <span data-tina-field={tinaField(data, "email")}>
+                      <Obfuscate
+                        email={data.email || "info@dorabel.co.uk"}
+                        className="text-dorabel-gray-dim hover:text-dorabel-gold transition-colors block font-light text-left"
+                      />
+                    </span>
+                    <span data-tina-field={tinaField(data, "secondaryEmail")}>
+                      <Obfuscate
+                        email={data.secondaryEmail || "support@dorabel.co.uk"}
+                        className="text-dorabel-gray-dim hover:text-dorabel-gold transition-colors block font-light text-left"
+                      />
+                    </span>
                   </div>
                 </div>
               </div>

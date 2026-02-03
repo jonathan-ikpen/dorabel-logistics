@@ -1,4 +1,5 @@
 import React from "react";
+import Obfuscate from "./ObfuscatedEmail";
 import { motion, AnimatePresence } from "framer-motion";
 import { tinaField } from "tinacms/dist/react";
 import { submitContact } from "../api/mockApi";
@@ -89,22 +90,18 @@ const ContactForm = ({ data }) => {
                   Email Us
                 </h4>
                 <div className="space-y-1">
-                  <a
-                    href={`mailto:${data.email || "info@dorabel.co.uk"}`}
-                    data-tina-field={tinaField(data, "email")}
-                    className="text-dorabel-gray-dim hover:text-dorabel-gold transition-colors block font-light"
-                  >
-                    {data.email || "info@dorabel.co.uk"}
-                  </a>
-                  <a
-                    href={`mailto:${
-                      data.secondaryEmail || "support@dorabel.co.uk"
-                    }`}
-                    data-tina-field={tinaField(data, "secondaryEmail")}
-                    className="text-dorabel-gray-dim hover:text-dorabel-gold transition-colors block font-light"
-                  >
-                    {data.secondaryEmail || "support@dorabel.co.uk"}
-                  </a>
+                  <span data-tina-field={tinaField(data, "email")}>
+                    <Obfuscate
+                      email={data.email || "info@dorabel.co.uk"}
+                      className="text-dorabel-gray-dim hover:text-dorabel-gold transition-colors block font-light text-left"
+                    />
+                  </span>
+                  <span data-tina-field={tinaField(data, "secondaryEmail")}>
+                    <Obfuscate
+                      email={data.secondaryEmail || "support@dorabel.co.uk"}
+                      className="text-dorabel-gray-dim hover:text-dorabel-gold transition-colors block font-light text-left"
+                    />
+                  </span>
                 </div>
               </div>
 
