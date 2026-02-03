@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { tinaField } from "tinacms/dist/react";
 import { submitContact } from "../api/mockApi";
+import CaptchaWrapper from "./CaptchaWrapper";
 
 const LeaveReviewForm = ({ data }) => {
   const [state, setState] = useState({
@@ -16,6 +17,7 @@ const LeaveReviewForm = ({ data }) => {
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState(null);
   const [error, setError] = useState(null);
+  const [captchaValid, setCaptchaValid] = useState(false);
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -199,10 +201,14 @@ const LeaveReviewForm = ({ data }) => {
                 ></textarea>
               </div>
 
+              <CaptchaWrapper onVerify={setCaptchaValid} />
+
               <button
                 type="submit"
-                disabled={loading}
-                className="w-full py-5 bg-dorabel-purple hover:bg-dorabel-gold text-white font-bold transition-all duration-300 shadow-sm rounded-xl tracking-widest uppercase text-sm"
+                disabled={loading || !captchaValid}
+                className={`w-full py-5 bg-dorabel-purple hover:bg-dorabel-gold text-white font-bold transition-all duration-300 shadow-sm rounded-xl tracking-widest uppercase text-sm ${
+                  !captchaValid ? "opacity-50 cursor-not-allowed" : ""
+                }`}
               >
                 {loading ? "Submitting..." : "Submit Review"}
               </button>

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { tinaField } from "tinacms/dist/react";
 import { submitContact } from "../api/mockApi";
+import CaptchaWrapper from "./CaptchaWrapper";
 
 const BookingForm = ({ data }) => {
   const [state, setState] = useState({
@@ -20,6 +21,7 @@ const BookingForm = ({ data }) => {
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState(null);
   const [error, setError] = useState(null);
+  const [captchaValid, setCaptchaValid] = useState(false);
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -249,10 +251,14 @@ const BookingForm = ({ data }) => {
                 ></textarea>
               </div>
 
+              <CaptchaWrapper onVerify={setCaptchaValid} />
+
               <button
                 type="submit"
-                disabled={loading}
-                className="w-full py-5 bg-dorabel-purple hover:bg-dorabel-gold text-white font-medium transition-all duration-300 shadow-sm rounded-xl tracking-widest uppercase text-sm"
+                disabled={loading || !captchaValid}
+                className={`w-full py-5 bg-dorabel-purple hover:bg-dorabel-gold text-white font-medium transition-all duration-300 shadow-sm rounded-xl tracking-widest uppercase text-sm ${
+                  !captchaValid ? "opacity-50 cursor-not-allowed" : ""
+                }`}
               >
                 {loading ? "Scheduling..." : "Book Appointment"}
               </button>

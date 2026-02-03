@@ -3,6 +3,7 @@ import Obfuscate from "./ObfuscatedEmail";
 import { motion, AnimatePresence } from "framer-motion";
 import { tinaField } from "tinacms/dist/react";
 import { submitContact } from "../api/mockApi";
+import CaptchaWrapper from "./CaptchaWrapper";
 
 const ContactForm = ({ data }) => {
   const [state, setState] = React.useState({
@@ -15,6 +16,7 @@ const ContactForm = ({ data }) => {
   const [loading, setLoading] = React.useState(false);
   const [result, setResult] = React.useState(null);
   const [error, setError] = React.useState(null);
+  const [captchaValid, setCaptchaValid] = React.useState(false);
 
   if (!data) return null;
 
@@ -188,10 +190,14 @@ const ContactForm = ({ data }) => {
                 ></textarea>
               </div>
 
+              <CaptchaWrapper onVerify={setCaptchaValid} />
+
               <button
                 type="submit"
-                disabled={loading}
-                className="w-full py-4 bg-dorabel-purple hover:bg-dorabel-gold text-white font-medium transition-all duration-300 shadow-sm rounded-xl tracking-widest uppercase text-sm"
+                disabled={loading || !captchaValid}
+                className={`w-full py-4 bg-dorabel-purple hover:bg-dorabel-gold text-white font-medium transition-all duration-300 shadow-sm rounded-xl tracking-widest uppercase text-sm ${
+                  !captchaValid ? "opacity-50 cursor-not-allowed" : ""
+                }`}
               >
                 {loading ? "Sending..." : "Send Message"}
               </button>
