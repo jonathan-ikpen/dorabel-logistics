@@ -3,7 +3,7 @@ import ReactGA from "react-ga4";
 import { useLocation } from "react-router-dom";
 
 // Hardcoded fallback ID to ensure tracking works even if CMS data fetch fails
-const FALLBACK_ID = "G-B4Z8T7BVVD";
+const FALLBACK_ID = "G-34FNNN5H9Y";
 
 const Analytics = ({ googleAnalyticsId }) => {
   const location = useLocation();
