@@ -23,19 +23,19 @@
     },
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "mail.h2ofacilities.co.uk" }],
+      "has": [{ "type": "host", "value": "mail.dorabel.co.uk" }],
       "destination": "https://premium95.web-hosting.com:2096/:path*",
       "permanent": true
     },
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "webmail.h2ofacilities.co.uk" }],
+      "has": [{ "type": "host", "value": "webmail.dorabel.co.uk" }],
       "destination": "https://premium95.web-hosting.com:2096/:path*",
       "permanent": true
     },
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "cpanel.h2ofacilities.co.uk" }],
+      "has": [{ "type": "host", "value": "cpanel.dorabel.co.uk" }],
       "destination": "https://premium95.web-hosting.com:2083/:path*",
       "permanent": true
     }
