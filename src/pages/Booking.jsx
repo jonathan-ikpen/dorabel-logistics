@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useSeo } from "../utils/seo";
+import { useSeo, useBreadcrumbs } from "../utils/seo";
 import { useLoadingStore } from "../store/loading";
 
 import { useTina } from "tinacms/dist/react";
@@ -10,6 +10,7 @@ import Services from "../components/Services";
 import CTA from "../components/CTA";
 import FAQ from "../components/FAQ";
 import LoadingSpinner from "../components/LoadingSpinner";
+import Breadcrumb from "../components/Breadcrumb";
 import { Reveal } from "../components/Reveal";
 import { tinaField } from "tinacms/dist/react";
 
@@ -53,6 +54,7 @@ const BookingContent = ({ initialData }) => {
   });
 
   useSeo(tinaData?.page);
+  useBreadcrumbs([{ name: "Booking", url: "/booking" }]);
 
   const setPageLoaded = useLoadingStore((state) => state.setPageLoaded);
 
@@ -70,6 +72,9 @@ const BookingContent = ({ initialData }) => {
 
   return (
     <div className="pt-20">
+      <div className="container mx-auto px-6 mt-10 mb-8">
+        <Breadcrumb items={[{ name: "Booking", url: "/booking" }]} />
+      </div>
       {blocks?.map((block, i) => {
         switch (block.__typename) {
           case "PageBlocksPageHeader":
