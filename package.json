@@ -6,8 +6,9 @@
   "description": "Dorabel International - Logistics & Transport Services",
   "scripts": {
     "dev": "tinacms dev -c \"vite\"",
-    "build": "tinacms build && vite build",
-    "preview": "vite preview --port 5173"
+    "build": "npm run generate:sitemap && tinacms build && vite build",
+    "preview": "vite preview --port 5173",
+    "generate:sitemap": "node scripts/generate-sitemap.js"
   },
   "dependencies": {
     "@studio-freight/lenis": "^1.0.42",

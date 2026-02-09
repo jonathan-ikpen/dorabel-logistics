@@ -8,9 +8,9 @@ import { useEffect } from "react";
  */
 
 // ========================================
-// CHANGE THIS WHEN YOU SWITCH TO A CUSTOM DOMAIN
+// CUSTOM DOMAIN - Updated for production
 // ========================================
-const BASE_URL = "https://dorabel-logistics.vercel.app";
+const BASE_URL = "https://dorabel.co.uk";
 
 const StructuredData = () => {
   useEffect(() => {
