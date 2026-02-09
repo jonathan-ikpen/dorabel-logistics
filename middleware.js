@@ -46,19 +46,21 @@ const SEO_METADATA = {
     image: "/uploads/og_image.png",
     canonical: "https://dorabel.co.uk/contact",
   },
-  "/booking": {
-    title: "Book an Appointment - Dorabel Logistics",
-    description:
-      "Request a quote or book logistics services with Dorabel Logistics. We offer efficient and reliable transport solutions.",
-    image: "/uploads/og_image.png",
-    canonical: "https://dorabel.co.uk/booking",
-  },  \"/leave-review\": {
-    title: \"Leave a Review - Dorabel Logistics\",
-    description:
-      \"Share your experience with Dorabel Logistics. We value your feedback on our transport and logistics services.\",
-    image: \"/uploads/og_image.png\",
-    canonical: \"https://dorabel.co.uk/leave-review\",
-  },};
+    "/booking": {
+      title: "Book an Appointment - Dorabel Logistics",
+      description:
+        "Request a quote or book logistics services with Dorabel Logistics. We offer efficient and reliable transport solutions.",
+      image: "/uploads/og_image.png",
+      canonical: "https://dorabel.co.uk/booking",
+    },
+    "/leave-review": {
+      title: "Leave a Review - Dorabel Logistics",
+      description:
+        "Share your experience with Dorabel Logistics. We value your feedback on our transport and logistics services.",
+      image: "/uploads/og_image.png",
+      canonical: "https://dorabel.co.uk/leave-review",
+    },
+  };
 
 const SITE_URL = "https://dorabel.co.uk";
 const SITE_NAME = "Dorabel Logistics";
