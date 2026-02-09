@@ -16,6 +16,7 @@ import { useTina } from "tinacms/dist/react";
 import Analytics from "./components/Analytics";
 import LiveChat from "./components/LiveChat";
 import StructuredData from "./components/StructuredData";
+import { reportWebVitalsToGA } from "./utils/webVitals";
 
 const AppContent = ({ globalData }) => {
   // Use Tina hook to make it editable
@@ -117,6 +118,11 @@ function App() {
     if (window.location.pathname.startsWith("/admin")) {
       window.location.href = "/admin/index.html";
       return;
+    }
+
+    // Initialize Core Web Vitals monitoring
+    if (typeof gtag !== "undefined") {
+      reportWebVitalsToGA();
     }
 
     const lenis = new Lenis({
