@@ -1,10 +1,9 @@
 ---
 title: Home
 seo:
-  title: Dorabel International - UK-Based Logistics & Transport Services
+  title: Dorabel International - UK Logistics & Transport Solutions
   description: >-
-    Dorabel International provides dependable transport support and coordination
-    for commercial clients. Efficient, compliant, and cost-effective logistics.
+    Professional UK logistics provider offering transport, delivery, and supply chain solutions. Same-day shipping, real-time tracking, and 99% on-time delivery. Get a free quote today.
   canonical: "https://dorabel.co.uk/"
   image: /uploads/og_image.png
 blocks:

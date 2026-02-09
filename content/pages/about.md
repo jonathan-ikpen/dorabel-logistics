@@ -1,11 +1,9 @@
 ---
 title: About Us
 seo:
-  title: About Us - Trusted Logistics Support Experts
+  title: About Dorabel International - UK Logistics Experts & Trusted Partner
   description: >-
-    Learn about Dorabel International, your partner in efficient
-    logistics and transport support within the UK. We ensure compliance, reliability, and
-    cost-effectiveness for commercial clients.
+    Discover Dorabel International: your trusted UK logistics partner since day one. We deliver excellence through transparency, reliability, and innovative supply chain solutions for businesses nationwide.
   canonical: "https://dorabel.co.uk/about"
   image: /uploads/og_image.png
 blocks:
@@ -58,8 +56,8 @@ blocks:
   - heading: A Streamlined Approach to Logistics
     subheading: How We Work
     description: >-
-      We believe logistics should accelerate your business. Our streamlined approach is built for speed and reliability, ensuring your supply chain moves as fast as your ambition.
-    ctaText: Book Now
+      We believe logistics should accelerate your business. Our streamlined approach is built for speed and reliability, ensuring your supply chain moves as fast as your ambition. Discover our full range of services and book your first shipment today.
+    ctaText: View Services
     steps:
       - number: "01"
         title: Initial Assessment

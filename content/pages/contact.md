@@ -1,10 +1,9 @@
 ---
 title: Contact Us
 seo:
-  title: Contact Us - Get a Free Quote Today
+  title: Contact Dorabel International - Free Quote & Logistics Support
   description: >-
-    Get in touch with Dorabel International for a free quote.
-    Trusted logistics partners. Call us or email for immediate assistance.
+    Contact Dorabel for a free transport quote. Phone, email, or live chat support available. Based in Yorkshire, serving all UK businesses. Immediate assistance for urgent shipments.
   canonical: "https://dorabel.co.uk/contact"
   image: /uploads/og_image.png
 blocks:
@@ -16,7 +15,7 @@ blocks:
     subheading: Get in Touch
     intro: >-
       Contact us today. We're here to help you move goods efficiently and
-      operate with confidence.
+      operate with confidence. Explore our full range of services or book an appointment to get started with reliable UK logistics support.
     address: |
       8, Kestrel Grove.
       Boroughbridge. YO51 9RX

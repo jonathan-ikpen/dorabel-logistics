@@ -1,10 +1,9 @@
 ---
 title: Book an Appointment
 seo:
-  title: Book an Appointment - Dorabel International
+  title: Book Logistics Services - Fast Quote & Transport Booking Dorabel
   description: >-
-    Request a quote or book logistics services with Dorabel
-    International. We offer efficient and reliable transport solutions.
+    Book transport services with Dorabel International. Get instant quotes for delivery, shipping, and logistics. 24/7 booking available. From same-day courier to bulk freight nationwide.
   canonical: "https://dorabel.co.uk/booking"
   image: /uploads/og_image.png
 blocks:
@@ -15,7 +14,8 @@ blocks:
   - heading: Schedule Your Service
     subheading: >-
       Fill out the form below to request a quote or book our logistics
-      services directly.
+      services directly. Need more information? View our services or learn more
+      about our company values and approach.
     _template: booking
   - heading: A Streamlined Approach to Logistics
     subheading: How We Work

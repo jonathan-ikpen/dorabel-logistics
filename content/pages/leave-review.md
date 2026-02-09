@@ -1,9 +1,9 @@
 ---
 title: Leave a Review
 seo:
-  title: Leave a Review - Dorabel International
+  title: Leave a Transport Review - Dorabel International Feedback
   description: >-
-    Share your experience with Dorabel International. We value your feedback on our logistics and transport support services.
+    Share your feedback about Dorabel's logistics and delivery services. Rate our transport solutions and help other businesses find trusted UK logistics. Your review matters to us.
   canonical: "https://dorabel.co.uk/leave-review"
   image: /images/dorabel_seo_og.png
 blocks:
@@ -12,7 +12,7 @@ blocks:
     image: /uploads/hero_building.png
     _template: pageHeader
   - heading: Share Your Experience
-    subheading: Tell us about your interaction with our team and services.
+    subheading: Tell us about your interaction with our team and services. Your feedback helps us improve and assists other businesses in finding reliable UK logistics support.
     _template: leaveReview
   - heading: Frequently Asked Questions
     subheading: Everything you need to know about our logistics services.

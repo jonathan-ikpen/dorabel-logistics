@@ -1,10 +1,9 @@
 ---
 title: Services
 seo:
-  title: Our Services - Transport & Supply Chain Support
+  title: Logistics Services - Express Delivery & Transport Solutions UK
   description: >-
-    Comprehensive logistics services including transport support, supply chain
-    coordination, export/import management, and business consultancy.
+    Full logistics services including same-day delivery, e-commerce shipping, supply chain management, bulk freight, and business consultancy. Fast, reliable, insured transport nationwide.
   canonical: "https://dorabel.co.uk/services"
   image: /uploads/og_image.png
 blocks:
@@ -75,7 +74,8 @@ blocks:
   - heading: Ready to Streamline Your Logistics?
     subheading: >-
       Join the growing number of businesses who trust Dorabel International to
-      keep their supply chain moving.
+      keep their supply chain moving. Book a service today or learn more about
+      our approach in our about us section.
     buttonText: Get a Free Quote
     secondaryButtonText: Call Us Now
     _template: cta
@@ -83,7 +83,8 @@ blocks:
     subheading: Get in Touch
     intro: >-
       Contact us today. We're here to help you move goods efficiently and
-      operate with confidence.
+      operate with confidence. Interested in learning more? Visit our about page
+      to discover what makes Dorabel different.
     address: |
       8, Kestrel Grove.
       Boroughbridge. YO51 9RX
