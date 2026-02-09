@@ -78,7 +78,7 @@ const FAQ = ({ data }) => {
   return (
     <section className="py-24 bg-white">
       {/* Container removed, using w-full with padding */}
-      <div className="w-full px-6 lg:px-12 xl:px-24">
+      <div className="container mx-auto px-6 lg:px-12 xl:px-24">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
           {/* Left Column: Heading and Contact Info */}
           <div className="lg:col-span-4 xl:col-span-4">
@@ -104,7 +104,7 @@ const FAQ = ({ data }) => {
                   )}
                 </h2>
 
-                <div className="mt-12 text-dorabel-gray-dim text-sm font-sans">
+                <div className="mt-12 text-dorabel-gray-dim text-base font-sans">
                   <p className="mb-2">
                     Didn't find an answer to your question?
                   </p>
